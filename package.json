@@ -32,8 +32,10 @@
   },
   "dependencies": {
     "airbnb-browser-shims": "^2.1.0",
+    "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
     "sp-pnp-js": "^3.0.4",
-    "sweetalert2": "^7.11.0"
+    "sweetalert2": "^7.11.0",
+    "toastr": "^2.1.4"
   }
 }
