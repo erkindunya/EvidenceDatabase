@@ -6,7 +6,7 @@ There are a couple of things that need configuring before you get started. Most 
 
 webpack.dev.js: Replace `\\\\uat-ext.kier.group@SSL\\DavWWWRoot\\kiera\\Pages\\Library` with the path to your UAT sharepoint folder.
 
-You will also need to run `npm install`
+You will also need to run `npm install` - **this only works off the work network**.
 
 ## Summary
 
