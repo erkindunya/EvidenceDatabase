@@ -13,7 +13,7 @@
 
 <asp:content ContentPlaceholderID="PlaceHolderMain" runat="server">
 
-  <p>Hello</p>
+  <p class="js-red-text">Hello</p>
 
   <script src="./js/bundle.js"></script>
 </asp:content>
