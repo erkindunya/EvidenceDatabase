@@ -1,5 +1,5 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const sassLintPlugin = require('sasslint-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 const babelOptions = {
     "presets": [
         "env"
@@ -61,10 +61,8 @@ module.exports = {
             filename: './dist/css/bundle.css',
             allChunks: true
         }),
-        new sassLintPlugin({
-            glob: 'styles/**/*.s?(a|c)ss',
-            configFile: '.scss-lint.yml',
-            ignorePlugins: [ 'extract-text-webpack-plugin' ]
+        new StyleLintPlugin({
+            context: 'styles'
         }),
     ]
 };
