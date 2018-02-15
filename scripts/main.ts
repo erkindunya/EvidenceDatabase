@@ -96,9 +96,17 @@ const table = new SharePointDataTable(
   $('.js-main-table-previous'));
 
 $('#mainTableFilter').keyup(function () {
-  table.filter(<string>$(this).val(), [
-    'Title',
-    'Tender_x0020_Number',
-  ]);
+  const query = <string>$(this).val();
+  setTimeout(
+    () => {
+      if (query === <string>$(this).val()) {
+        table.filter(query, [
+          'Title',
+          'Tender_x0020_Number',
+        ]);
+      }
+    },
+    500,
+  );
 });
 
