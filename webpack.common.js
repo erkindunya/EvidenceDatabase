@@ -66,7 +66,7 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin({
-            filename: './dist/css/bundle.css',
+            filename: '../css/[name].css',
             allChunks: true
         }),
         new StyleLintPlugin({

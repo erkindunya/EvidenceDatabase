@@ -63,12 +63,15 @@ export class SharePointDataTable {
     let filter = '';
 
     for (const column of columns) {
-      filter += `startsWith(${column},'${escape(query)}') OR `;
+      filter += `substringof('${escape(query)}',${column}) or `;
     }
 
     filter = filter.slice(0, -4);
 
-    const pagedCollection = this.collection.top(10).filter(filter).getPaged()
+    let collectionQuery = this.collection.top(10);
+    if (query.trim() !== '') collectionQuery = collectionQuery.filter(filter);
+
+    collectionQuery.getPaged()
       .then((collection: PagedItemCollection<any>) => {
         this.pagedCollections = [collection];
         this.page = 0;

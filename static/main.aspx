@@ -3,7 +3,7 @@
 
 <asp:Content ContentPlaceholderID="PlaceHolderAdditionalPageHead" runat="server">
 
-  <link href="./css/bundle.css" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
 
 </asp:content>
 
