@@ -23,8 +23,9 @@ export class SharePointDataTable {
   constructor(private collection: Items,
               private columns: SharePointDataTableColumn[],
               private element: JQuery<HTMLElement>,
-              private nextElement: JQuery<HTMLElement>,
-              private previousElement: JQuery<HTMLElement>) {
+              private nextElement: JQuery<HTMLElement> = null,
+              private previousElement: JQuery<HTMLElement> = null,
+              private filterInput: JQuery<HTMLElement> = null) {
     let table = $('<table></table>');
     table = table.append(this.createHeader(columns));
     table = table.append($(`<tbody><tr><td colspan="${columns.length}"></td></tr></tbody>`));
@@ -46,17 +47,40 @@ export class SharePointDataTable {
       });
     element.empty().append(this.table);
     
-    this.nextElement.click((event) => {
-      event.preventDefault();
-      this.getNext();
-    });
+    if (this.nextElement) {
+      this.nextElement.click((event) => {
+        event.preventDefault();
+        this.getNext();
+      });
+    }
 
-    this.previousElement.click((event) => {
-      event.preventDefault();
-      this.getPrevious();
-    });
+    if (this.previousElement) {
+      this.previousElement.click((event) => {
+        event.preventDefault();
+        this.getPrevious();
+      });
+    }
+
+    if (this.filterInput) this.addFilterInput(this.filterInput);
 
     this.enableButtons();
+  }
+
+  public addFilterInput(input: JQuery<HTMLElement>) {
+    input.keyup((event) => {
+      const query = <string>$(event.delegateTarget).val();
+      setTimeout(
+        () => {
+          if (query === <string>$(event.delegateTarget).val()) {
+            this.filter(query, [
+              'Title',
+              'Tender_x0020_Number',
+            ]);
+          }
+        },
+        500,
+      );
+    });
   }
 
   public filter(query: string, columns: string[]) {

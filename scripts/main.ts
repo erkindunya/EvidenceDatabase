@@ -15,10 +15,6 @@ swal('Any fool can use a computer');
 
 toastr.info('Hello');
 
-web.webs.get().then((result) => {
-  console.log(result);
-});
-
 let sites: any[] = null;
 
 async function getSiteTitle(url: string): Promise<string> {
@@ -93,20 +89,21 @@ const table = new SharePointDataTable(
   columns,
   $('.js-main-table'),
   $('.js-main-table-next'),
-  $('.js-main-table-previous'));
+  $('.js-main-table-previous'),
+  $('#mainTableFilter'));
 
-$('#mainTableFilter').keyup(function () {
-  const query = <string>$(this).val();
-  setTimeout(
-    () => {
-      if (query === <string>$(this).val()) {
-        table.filter(query, [
-          'Title',
-          'Tender_x0020_Number',
-        ]);
-      }
-    },
-    500,
-  );
-});
+// $('#mainTableFilter').keyup(function () {
+//   const query = <string>$(this).val();
+//   setTimeout(
+//     () => {
+//       if (query === <string>$(this).val()) {
+//         table.filter(query, [
+//           'Title',
+//           'Tender_x0020_Number',
+//         ]);
+//       }
+//     },
+//     500,
+//   );
+// });
 
