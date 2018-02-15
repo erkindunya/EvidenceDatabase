@@ -20,6 +20,15 @@
     <input type="text" class="form-control" id="mainTableFilter" placeholder="Enter Filter.">
   </div>
 
+  <div class="form-group">
+    <label for="mainTablePageSize">Page Size</label>
+    <select id="mainTablePageSize">
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="50">50</option>
+    </select>
+  </div>
+
   <div class="js-main-table"></div>
 
   <button type="button" class="js-main-table-previous">Previous</button>

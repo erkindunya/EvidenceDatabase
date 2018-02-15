@@ -15,6 +15,7 @@ export class SharePointDataTable {
   private table: JQuery<HTMLElement>;
   private pagedCollections: PagedItemCollection<any>[] = [];
   protected page: number = 0;
+  private filterQuery: string = '';
   /**
    *
    * Creates a pages datatable from 
@@ -25,14 +26,15 @@ export class SharePointDataTable {
               private element: JQuery<HTMLElement>,
               private nextElement: JQuery<HTMLElement> = null,
               private previousElement: JQuery<HTMLElement> = null,
-              private filterInput: JQuery<HTMLElement> = null) {
+              private filterInput: JQuery<HTMLElement> = null,
+              private pageSize: number = 10) {
     let table = $('<table></table>');
     table = table.append(this.createHeader(columns));
     table = table.append($(`<tbody><tr><td colspan="${columns.length}"></td></tr></tbody>`));
     this.table = table;
 
 
-    const pagedCollection = collection.top(10).orderBy('Created', false).getPaged()
+    const pagedCollection = collection.top(this.pageSize).orderBy('Created', false).getPaged()
       .then((collection: PagedItemCollection<any>) => {
         this.pagedCollections = [collection];
         this.updateBody().then((result) => {
@@ -66,6 +68,28 @@ export class SharePointDataTable {
     this.enableButtons();
   }
 
+  public updatePageCollection(collection: Items) {
+    collection.getPaged()
+      .then((collection: PagedItemCollection<any>) => {
+        this.pagedCollections = [collection];
+        this.page = 0;
+        this.updateBody().then((result) => {
+          toastr.clear();
+          toastr.success('Page loaded.');
+        }).catch((error) => {
+          console.log(error);
+          toastr.error('Items failed to render.');
+        });
+      }).catch((error) => {
+        toastr.error('Page failed to load.');
+      });
+  }
+
+  public setPageSize(size: number) {
+    this.pageSize = size;
+    this.updatePageCollection(this.collection.top(this.pageSize));
+  }
+
   public addFilterInput(input: JQuery<HTMLElement>) {
     input.keyup((event) => {
       const query = <string>$(event.delegateTarget).val();
@@ -84,6 +108,7 @@ export class SharePointDataTable {
   }
 
   public filter(query: string, columns: string[]) {
+    this.filterQuery = query;
     let filter = '';
 
     for (const column of columns) {
@@ -92,23 +117,10 @@ export class SharePointDataTable {
 
     filter = filter.slice(0, -4);
 
-    let collectionQuery = this.collection.top(10);
+    let collectionQuery = this.collection.top(this.pageSize);
     if (query.trim() !== '') collectionQuery = collectionQuery.filter(filter);
 
-    collectionQuery.getPaged()
-      .then((collection: PagedItemCollection<any>) => {
-        this.pagedCollections = [collection];
-        this.page = 0;
-        this.updateBody().then((result) => {
-          toastr.clear();
-          toastr.success('Page loaded.');
-        }).catch((error) => {
-          console.log(error);
-          toastr.error('Items failed to render.');
-        });
-      }).catch((error) => {
-        toastr.error('Page failed to load.');
-      });
+    this.updatePageCollection(collectionQuery);
   }
 
   public getPrevious() {

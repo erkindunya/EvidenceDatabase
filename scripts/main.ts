@@ -90,20 +90,10 @@ const table = new SharePointDataTable(
   $('.js-main-table'),
   $('.js-main-table-next'),
   $('.js-main-table-previous'),
-  $('#mainTableFilter'));
+  $('#mainTableFilter'),
+  10);
 
-// $('#mainTableFilter').keyup(function () {
-//   const query = <string>$(this).val();
-//   setTimeout(
-//     () => {
-//       if (query === <string>$(this).val()) {
-//         table.filter(query, [
-//           'Title',
-//           'Tender_x0020_Number',
-//         ]);
-//       }
-//     },
-//     500,
-//   );
-// });
+$('#mainTablePageSize').change(function () {
+  table.setPageSize(<number>$(this).val());
+});
 
