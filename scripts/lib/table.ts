@@ -1,5 +1,5 @@
 import { sp, Web } from './sp';
-import { Items, PagedItemCollection } from 'sp-pnp-js/lib/pnp';
+import { Items, PagedItemCollection, ConfigOptions } from 'sp-pnp-js/lib/pnp';
 import * as $ from 'jquery';
 import * as toastr from 'toastr';
 
@@ -9,6 +9,7 @@ const web = new Web('https://uat-ext.kier.co.uk/sites/projects');
 export interface SharePointDataTableColumn {
   title: string;
   renderer: (row: any) => Promise<string>;
+  orderByColumn?: string;
 }
 
 export class SharePointDataTable {
@@ -27,14 +28,17 @@ export class SharePointDataTable {
               private nextElement: JQuery<HTMLElement> = null,
               private previousElement: JQuery<HTMLElement> = null,
               private filterInput: JQuery<HTMLElement> = null,
-              private pageSize: number = 10) {
+              private pageSize: number = 10,
+              private orderByColumn: string = 'Title',
+              private orderByAscending: boolean = true) {
     let table = $('<table></table>');
     table = table.append(this.createHeader(columns));
     table = table.append($(`<tbody><tr><td colspan="${columns.length}"></td></tr></tbody>`));
     this.table = table;
 
 
-    const pagedCollection = collection.top(this.pageSize).orderBy('Created', false).getPaged()
+    const pagedCollection = collection.top(this.pageSize)
+      .orderBy(this.orderByColumn, this.orderByAscending).getPaged()
       .then((collection: PagedItemCollection<any>) => {
         this.pagedCollections = [collection];
         this.updateBody().then((result) => {
@@ -68,9 +72,22 @@ export class SharePointDataTable {
     this.enableButtons();
   }
 
-  public updatePageCollection(collection: Items) {
-    collection.getPaged()
-      .then((collection: PagedItemCollection<any>) => {
+  public updatePageCollection() {
+    this.disableButtons();
+    let collectionQuery: Items;
+    if (this.filterQuery.trim() !== '') {
+      collectionQuery = this.collection.filter(this.filterQuery);
+    } else {
+      collectionQuery = this.collection;
+    }
+
+    if (collectionQuery.query.get('$orderby'))
+      collectionQuery.query.remove('$orderby');
+
+    collectionQuery
+      .orderBy(this.orderByColumn, this.orderByAscending)
+      .top(this.pageSize)
+      .getPaged().then((collection: PagedItemCollection<any>) => {
         this.pagedCollections = [collection];
         this.page = 0;
         this.updateBody().then((result) => {
@@ -83,11 +100,18 @@ export class SharePointDataTable {
       }).catch((error) => {
         toastr.error('Page failed to load.');
       });
+    this.enableButtons();
+  }
+
+  public setOrderBy(columnName: string) {
+    if (this.orderByColumn === columnName) this.orderByAscending = !this.orderByAscending;
+    this.orderByColumn = columnName;
+    this.updatePageCollection();
   }
 
   public setPageSize(size: number) {
     this.pageSize = size;
-    this.updatePageCollection(this.collection.top(this.pageSize));
+    this.updatePageCollection();
   }
 
   public addFilterInput(input: JQuery<HTMLElement>) {
@@ -108,7 +132,11 @@ export class SharePointDataTable {
   }
 
   public filter(query: string, columns: string[]) {
-    this.filterQuery = query;
+    if (query.trim() === '') {
+      this.filterQuery = '';
+      this.updatePageCollection();
+      return;
+    }
     let filter = '';
 
     for (const column of columns) {
@@ -117,10 +145,9 @@ export class SharePointDataTable {
 
     filter = filter.slice(0, -4);
 
-    let collectionQuery = this.collection.top(this.pageSize);
-    if (query.trim() !== '') collectionQuery = collectionQuery.filter(filter);
+    this.filterQuery = filter;
 
-    this.updatePageCollection(collectionQuery);
+    this.updatePageCollection();
   }
 
   public getPrevious() {
@@ -211,8 +238,15 @@ export class SharePointDataTable {
   private createHeader(columns: SharePointDataTableColumn[]): JQuery<HTMLElement> {
     let $header = $('<thead></thead>');
     let $row = $('<tr></tr>');
-    columns.forEach((column) => {
-      $row = $row.append(`<th>${column.title}</th>`);
+    columns.forEach((column, index) => {
+      const $title = $(`<th class="sp_column_${index}">${column.title}</th>`);
+      $row = $row.append($title);
+      if (column.orderByColumn) {
+        this.element.on('click', `.sp_column_${index}`, (event) => {
+          event.preventDefault();
+          this.setOrderBy(column.orderByColumn);
+        });
+      }
     });
     $header = $header.append($row);
     return $header;

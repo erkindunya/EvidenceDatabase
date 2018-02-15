@@ -47,10 +47,12 @@ const columns: SharePointDataTableColumn[] = [
   {
     title: 'Business Unit',
     renderer: row => row.Business_x0020_Unit,
+    orderByColumn: 'Business_x0020_Unit',
   },
   {
     title: 'Project Number',
     renderer: row => row.ProjectNumber,
+    orderByColumn: 'ProjectNumber',
   },
   {
     title: 'Tender Number',
