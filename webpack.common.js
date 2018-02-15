@@ -1,5 +1,6 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const webpack = require('webpack');
 const babelOptions = {
     "presets": [
         "env"
@@ -9,13 +10,20 @@ const babelOptions = {
 
 module.exports = {
     devtool: 'source-map',
-    entry: [
-        'babel-polyfill',
-        "./scripts/main.ts",
-        "./styles/main.scss"
-    ],
+    entry: {
+        main: [
+            'babel-polyfill',
+            "./scripts/main.ts",
+            "./styles/main.scss"
+        ],
+        subpage: [
+            'babel-polyfill',
+            "./scripts/subpage.ts"
+        ]
+    },
     output: {
-        filename: "./dist/js/bundle.js"
+        filename: "[name].js",
+        path: __dirname + '/dist/js'
     },
     resolve: {
         modules: ['.', './node_modules'],
@@ -64,5 +72,10 @@ module.exports = {
         new StyleLintPlugin({
             context: 'styles'
         }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "libs",
+            filename: "libs.js",
+            minChunks: 2
+        })
     ]
 };

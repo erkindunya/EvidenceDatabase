@@ -26,5 +26,5 @@
   <button type="button" class="js-main-table-next">Next</button>
 
   <script src="./js/libs.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="./js/subpage.js"></script>
 </asp:content>
