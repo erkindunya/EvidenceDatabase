@@ -11,7 +11,7 @@ module.exports = merge(common, {
         rules: [
             { // sass / scss loader for webpack
                 test: /\.(sass|scss)$/,
-                loader: ExtractTextPlugin.extract(['css-loader?minimize=1', 'sass-loader'])
+                loader: ExtractTextPlugin.extract(['css-loader?url=false&minimize=1', 'sass-loader'])
             }
         ]
     },

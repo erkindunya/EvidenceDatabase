@@ -55,12 +55,6 @@ module.exports = {
                         loader: 'ts-loader'
                     }
                 ]
-            },
-            { // regular css files
-                test: /\.css$/,
-                loader: ExtractTextPlugin.extract({
-                    use: 'css-loader?importLoaders=1',
-                }),
             }
         ]
     },
