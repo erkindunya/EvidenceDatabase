@@ -8,7 +8,9 @@
     "build": "webpack --config webpack.prod.js"
   },
   "devDependencies": {
+    "@types/bootstrap": "^3.3.37",
     "@types/jquery": "^3.2.18",
+    "@types/toastr": "^2.1.35",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",
@@ -35,8 +37,9 @@
     "airbnb-browser-shims": "^2.1.0",
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
+    "popper.js": "^1.12.9",
     "sp-pnp-js": "^3.0.4",
-    "sweetalert2": "^7.11.0",
+    "sweetalert": "^2.1.0",
     "toastr": "^2.1.4"
   }
 }

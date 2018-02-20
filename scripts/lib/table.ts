@@ -5,7 +5,6 @@ import * as toastr from 'toastr';
 
 const web = new Web('https://uat-ext.kier.co.uk/sites/projects');
 
-
 export interface SharePointDataTableColumn {
   title: string;
   renderer: (row: any) => Promise<string>;
@@ -19,7 +18,7 @@ export class SharePointDataTable {
   private filterQuery: string = '';
   /**
    *
-   * Creates a pages datatable from 
+   * Creates a paged datatable from a sharepoint list
    * 
    */
   constructor(private collection: Items,
@@ -79,6 +78,8 @@ export class SharePointDataTable {
       collectionQuery = this.collection.filter(this.filterQuery);
     } else {
       collectionQuery = this.collection;
+      if (collectionQuery.query.get('$filter'))
+        collectionQuery.query.remove('$filter');
     }
 
     if (collectionQuery.query.get('$orderby'))

@@ -4,3 +4,26 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.modal-content {
+  padding: 24px;
+
+  &::before {
+    display: block;
+    content: '';
+    background-image: url('/sites/projects/Style Library/Archive/Images/kier-logo-transparent.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 180px;
+    height: 67px;
+  }
+
+  .button-group {
+    text-align: right;
+
+    button {
+      margin-left: 18px;
+    }
+  }
+}

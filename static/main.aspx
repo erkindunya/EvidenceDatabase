@@ -34,6 +34,8 @@
   <button type="button" class="js-main-table-previous">Previous</button>
   <button type="button" class="js-main-table-next">Next</button>
 
+  <button type="button" class="js-popup-create-project">Create Project</button>
+
   <script src="./js/libs.js"></script>
   <script src="./js/main.js"></script>
 </asp:content>

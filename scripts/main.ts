@@ -1,19 +1,15 @@
 import 'airbnb-browser-shims';
 import { sp, Web } from './lib/sp';
 import * as $ from 'jquery';
-import sweetalert2 from 'sweetalert2';
 import * as toastr from 'toastr';
 import { SharePointDataTable, SharePointDataTableColumn } from './lib/table';
-
-const swal = sweetalert2;
+import { SharePointPopup, SharePointPopupField,
+         SharePointPopupFieldType } from './lib/popup';
+import { ItemAddResult, ItemUpdateResult } from 'sp-pnp-js/lib/pnp';
 
 const web = new Web('https://uat-ext.kier.co.uk/sites/projects');
 
-$('.js-red-text').css('color', 'red');
-
-swal('Any fool can use a computer');
-
-toastr.info('Hello');
+toastr.info('Loading...');
 
 let sites: any[] = null;
 
@@ -27,6 +23,52 @@ async function getSiteTitle(url: string): Promise<string> {
   if (result.length > 0) return result[0].Title;
   return null;
 }
+
+
+
+const fields: SharePointPopupField[] = [
+  {
+    title: 'Project Name*',
+    placeholder: 'Project Name',
+    type: SharePointPopupFieldType.Text,
+    column: 'Title',
+    required: true,
+  },
+  {
+    title: 'Business Unit',
+    type: SharePointPopupFieldType.Select,
+    column: 'Business_x0020_Unit',
+    options: [
+      { title: 'Construction South - Southern' },
+      { title: 'Construction South - Major Projects' },
+    ],
+  },
+  {
+    title: 'Project Number',
+    placeholder: 'Project Number',
+    type: SharePointPopupFieldType.Text,
+    column: 'ProjectNumber',
+  },
+  {
+    title: 'Tender Number',
+    placeholder: 'Tender Number',
+    type: SharePointPopupFieldType.Text,
+    column: 'Tender_x0020_Number',
+  },
+  {
+    title: 'Opportunity Number',
+    placeholder: 'Opportunity Number',
+    type: SharePointPopupFieldType.Text,
+    column: 'OracleNumber',
+  },
+];
+
+const createProjectPopup = new SharePointPopup('create-project',
+                                               web.lists.getByTitle('projects').items,
+                                               fields);
+$('.js-popup-create-project').click(() => {
+  createProjectPopup.show();
+});
 
 const columns: SharePointDataTableColumn[] = [
   {
@@ -79,9 +121,9 @@ const columns: SharePointDataTableColumn[] = [
     },
   },
   {
-    title: '',
+    title: 'Edit',
     renderer: (row) => {
-      return '';
+      return `<a href="#" class="edit-project" data-id="${row.Id}">Edit</a>`;
     },
   },
 ];
@@ -95,7 +137,22 @@ const table = new SharePointDataTable(
   $('#mainTableFilter'),
   10);
 
+
+$('.js-main-table').on('click', '.edit-project', (event) => {
+  event.preventDefault();
+  const id: number = $(event.currentTarget).data('id');
+  createProjectPopup.show(id);
+});
+
 $('#mainTablePageSize').change(function () {
   table.setPageSize(<number>$(this).val());
+});
+
+createProjectPopup.onCreated(async (result: ItemAddResult) => {
+  table.updatePageCollection();
+});
+
+createProjectPopup.onUpdated((result: ItemUpdateResult) => {
+  table.updatePageCollection();
 });
 
