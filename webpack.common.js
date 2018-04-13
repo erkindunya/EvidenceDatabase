@@ -19,9 +19,14 @@ module.exports = {
         subpage: [
             'babel-polyfill',
             "./scripts/subpage.ts"
+        ],
+        export: [
+            'babel-polyfill',
+            "./scripts/export.ts"
         ]
     },
     output: {
+        library: 'EDB',
         filename: "[name].js",
         path: __dirname + '/dist/js'
     },
