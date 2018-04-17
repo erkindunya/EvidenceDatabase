@@ -2,24 +2,31 @@ import { sp, Web } from './lib/sp';
 import * as $ from 'jquery';
 
 const web = sp.web;
+
 export async function exportToWord(curItemId:string, curItemTitle:string, curPath:string) {
   const listName = curPath.substring(curPath.lastIndexOf('/Lists/') + 7, curPath.lastIndexOf('/'));
   const listID = +getParameterByName('ID', curPath);
   const listItem = await getListItems(listName,listID);
   const fields = await getFields(listName);
+  console.log(fields);
   const htmlData = populateTableforWord(listItem,fields);
-  
+
   exportElementToWord(htmlData);
 }
 
-function populateTableforWord(listItem:any,fields:any):string {
-  $('<h2 align="left">' + listItem.Title + '</h2>').appendTo('#mainExportContainer');
+function populateTableforWord(listItem:any,fields:any): string {
+  const h2 = $('<h2 align="left">' + listItem.Title + '</h2>');
+  h2.appendTo('#mainExportContainer');
   const $table = $('<table></table>');
   $table.attr('id', listItem.ID);
   $('<thead><tr><td><b>Column Name</b></td><td><b> \
   Column Value</b></td><tr></thead>').appendTo($table);
 
   fields.forEach((field, index) => {
+    let itemValue = listItem[field.InternalName];
+    if (field.TypeAsString === 'DateTime') {
+      console.log(formatUkDate(itemValue));
+    } 
     let row;
     let rowData;
     // Add field name row
@@ -27,7 +34,7 @@ function populateTableforWord(listItem:any,fields:any):string {
     rowData = $('<td></td>').addClass('fieldName').text(field.Title);
     row.append(rowData);
     // Add field value row
-    rowData = $('<td></td>').addClass('fieldValue').text(listItem[field.InternalName]);
+    rowData = $('<td></td>').addClass('fieldValue').text(itemValue);
     row.append(rowData);
     $table.append(row);
   });
@@ -74,4 +81,30 @@ function exportElementToWord(html) {
       console.log('Please use an IE Browser.');
     }
   }
+}
+
+// function parseDate(dateStr) {
+//   let formatedDate;
+//   if (dateStr != null || dateStr !== '') {
+//     const datetime = formatUkDate(dateStr);
+//     let dd = datetime.getDate();
+//     let mm = datetime.getMonth() + 1; // January is 0!
+//     const yyyy = datetime.getFullYear();
+//     if (dd < 10) {
+//       dd = 0 + dd;
+//     }
+//     if (mm < 10) {
+//       mm = 0 + mm;
+//     }
+//     formatedDate = mm + '/' + dd + '/' + yyyy;
+//   } else {
+//     formatedDate = null;
+//   }
+//   return formatedDate;
+// }
+
+function formatUkDate(dateStr:string):Date {
+  const date:string[] = dateStr.split('T');
+  const dateArray:string[] = date[0].split('-');
+  return new Date(+dateArray[2], +dateArray[1] - 1, +dateArray[0]);
 }
