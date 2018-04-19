@@ -7,7 +7,6 @@ const babelOptions = {
     ]
 };
 
-
 module.exports = {
     devtool: 'source-map',
     entry: {
@@ -22,7 +21,8 @@ module.exports = {
         ],
         export: [
             'babel-polyfill',
-            "./scripts/export.ts"
+            "./scripts/export.ts",
+            "./styles/export.css"
         ]
     },
     output: {

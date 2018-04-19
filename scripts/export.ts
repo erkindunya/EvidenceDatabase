@@ -1,45 +1,47 @@
+import 'airbnb-browser-shims';
 import { sp, Web } from './lib/sp';
 import * as $ from 'jquery';
 
 const web = sp.web;
 
-export async function exportToWord(curItemId:string, curItemTitle:string, curPath:string) {
-  const listName = curPath.substring(curPath.lastIndexOf('/Lists/') + 7, curPath.lastIndexOf('/'));
-  const listID = +getParameterByName('ID', curPath);
-  const listItem = await getListItems(listName,listID);
-  const fields = await getFields(listName);
-  console.log(fields);
-  const htmlData = populateTableforWord(listItem,fields);
-
+export async function exportToWord(curPath:string,biteList:string) {
+  const dataList = curPath.substring(curPath.lastIndexOf('/Lists/') + 7, curPath.lastIndexOf('/'));
+  const itemID = +getParameterByName('ID', curPath);
+  let htmlData;
+  let dataItems;
+  let dataFields;
+  let biteItems;
+  let biteFields;
+  if (biteList !== '') {
+    [dataItems, dataFields, biteItems, biteFields] = await Promise.all([
+      getDataListItems(dataList,itemID),
+      getFields(dataList),
+      getBiteListItems(biteList,itemID),
+      getFields(biteList)]);
+  } else {
+    [dataItems, dataFields] = await Promise.all([
+      getDataListItems(dataList,itemID),
+      getFields(dataList)]);
+  }
+  htmlData = populateTableforWord(dataItems,dataFields, biteItems, biteFields,dataList,biteList);
+  // exportElementToWord(htmlData);
   exportElementToWord(htmlData);
 }
 
-function populateTableforWord(listItem:any,fields:any): string {
-  const h2 = $('<h2 align="left">' + listItem.Title + '</h2>');
+function populateTableforWord(dataItems:any,dataFields:any,biteItems:any,biteFields:any,dataList:string,biteList:string): string {
+  const h3 = $('<h2 align="left">' + dataList + '</h2></br>');
+  const h2 = $('<h2 align="left">' + dataItems.Title + '</h2>');
+  h3.appendTo('#mainExportContainer');
   h2.appendTo('#mainExportContainer');
-  const $table = $('<table></table>');
-  $table.attr('id', listItem.ID);
-  $('<thead><tr><td><b>Column Name</b></td><td><b> \
-  Column Value</b></td><tr></thead>').appendTo($table);
+  createTable(dataFields,dataItems);
 
-  fields.forEach((field, index) => {
-    let itemValue = listItem[field.InternalName];
-    if (field.TypeAsString === 'DateTime') {
-      console.log(formatUkDate(itemValue));
-    } 
-    let row;
-    let rowData;
-    // Add field name row
-    row = $('<tr></tr>');
-    rowData = $('<td></td>').addClass('fieldName').text(field.Title);
-    row.append(rowData);
-    // Add field value row
-    rowData = $('<td></td>').addClass('fieldValue').text(itemValue);
-    row.append(rowData);
-    $table.append(row);
-  });
-  // Add table to the DIV
-  $table.appendTo($('#mainExportContainer'));
+  if (biteItems && biteFields) {
+    const h3 = $('<h2 align="left">' + biteList + '</h2></br>');
+    h3.appendTo('#mainExportContainer');
+    for (const i in biteItems) {
+      createTable(biteFields,biteItems[i]);
+    }
+  }
   // $('#mainExportContainer table tr td:first-child').css('background-color', 'grey');
   const htmlData = '<html xmlns:office="urn:schemas-microsoft-com:office:office" \
   xmlns:word="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"> \
@@ -47,6 +49,57 @@ function populateTableforWord(listItem:any,fields:any): string {
   <word:Zoom>90</word:Zoom><word:DoNotOptimizeForBrowser/></word:WordDocument></head> \
   <body>' + document.getElementById('mainExportContainer').innerHTML + '</body></html>';
   return htmlData;
+}
+
+function createTable(fields,items) {
+  let row;
+  let rowData;
+  const $table = $('<table></table>');
+  $table.attr('id', items.ID);
+  $('<thead><tr><td><b>Column Name</b></td><td><b> \
+  Column Value</b></td><tr></thead>').appendTo($table);
+  fields.forEach((field, index) => {
+    const itemValue = getFieldValue(items,field);
+    row = $('<tr></tr>');
+    rowData = $('<td></td>').addClass('fieldName').text(field.Title);
+    row.append(rowData);
+    rowData = $('<td></td>').addClass('fieldValue').text(itemValue);
+    row.append(rowData);
+    $table.append(row);
+  });
+  $table.appendTo($('#mainExportContainer'));
+}
+
+function getFieldValue(listItem:any,field:any): string {
+  let itemValue = listItem[field.InternalName];
+  if (field.TypeAsString === 'DateTime') {
+    itemValue = formatUkDate(itemValue);
+  } else if (field.TypeAsString === 'TaxonomyFieldType') {
+    const term = listItem[field.InternalName];   
+    if (term) {
+      itemValue = getMetaDataLabel(listItem['TaxCatchAll'],term.WssId);       
+    } else {
+      itemValue = '';
+    }
+  } else if (field.TypeAsString === 'TaxonomyFieldTypeMulti') {
+    const termlabelsArr:any[] = itemValue['results'];
+    let termLabelColl: string = '';
+    for (const termLabel of termlabelsArr) {
+      termLabelColl += `${termLabel.Label},`;
+    }
+    itemValue = termLabelColl.slice(0, -1);
+  } else if (field.TypeAsString === 'User') {
+    const userID = listItem[`${field.InternalName}Id`]; 
+    if (userID) {
+      itemValue = itemValue.Title;
+    } else {
+      itemValue = '';
+    }
+  } else if (field.TypeAsString === 'Currency') {
+    if (itemValue)
+      itemValue = `£${itemValue.toLocaleString('en')}.00`;
+  }
+  return itemValue;
 }
 
 function getParameterByName(name, url) {
@@ -59,8 +112,32 @@ function getParameterByName(name, url) {
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-async function getListItems(listName: string, listID: number): Promise<any> {
-  return web.lists.getByTitle(listName).items.getById(listID).get();
+async function getDataListItems(listName: string, listID: number): Promise<any> {
+  const [expand,select] = getQueryAttributes();
+  return web.lists.getByTitle(listName).items.getById(listID)
+  .select(select).expand(expand).get();
+}
+
+async function getBiteListItems(listName: string, listID: number): Promise<any> {
+  const [expand,select] = getQueryAttributes();
+  return web.lists.getByTitle(listName).items
+  .filter(`ProjectDatasheetID eq ${listID}`)
+  .select(select).expand(expand).get();
+}
+
+function getQueryAttributes():string[] {
+  const queryAttrs:string[] = [
+    'TaxCatchAll,Author,Bid_x0020_Lead,Design_x0020_Manager, \
+    Project_x0020__x002F__x0020_Cont,Champion,CRM_x0020_Opportunity_x0020_Auth, \
+    QS_x0020__x002F__x0020_Commercia,Reviewer,Editor',
+    '*,TaxCatchAll/ID,TaxCatchAll/Term,Author/Id,Author/Title,Bid_x0020_Lead/ \
+    Id,Bid_x0020_Lead/Title,Design_x0020_Manager/Id,Design_x0020_Manager \
+    /Title,Project_x0020__x002F__x0020_Cont/Id,Project_x0020__x002F__x0020_Cont\
+    /Title,Champion/Id,Champion/Title, \
+    CRM_x0020_Opportunity_x0020_Auth/Id,CRM_x0020_Opportunity_x0020_Auth/Title \
+    ,QS_x0020__x002F__x0020_Commercia/Id,QS_x0020__x002F__x0020_Commercia/Title, \
+    Reviewer/Id,Reviewer/Title,Editor/Id,Editor/Title'];
+  return queryAttrs;
 }
 
 async function getFields(listName: string): Promise<any> {
@@ -68,43 +145,44 @@ async function getFields(listName: string): Promise<any> {
 }
 
 function exportElementToWord(html) {
-  if (navigator.appName === 'Microsoft Internet Explorer') {
-    let iframe = document.getElementById('htmlDownloadFrame') as any;
-    iframe = iframe.contentWindow || iframe.contentDocument;
-    iframe.document.open('text/html', 'replace');
-    iframe.document.write(html);
-    iframe.document.close();
-    iframe.focus();
-    iframe.document.execCommand('SaveAs', true, 'Word.doc');
-  } else {
-    if (console && console.log) {
-      console.log('Please use an IE Browser.');
-    }
+  if (!window.Blob) {
+    alert('Your legacy browser does not support this action.');
+    return;
   }
+  let link;
+  const blob = new Blob(['\ufeff',  html], {
+    type: 'application/msword',
+  });
+  const url = URL.createObjectURL(blob);
+  link = document.createElement('A');
+  link.href = url;
+  link.download = 'Document';   
+  document.body.appendChild(link);
+  if (navigator.msSaveOrOpenBlob) 
+    navigator.msSaveOrOpenBlob(blob, 'Document.doc'); // IE10-11
+  else link.click();  // other browsers
+  document.body.removeChild(link);
 }
 
-// function parseDate(dateStr) {
-//   let formatedDate;
-//   if (dateStr != null || dateStr !== '') {
-//     const datetime = formatUkDate(dateStr);
-//     let dd = datetime.getDate();
-//     let mm = datetime.getMonth() + 1; // January is 0!
-//     const yyyy = datetime.getFullYear();
-//     if (dd < 10) {
-//       dd = 0 + dd;
-//     }
-//     if (mm < 10) {
-//       mm = 0 + mm;
-//     }
-//     formatedDate = mm + '/' + dd + '/' + yyyy;
-//   } else {
-//     formatedDate = null;
-//   }
-//   return formatedDate;
-// }
+function formatUkDate(dateStr:string):string {
+  let dateUK:string;
+  if (dateStr) {
+    const date:string[] = dateStr.split('T');
+    const dateArray:string[] = date[0].split('-');
+    dateUK = `${dateArray[2]}/${dateArray[1]}/${dateArray[0]}`;  
+  } else {
+    dateUK = '';
+  }
+  return dateUK;
+}
 
-function formatUkDate(dateStr:string):Date {
-  const date:string[] = dateStr.split('T');
-  const dateArray:string[] = date[0].split('-');
-  return new Date(+dateArray[2], +dateArray[1] - 1, +dateArray[0]);
+function getMetaDataLabel(listItem, termID): string {
+  const termlabelsArr:any[] = listItem['results'];
+  const termLabel = termlabelsArr.find(termlabelsArr => termlabelsArr.ID === termID);
+  let termlLablelValue:string;
+  if (termLabel)
+    termlLablelValue = termLabel.Term;
+  else 
+    termlLablelValue = '';
+  return termlLablelValue;
 }
