@@ -21,8 +21,7 @@ module.exports = {
         ],
         export: [
             'babel-polyfill',
-            "./scripts/export.ts",
-            "./styles/export.css"
+            "./scripts/export.ts"
         ]
     },
     output: {

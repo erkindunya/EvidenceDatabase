@@ -5,9 +5,8 @@ import * as $ from 'jquery';
 const web = sp.web;
 
 export async function exportToWord(curPath:string,biteList:string) {
-  const dataList = curPath.substring(curPath.lastIndexOf('/Lists/') + 7, curPath.lastIndexOf('/'));
-  const itemID = +getParameterByName('ID', curPath);
-  let htmlData;
+  const dataList:string = curPath.substring(curPath.lastIndexOf('/Lists/') + 7, curPath.lastIndexOf('/'));
+  const itemID:number = +getParameterByName('ID', curPath);
   let dataItems;
   let dataFields;
   let biteItems;
@@ -23,15 +22,14 @@ export async function exportToWord(curPath:string,biteList:string) {
       getDataListItems(dataList,itemID),
       getFields(dataList)]);
   }
-  htmlData = populateTableforWord(dataItems,dataFields, biteItems, biteFields,dataList,biteList);
-  // exportElementToWord(htmlData);
-  exportElementToWord(htmlData);
+  const htmlData = populateTableforWord(dataItems,dataFields, biteItems, biteFields,dataList,biteList);
+  applyStyle();
+  exportElementToWord(document.getElementById('mainExportContainer').innerHTML);
 }
 
-function populateTableforWord(dataItems:any,dataFields:any,biteItems:any,biteFields:any,dataList:string,biteList:string): string {
-  const h3 = $('<h2 align="left">' + dataList + '</h2></br>');
-  const h2 = $('<h2 align="left">' + dataItems.Title + '</h2>');
-  h3.appendTo('#mainExportContainer');
+function populateTableforWord(dataItems:any,dataFields:any,biteItems:any,biteFields:any,dataList:string,biteList:string): void {
+  $('#mainExportContainer').html('');
+  const h2 = $(`<h2 align="left">${dataList} Export - ${getCurrentDate()} </h2></br>`);
   h2.appendTo('#mainExportContainer');
   createTable(dataFields,dataItems);
 
@@ -42,32 +40,36 @@ function populateTableforWord(dataItems:any,dataFields:any,biteItems:any,biteFie
       createTable(biteFields,biteItems[i]);
     }
   }
-  // $('#mainExportContainer table tr td:first-child').css('background-color', 'grey');
-  const htmlData = '<html xmlns:office="urn:schemas-microsoft-com:office:office" \
-  xmlns:word="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"> \
-  <head><xml><word:WordDocument><word:View>Print</word:View> \
-  <word:Zoom>90</word:Zoom><word:DoNotOptimizeForBrowser/></word:WordDocument></head> \
-  <body>' + document.getElementById('mainExportContainer').innerHTML + '</body></html>';
-  return htmlData;
 }
 
 function createTable(fields,items) {
   let row;
   let rowData;
   const $table = $('<table></table>');
+  $('<thead><tr><th colspan="2"><b>' + items.Title + '</b></th><tr></thead><tbody>').appendTo($table);
   $table.attr('id', items.ID);
-  $('<thead><tr><td><b>Column Name</b></td><td><b> \
-  Column Value</b></td><tr></thead>').appendTo($table);
   fields.forEach((field, index) => {
     const itemValue = getFieldValue(items,field);
-    row = $('<tr></tr>');
+    const rowType = getEvenOddRows(index);
+    row = $(`<tr ${rowType}></tr>`);
     rowData = $('<td></td>').addClass('fieldName').text(field.Title);
     row.append(rowData);
     rowData = $('<td></td>').addClass('fieldValue').text(itemValue);
     row.append(rowData);
     $table.append(row);
   });
+  $table.append('</tbody>'); 
   $table.appendTo($('#mainExportContainer'));
+}
+
+function getEvenOddRows(rowIndex:number):string {
+  let rowClass:string;
+  if (rowIndex % 2) {
+    rowClass = 'class="odd"';
+  } else {
+    rowClass = 'class="even"';
+  }
+  return rowClass;
 }
 
 function getFieldValue(listItem:any,field:any): string {
@@ -145,11 +147,11 @@ async function getFields(listName: string): Promise<any> {
 }
 
 function exportElementToWord(html) {
+  let link;
   if (!window.Blob) {
     alert('Your legacy browser does not support this action.');
     return;
   }
-  let link;
   const blob = new Blob(['\ufeff',  html], {
     type: 'application/msword',
   });
@@ -175,6 +177,10 @@ function formatUkDate(dateStr:string):string {
   }
   return dateUK;
 }
+function getCurrentDate():string {
+  const d = new Date();
+  return [d.getDate(), d.getMonth() + 1, d.getFullYear()].join('/');
+}
 
 function getMetaDataLabel(listItem, termID): string {
   const termlabelsArr:any[] = listItem['results'];
@@ -185,4 +191,62 @@ function getMetaDataLabel(listItem, termID): string {
   else 
     termlLablelValue = '';
   return termlLablelValue;
+}
+
+function applyStyle():void {
+  const styles = [
+    { // table
+      width:'100%',
+      'font-family':'Arial, Helvetica, sans-serif',
+      'font-size':'12px',
+      'text-shadow': '1px 1px 0px #fff',
+      background:'#eaebec',
+      border:'#ccc 1px solid',
+    },
+    { // thead
+      'text-align': 'left',
+      'padding-left':'20px',
+    },
+    { // thead tr
+      'font-size': '18px',
+      color: '#eb8f00',
+      padding:'15px 15px 15px 15px',
+      'border-top':'1px solid #fafafa',
+      'border-bottom':'1px solid #eb8f00',
+      background: '#ededed',
+      'text-align': 'left',
+    },
+    { // thead tr
+      padding:'15px',
+      'border-top': '1px solid #e0e0e0',
+      'border-bottom':'1px solid #e0e0e0',
+      'border-left': '1px solid #e0e0e0',
+      background: '#fafafa',
+    },
+    { // thead th
+      color: '#eb8f00',
+      padding:'21px 25px 22px 25px',
+      'border-top':'1px solid #fafafa',
+      'border-bottom':'1px solid #eb8f00',
+      background: '#ededed',
+    },
+    { // thead th:first-child
+      'text-align': 'left',
+      'padding-left':'20px',
+    },
+    { // thead tr:first-child th:last-child
+      'border-top-right-radius':'3px',
+    },
+  ];
+
+  $('#mainExportContainer table').css(styles[0]);
+  $('#mainExportContainer thead').css(styles[1]);
+  $('#mainExportContainer tbody tr').css(styles[1]);
+  $('#mainExportContainer thead tr').css(styles[2]);
+  $('#mainExportContainer thead th').css(styles[4]);
+  $('#mainExportContainer thead th:first-child').css(styles[5]);
+  $('#mainExportContainer thead tr:first-child th:last-child').css(styles[6]);
+  $('#mainExportContainer table td').css(styles[3]);
+  $('#mainExportContainer tbody tr.even').css('background','#f6f6f6');
+  $('#mainExportContainer h2').css('font-family','Arial, Helvetica, sans-serif');
 }
