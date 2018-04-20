@@ -5,8 +5,8 @@ import * as $ from 'jquery';
 const web = sp.web;
 
 export async function exportToWord(curPath:string,biteList:string) {
-  const dataList:string = curPath.substring(curPath.lastIndexOf('/Lists/') + 7, curPath.lastIndexOf('/'));
-  const itemID:number = +getParameterByName('ID', curPath);
+  const dataList = curPath.substring(curPath.lastIndexOf('/Lists/') + 7, curPath.lastIndexOf('/'));
+  const itemID = +getParameterByName('ID', curPath);
   let dataItems;
   let dataFields;
   let biteItems;
@@ -22,36 +22,39 @@ export async function exportToWord(curPath:string,biteList:string) {
       getDataListItems(dataList,itemID),
       getFields(dataList)]);
   }
-  const htmlData = populateTableforWord(dataItems,dataFields, biteItems, biteFields,dataList,biteList);
-  applyStyle();
-  exportElementToWord(document.getElementById('mainExportContainer').innerHTML);
+  const title = populateTableforWord(dataItems,dataFields, biteItems, biteFields,dataList,biteList);
+  applyStyle(); // Without the CSS injection the style doesn't display in MS Word
+  exportElementToWord(title);
 }
 
-function populateTableforWord(dataItems:any,dataFields:any,biteItems:any,biteFields:any,dataList:string,biteList:string): void {
+function populateTableforWord(dataItems,dataFields,biteItems,biteFields,dataList:string,biteList:string): string {
   $('#mainExportContainer').html('');
+  $('#mainExportContainer').hide();
   const h2 = $(`<h2 align="left">${dataList} Export - ${getCurrentDate()} </h2></br>`);
   h2.appendTo('#mainExportContainer');
+
   createTable(dataFields,dataItems);
 
   if (biteItems && biteFields) {
     const h3 = $('<h2 align="left">' + biteList + '</h2></br>');
     h3.appendTo('#mainExportContainer');
-    for (const i in biteItems) {
-      createTable(biteFields,biteItems[i]);
+    for (const biteItem in biteItems) {
+      createTable(biteFields,biteItems[biteItem]);
     }
   }
+  return dataItems.Title;
 }
 
 function createTable(fields,items) {
   let row;
   let rowData;
   const $table = $('<table></table>');
-  $('<thead><tr><th colspan="2"><b>' + items.Title + '</b></th><tr></thead><tbody>').appendTo($table);
   $table.attr('id', items.ID);
+  $(`<thead><tr><th colspan="2"><b>${items.Title}</b></th><tr></thead><tbody>`).appendTo($table);
   fields.forEach((field, index) => {
-    const itemValue = getFieldValue(items,field);
     const rowType = getEvenOddRows(index);
-    row = $(`<tr ${rowType}></tr>`);
+    const itemValue = getFieldValue(items,field);
+    row = $('<tr></tr>').addClass(rowType);
     rowData = $('<td></td>').addClass('fieldName').text(field.Title);
     row.append(rowData);
     rowData = $('<td></td>').addClass('fieldValue').text(itemValue);
@@ -65,9 +68,9 @@ function createTable(fields,items) {
 function getEvenOddRows(rowIndex:number):string {
   let rowClass:string;
   if (rowIndex % 2) {
-    rowClass = 'class="odd"';
+    rowClass = 'odd';
   } else {
-    rowClass = 'class="even"';
+    rowClass = 'even';
   }
   return rowClass;
 }
@@ -146,22 +149,23 @@ async function getFields(listName: string): Promise<any> {
   return web.lists.getByTitle(listName).fields.filter('Hidden eq false').get();
 }
 
-function exportElementToWord(html) {
-  let link;
+function exportElementToWord(title:string):void {
+  const html = document.getElementById('mainExportContainer').innerHTML;
   if (!window.Blob) {
     alert('Your legacy browser does not support this action.');
     return;
   }
+  let link;
   const blob = new Blob(['\ufeff',  html], {
     type: 'application/msword',
   });
   const url = URL.createObjectURL(blob);
   link = document.createElement('A');
   link.href = url;
-  link.download = 'Document';   
+  link.download = title;   
   document.body.appendChild(link);
   if (navigator.msSaveOrOpenBlob) 
-    navigator.msSaveOrOpenBlob(blob, 'Document.doc'); // IE10-11
+    navigator.msSaveOrOpenBlob(blob, `${title}.doc`); // IE10-11
   else link.click();  // other browsers
   document.body.removeChild(link);
 }
@@ -211,17 +215,16 @@ function applyStyle():void {
       'font-size': '18px',
       color: '#eb8f00',
       padding:'15px 15px 15px 15px',
-      'border-top':'1px solid #fafafa',
+      'border-top':'1px solid #eb8f00',
       'border-bottom':'1px solid #eb8f00',
       background: '#ededed',
       'text-align': 'left',
     },
     { // thead tr
       padding:'15px',
-      'border-top': '1px solid #e0e0e0',
+      'border-top': '1px solid #ffffff',
       'border-bottom':'1px solid #e0e0e0',
       'border-left': '1px solid #e0e0e0',
-      background: '#fafafa',
     },
     { // thead th
       color: '#eb8f00',
@@ -237,6 +240,12 @@ function applyStyle():void {
     { // thead tr:first-child th:last-child
       'border-top-right-radius':'3px',
     },
+    { // thead tr:first-child th:last-child
+      background: '#f6f6f6',
+    },
+    { // thead tr:first-child th:last-child
+      background: '#fafafa',
+    },
   ];
 
   $('#mainExportContainer table').css(styles[0]);
@@ -247,6 +256,7 @@ function applyStyle():void {
   $('#mainExportContainer thead th:first-child').css(styles[5]);
   $('#mainExportContainer thead tr:first-child th:last-child').css(styles[6]);
   $('#mainExportContainer table td').css(styles[3]);
-  $('#mainExportContainer tbody tr.even').css('background','#f6f6f6');
+  $('#mainExportContainer tbody tr.even').css(styles[7]);
+  $('#mainExportContainer tbody tr.odd').css(styles[8]);
   $('#mainExportContainer h2').css('font-family','Arial, Helvetica, sans-serif');
 }
