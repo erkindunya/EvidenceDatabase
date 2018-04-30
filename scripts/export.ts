@@ -5,9 +5,8 @@ import * as $ from 'jquery';
 const web = sp.web;
 
 export async function exportToWord(curPath:string,biteList:string) {
-  const dataList = curPath.substring(curPath.lastIndexOf('/Lists/') + 7, curPath.lastIndexOf('/'));
-  const itemID = +getParameterByName('ID', curPath);
-  let htmlData;
+  const dataList:string = curPath.substring(curPath.lastIndexOf('/Lists/') + 7, curPath.lastIndexOf('/'));
+  const itemID:number = +getParameterByName('ID', curPath);
   let dataItems;
   let dataFields;
   let biteItems;
@@ -23,8 +22,7 @@ export async function exportToWord(curPath:string,biteList:string) {
       getDataListItems(dataList,itemID),
       getFields(dataList)]);
   }
-  htmlData = populateTableforWord(dataItems,dataFields, biteItems, biteFields,dataList,biteList);
-  // exportElementToWord(htmlData);
+  const htmlData:string = populateTableforWord(dataItems,dataFields, biteItems, biteFields,dataList,biteList);
   exportElementToWord(htmlData);
 }
 
@@ -36,13 +34,12 @@ function populateTableforWord(dataItems:any,dataFields:any,biteItems:any,biteFie
   createTable(dataFields,dataItems);
 
   if (biteItems && biteFields) {
-    const h3 = $('<h2 align="left">' + biteList + '</h2></br>');
+    const h3 = $('</br><h2 align="left">' + biteList + '</h2></br>');
     h3.appendTo('#mainExportContainer');
     for (const i in biteItems) {
       createTable(biteFields,biteItems[i]);
     }
   }
-  // $('#mainExportContainer table tr td:first-child').css('background-color', 'grey');
   const htmlData = '<html xmlns:office="urn:schemas-microsoft-com:office:office" \
   xmlns:word="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"> \
   <head><xml><word:WordDocument><word:View>Print</word:View> \
@@ -58,16 +55,28 @@ function createTable(fields,items) {
   $table.attr('id', items.ID);
   $('<thead><tr><td><b>Column Name</b></td><td><b> \
   Column Value</b></td><tr></thead>').appendTo($table);
+
   fields.forEach((field, index) => {
+    const rowType = getEvenOddRows(index);
     const itemValue = getFieldValue(items,field);
-    row = $('<tr></tr>');
-    rowData = $('<td></td>').addClass('fieldName').text(field.Title);
+    row = $(`<tr></tr>`).addClass(rowType);
+    rowData = $('<td></td>').text(field.Title);
     row.append(rowData);
-    rowData = $('<td></td>').addClass('fieldValue').text(itemValue);
+    rowData = $('<td></td>').text(itemValue);
     row.append(rowData);
     $table.append(row);
   });
   $table.appendTo($('#mainExportContainer'));
+}
+
+function getEvenOddRows(rowIndex:number):string {
+  let rowClass:string;
+  if (rowIndex % 2) {
+    rowClass = 'odd';
+  } else {
+    rowClass = 'even';
+  }
+  return rowClass;
 }
 
 function getFieldValue(listItem:any,field:any): string {
@@ -150,6 +159,14 @@ function exportElementToWord(html) {
     return;
   }
   let link;
+
+  const  css = (
+    '<style>' +
+    '@page WordSection1{size: 841.95pt 595.35pt;mso-page-orientation: landscape;}' +
+    'div.WordSection1 {page: WordSection1;}' +
+    'table{border-collapse:collapse;}td{border:1px gray solid;width:5em;padding:2px;}'+
+    '</style>'
+  );
   const blob = new Blob(['\ufeff',  html], {
     type: 'application/msword',
   });
