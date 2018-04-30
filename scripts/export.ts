@@ -5,13 +5,8 @@ import * as $ from 'jquery';
 const web = sp.web;
 
 export async function exportToWord(curPath:string,biteList:string) {
-<<<<<<< HEAD
   const dataList:string = curPath.substring(curPath.lastIndexOf('/Lists/') + 7, curPath.lastIndexOf('/'));
   const itemID:number = +getParameterByName('ID', curPath);
-=======
-  const dataList = curPath.substring(curPath.lastIndexOf('/Lists/') + 7, curPath.lastIndexOf('/'));
-  const itemID = +getParameterByName('ID', curPath);
->>>>>>> c549540aa410fdf37a1326fdce6119c11c113a59
   let dataItems;
   let dataFields;
   let biteItems;
@@ -27,14 +22,9 @@ export async function exportToWord(curPath:string,biteList:string) {
       getDataListItems(dataList,itemID),
       getFields(dataList)]);
   }
-<<<<<<< HEAD
-  const htmlData:string = populateTableforWord(dataItems,dataFields, biteItems, biteFields,dataList,biteList);
-  exportElementToWord(htmlData);
-=======
   const title = populateTableforWord(dataItems,dataFields, biteItems, biteFields,dataList,biteList);
   applyStyle(); // Without the CSS injection the style doesn't display in MS Word
   exportElementToWord(title);
->>>>>>> c549540aa410fdf37a1326fdce6119c11c113a59
 }
 
 function populateTableforWord(dataItems,dataFields,biteItems,biteFields,dataList:string,biteList:string): string {
@@ -52,16 +42,7 @@ function populateTableforWord(dataItems,dataFields,biteItems,biteFields,dataList
       createTable(biteFields,biteItems[biteItem]);
     }
   }
-<<<<<<< HEAD
-  const htmlData = '<html xmlns:office="urn:schemas-microsoft-com:office:office" \
-  xmlns:word="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"> \
-  <head><xml><word:WordDocument><word:View>Print</word:View> \
-  <word:Zoom>90</word:Zoom><word:DoNotOptimizeForBrowser/></word:WordDocument></head> \
-  <body>' + document.getElementById('mainExportContainer').innerHTML + '</body></html>';
-  return htmlData;
-=======
   return dataItems.Title;
->>>>>>> c549540aa410fdf37a1326fdce6119c11c113a59
 }
 
 function createTable(fields,items) {
@@ -69,23 +50,12 @@ function createTable(fields,items) {
   let rowData;
   const $table = $('<table></table>');
   $table.attr('id', items.ID);
-<<<<<<< HEAD
-  $('<thead><tr><td><b>Column Name</b></td><td><b> \
-  Column Value</b></td><tr></thead>').appendTo($table);
-
-  fields.forEach((field, index) => {
-    const rowType = getEvenOddRows(index);
-    const itemValue = getFieldValue(items,field);
-    row = $(`<tr></tr>`).addClass(rowType);
-    rowData = $('<td></td>').text(field.Title);
-=======
   $(`<thead><tr><th colspan="2"><b>${items.Title}</b></th><tr></thead><tbody>`).appendTo($table);
   fields.forEach((field, index) => {
     const rowType = getEvenOddRows(index);
     const itemValue = getFieldValue(items,field);
     row = $('<tr></tr>').addClass(rowType);
     rowData = $('<td></td>').addClass('fieldName').text(field.Title);
->>>>>>> c549540aa410fdf37a1326fdce6119c11c113a59
     row.append(rowData);
     rowData = $('<td></td>').text(itemValue);
     row.append(rowData);
