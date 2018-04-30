@@ -152,7 +152,6 @@ function getQueryAttributes():string[] {
 async function getFields(listName: string): Promise<any> {
   return web.lists.getByTitle(listName).fields.filter('Hidden eq false').get();
 }
-
 function exportElementToWord(html) {
   if (!window.Blob) {
     alert('Your legacy browser does not support this action.');
@@ -164,7 +163,7 @@ function exportElementToWord(html) {
     '<style>' +
     '@page WordSection1{size: 841.95pt 595.35pt;mso-page-orientation: landscape;}' +
     'div.WordSection1 {page: WordSection1;}' +
-    'table{border-collapse:collapse;}td{border:1px gray solid;width:5em;padding:2px;}'+
+    'table{border-collapse:collapse;}td{border:1px gray solid;width:5em;padding:2px;}' +
     '</style>'
   );
   const blob = new Blob(['\ufeff',  html], {
