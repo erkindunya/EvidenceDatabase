@@ -19,6 +19,10 @@ module.exports = {
             'babel-polyfill',
             "./scripts/subpage.ts"
         ],
+        adminpage: [
+            'babel-polyfill',
+            "./scripts/adminpage.tsx"
+        ],
         export: [
             'babel-polyfill',
             "./scripts/export.ts"
@@ -48,7 +52,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.ts$/,
+                test: /\.ts|\.tsx$/,
                 exclude: /(node_modules|bower_components)/,
                 use: [
                     {

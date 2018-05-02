@@ -34,7 +34,7 @@ function populateTableforWord(dataItems,dataFields,biteItems,biteFields,dataList
   h2.appendTo('#mainExportContainer');
 
   createTable(dataFields,dataItems);
-
+  
   if (biteItems && biteFields) {
     const h3 = $('<h2 align="left">' + biteList + '</h2></br>');
     h3.appendTo('#mainExportContainer');
@@ -48,18 +48,24 @@ function populateTableforWord(dataItems,dataFields,biteItems,biteFields,dataList
 function createTable(fields,items) {
   let row;
   let rowData;
-  const $table = $('<table></table>');
+  const $table = $('<table></table></br>');
   $table.attr('id', items.ID);
   $(`<thead><tr><th colspan="2"><b>${items.Title}</b></th><tr></thead><tbody>`).appendTo($table);
   fields.forEach((field, index) => {
+    // const test = field.Title;
+    // if (test === 'RAG Status')  {
+    //   console.log(test);
     const rowType = getEvenOddRows(index);
     const itemValue = getFieldValue(items,field);
-    row = $('<tr></tr>').addClass(rowType);
-    rowData = $('<td></td>').addClass('fieldName').text(field.Title);
-    row.append(rowData);
-    rowData = $('<td></td>').addClass('fieldValue').text(itemValue);
-    row.append(rowData);
-    $table.append(row);
+    if (itemValue) {
+      row = $('<tr></tr>').addClass(rowType);
+      rowData = $('<td></td>').addClass('fieldName').text(field.Title);
+      row.append(rowData);
+      rowData = $('<td></td>').addClass('fieldValue').text(itemValue);
+      row.append(rowData);
+      $table.append(row);
+    }
+  // }
   });
   $table.append('</tbody>'); 
   $table.appendTo($('#mainExportContainer'));
@@ -87,12 +93,14 @@ function getFieldValue(listItem:any,field:any): string {
       itemValue = '';
     }
   } else if (field.TypeAsString === 'TaxonomyFieldTypeMulti') {
-    const termlabelsArr:any[] = itemValue['results'];
-    let termLabelColl: string = '';
-    for (const termLabel of termlabelsArr) {
-      termLabelColl += `${termLabel.Label},`;
+    if (itemValue) {
+      const termlabelsArr:any[] = itemValue['results'];
+      let termLabelColl: string = '';
+      for (const termLabel of termlabelsArr) {
+        termLabelColl += `${termLabel.Label},`;
+      }
+      itemValue = termLabelColl.slice(0, -1);
     }
-    itemValue = termLabelColl.slice(0, -1);
   } else if (field.TypeAsString === 'User') {
     const userID = listItem[`${field.InternalName}Id`]; 
     if (userID) {
@@ -103,7 +111,18 @@ function getFieldValue(listItem:any,field:any): string {
   } else if (field.TypeAsString === 'Currency') {
     if (itemValue)
       itemValue = `£${itemValue.toLocaleString('en')}.00`;
-  }
+  } else if (field.TypeAsString === 'Number') {
+    if (itemValue) {
+      const schema:string = field.SchemaXml;
+      const indexNumber:number = schema.toLowerCase().indexOf('percentage=\"true\"');
+      if (indexNumber > 0) {
+        itemValue = `${itemValue}%`;
+      }
+    }
+  } else if (field.TypeAsString === 'Calculated') {
+    if (itemValue)
+      itemValue = itemValue.replace(/(<([^>]+)>)/ig, '');
+  } 
   return itemValue;
 }
 
@@ -118,30 +137,41 @@ function getParameterByName(name, url) {
 }
 
 async function getDataListItems(listName: string, listID: number): Promise<any> {
-  const [expand,select] = getQueryAttributes();
+  const [expand,select] = getQueryAttributes(listName);
   return web.lists.getByTitle(listName).items.getById(listID)
   .select(select).expand(expand).get();
 }
 
 async function getBiteListItems(listName: string, listID: number): Promise<any> {
-  const [expand,select] = getQueryAttributes();
+  const [expand,select] = getQueryAttributes(listName);
   return web.lists.getByTitle(listName).items
   .filter(`ProjectDatasheetID eq ${listID}`)
-  .select(select).expand(expand).get();
+  .select(select)
+  .expand(expand).get();
 }
 
-function getQueryAttributes():string[] {
-  const queryAttrs:string[] = [
-    'TaxCatchAll,Author,Bid_x0020_Lead,Design_x0020_Manager, \
-    Project_x0020__x002F__x0020_Cont,Champion,CRM_x0020_Opportunity_x0020_Auth, \
-    QS_x0020__x002F__x0020_Commercia,Reviewer,Editor',
-    '*,TaxCatchAll/ID,TaxCatchAll/Term,Author/Id,Author/Title,Bid_x0020_Lead/ \
-    Id,Bid_x0020_Lead/Title,Design_x0020_Manager/Id,Design_x0020_Manager \
-    /Title,Project_x0020__x002F__x0020_Cont/Id,Project_x0020__x002F__x0020_Cont\
-    /Title,Champion/Id,Champion/Title, \
-    CRM_x0020_Opportunity_x0020_Auth/Id,CRM_x0020_Opportunity_x0020_Auth/Title \
-    ,QS_x0020__x002F__x0020_Commercia/Id,QS_x0020__x002F__x0020_Commercia/Title, \
-    Reviewer/Id,Reviewer/Title,Editor/Id,Editor/Title'];
+function getQueryAttributes(listName:string):string[] {
+  let queryAttrs:string[] = [];
+  if (listName === 'Project Datasheet') { 
+    queryAttrs = [
+      'TaxCatchAll,Author,Bid_x0020_Lead,Design_x0020_Manager, \
+      Project_x0020__x002F__x0020_Cont,Champion,CRM_x0020_Opportunity_x0020_Auth, \
+      QS_x0020__x002F__x0020_Commercia,Reviewer,Editor',
+      '*,TaxCatchAll/ID,TaxCatchAll/Term,Author/Id,Author/Title,\
+      Bid_x0020_Lead/Id,Bid_x0020_Lead/Title,Design_x0020_Manager/Id,Design_x0020_Manager/Title, \
+      Project_x0020__x002F__x0020_Cont/Id,Project_x0020__x002F__x0020_Cont/Title,\
+      Champion/Id,Champion/Title, \
+      CRM_x0020_Opportunity_x0020_Auth/Id,CRM_x0020_Opportunity_x0020_Auth/Title, \
+      QS_x0020__x002F__x0020_Commercia/Id,QS_x0020__x002F__x0020_Commercia/Title, \
+      Reviewer/Id,Reviewer/Title,Editor/Id,Editor/Title'];
+  } else {
+    queryAttrs = [
+      'TaxCatchAll',
+      'Title,EvidenceProjectStage,Business_x0020_Function,Topic,Evidence_x0020_Bite_x0020_Headli, \
+      Evidence_x0020_Bite_x0020_Descri,Evidence_x0020_Bite_x0020_Benefi,TaxCatchAll,\
+      TaxCatchAll/ID,TaxCatchAll/Term'];
+  }
+  
   return queryAttrs;
 }
 
