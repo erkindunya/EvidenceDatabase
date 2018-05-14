@@ -18,7 +18,7 @@ module.exports = merge(common, {
         new FileManagerPlugin({
             onStart: { copy: [{source: 'static', destination: 'dist'}] },
             // Remember to update the destination to your own folder
-            onEnd: { copy: [{source: 'dist', destination: '\\\\uat-ext.kier.group@SSL\\DavWWWRoot\\kiera\\TestApp'}] },
+            onEnd: { copy: [{source: 'dist', destination: '\\\\26-uat.kier.group@SSL\\DavWWWRoot\\App'}] },
         }),
         new webpack.DefinePlugin({
             DEVELOPMENT: JSON.stringify(true)            

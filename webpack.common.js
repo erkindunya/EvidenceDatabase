@@ -23,6 +23,10 @@ module.exports = {
             'babel-polyfill',
             "./scripts/adminpage.tsx"
         ],
+        datasheet: [
+            'babel-polyfill',
+            "./scripts/Datasheet/Datasheet.tsx"
+        ],
         export: [
             'babel-polyfill',
             "./scripts/export.ts"
@@ -35,7 +39,7 @@ module.exports = {
     },
     resolve: {
         modules: ['.', './node_modules'],
-        extensions: [".ts", ".js"]
+        extensions: [".ts",".tsx", ".js"]
     },
     module: {
         rules: [
@@ -50,6 +54,10 @@ module.exports = {
                         options: { configFile: './tslint.json' },
                     }
                 ]
+            },
+            {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader' ]
             },
             {
                 test: /\.ts|\.tsx$/,

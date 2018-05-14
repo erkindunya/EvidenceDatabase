@@ -24,8 +24,6 @@ async function getSiteTitle(url: string): Promise<string> {
   return null;
 }
 
-
-
 const fields: SharePointPopupField[] = [
   {
     title: 'Project Name*',
