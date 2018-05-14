@@ -20,24 +20,20 @@ interface Person{
   email: string;
 };
 
-class ProductTable extends React.Component<PersonTableProps, PersonTableState> {
+class PersonTable extends React.Component<PersonTableProps, PersonTableState> {
+  constructor(props){
+    super(props);
+    this.state = {person:props};
+  };
   render() {
     const rows = (
       <tr>
-        <td>{}</td>
+        <td>{this.props.person[0]}</td>
         <td></td>
       </tr>
     );
     return (
       <table>
-        <thead>
-          <tr>
-            <th>Datasheet ID</th>
-            <th>Name</th>
-            <th>Job Title</th>
-            <th>Email</th>
-          </tr>
-        </thead>
         <tbody>{rows}</tbody>
       </table>
     );
@@ -49,11 +45,15 @@ function App(props) {
   );
 }
 
-const Person = [
+const PersonFieldNames = [
+  {DatasheetID: 'DatasheetID', name: 'Name', jobTitle: 'Job Title', email: 'Email'}
+];
+
+const PERSON = [
   {DatasheetID: 12, name: 'James', jobTitle: 'Manager', email: 'test@test.com'}
 ];
 
 ReactDOM.render(     
-<App products={Person} />,
+<App person={PERSON} />,
     document.getElementById('root')        
 );

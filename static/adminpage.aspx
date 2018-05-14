@@ -12,7 +12,7 @@
 </asp:content>
 
 <asp:content ContentPlaceholderID="PlaceHolderMain" runat="server">
-  <div id="container"></div>
+  <div id="root"></div>
   <script src="./js/libs.js"></script>
   <script src="./js/adminpage.js"></script>
 </asp:content>
