@@ -4,63 +4,55 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import Datasheet from './Datasheet/Datasheet'
 
-class App extends React.Component {
-    state = {
-      persons: [
-        { name: 'Max', age: 28 },
-        { name: 'Manu', age: 29 },
-        { name: 'Stephanie', age: 26 }
-      ],
-      otherState: 'some other value'
-    }
-  
-    switchNameHandler = (newName) => {
-      // console.log('Was clicked!');
-      // DON'T DO THIS: this.state.persons[0].name = 'Maximilian';
-      this.setState( {
-        persons: [
-          { name: newName, age: 28 },
-          { name: 'Manu', age: 29 },
-          { name: 'Stephanie', age: 27 }
-        ]
-      } )
-    }
-  
-    nameChangedHandler = (event) => {
-      this.setState( {
-        persons: [
-          { name: 'Max', age: 28 },
-          { name: event.target.value, age: 29 },
-          { name: 'Stephanie', age: 26 }
-        ]
-      } )
-    }
-  
-    render () {
-      const style = {
-        backgroundColor: 'white',
-        font: 'inherit',
-        border: '1px solid blue',
-        padding: '8px',
-        cursor: 'pointer'
-      };
-  
-      return (
-        <div className="App">
-          <p></p>
-          <button 
-            style={style}
-            onClick={() => this.switchNameHandler('Maximilian!!')}>Switch Name</button>
-          <Datasheet 
-            name={this.state.persons[0].name} 
-            age={this.state.persons[0].age} />
-        </div>
-      );
-      // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
-    }
+interface PersonTableProps{
+  person: Person[];
+};
+
+interface PersonTableState{
+  person: Person[];
+};
+
+interface Person{
+  datasheetID: number;
+  name: string;
+  jobTitle: boolean;
+  email: string;
+};
+
+class ProductTable extends React.Component<PersonTableProps, PersonTableState> {
+  render() {
+    const rows = (
+      <tr>
+        <td>{}</td>
+        <td></td>
+      </tr>
+    );
+    return (
+      <table>
+        <thead>
+          <tr>
+            <th>Datasheet ID</th>
+            <th>Name</th>
+            <th>Job Title</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>{rows}</tbody>
+      </table>
+    );
   }
+}
+function App(props) {
+  return (  
+    <div>{this.props.category}</div>
+  );
+}
+
+const Person = [
+  {DatasheetID: 12, name: 'James', jobTitle: 'Manager', email: 'test@test.com'}
+];
 
 ReactDOM.render(     
-<App />,
+<App products={Person} />,
     document.getElementById('root')        
 );
