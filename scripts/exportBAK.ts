@@ -1,5 +1,5 @@
 import 'airbnb-browser-shims';
-import { sp, Web } from './lib/sp';
+import { sp } from './lib/sp';
 import * as $ from 'jquery';
 
 const web = sp.web;

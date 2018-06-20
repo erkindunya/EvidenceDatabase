@@ -19,18 +19,10 @@ module.exports = {
             'babel-polyfill',
             "./scripts/subpage.ts"
         ],
-        adminpage: [
-            'babel-polyfill',
-            "./scripts/adminpage.tsx"
-        ],
-        datasheet: [
-            'babel-polyfill',
-            "./scripts/Datasheet/Datasheet.tsx"
-        ],
         export: [
             'babel-polyfill',
-            "./scripts/export.ts"
-        ]
+            "./scripts/export.tsx"
+        ],
     },
     output: {
         library: 'EDB',
