@@ -1,11 +1,24 @@
 import * as React from 'react';
 import '../../styles/export.css'; 
 
+const tableStyle = {
+  margin: '40px',
+  borderSpacing: 0,
+  width: '100%',
+  fontFamily : 'Arial, Helvetica, sans-serif',
+  fontSize: 12,
+  borderColor: 'grey',
+};
+const pStyle = {
+  fontSize: '15px',
+  textAlign: 'center'
+};
+
 const DatasheetComp = (props:any) => {
     const item = props.dataSheetItems;
     const less:string = "<";
     return (
-    <table>
+    <table style={tableStyle}>
         <thead>
             <tr>
                 <th colSpan={2}>{item.Title}</th>

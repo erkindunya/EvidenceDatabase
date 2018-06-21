@@ -10,15 +10,6 @@ const babelOptions = {
 module.exports = {
     devtool: 'source-map',
     entry: {
-        main: [
-            'babel-polyfill',
-            "./scripts/main.ts",
-            "./styles/main.scss"
-        ],
-        subpage: [
-            'babel-polyfill',
-            "./scripts/subpage.ts"
-        ],
         export: [
             'babel-polyfill',
             "./scripts/export.tsx"

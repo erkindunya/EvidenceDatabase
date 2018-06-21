@@ -14,6 +14,7 @@ interface IState {
   dataItems: Datasheet;
   isLoaded: boolean;
 }
+
 interface IProps {
   parameter: IFields[];
   dataBites: EvidenceBite;
