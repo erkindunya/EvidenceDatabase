@@ -19,25 +19,25 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Author</td>
-                <td style={style.tableTd}>{item.Id}</td>
+                <td style={style.tableTd}>{item.Author.Title}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Stage of Project</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.Stage_x0020_of_x0020_ProjectTerm}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableRowEmpty} colSpan={2}/>
             </tr>
             <tr style={style.tableTr}>
-                <td style={style.tableRowGreen}  colSpan={2}>Project Information</td>
+                <td style={style.tableRowGreen} colSpan={2}>Project Information</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Otherwise known as</td>
-                <td style={style.tableTd}>{item.Id}</td>
+                <td style={style.tableTd}>{item.Otherwise_x0020_known_x0020_as.Title}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Contract/CRM number</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.Contract_x0020_Number}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Client</td>
@@ -45,58 +45,58 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Kier delivery region</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.Kier_x0020_Delivery_x0020_RegionTerm}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>External JV</td>
-                <td style={style.tableTd}>{item.Id}</td>
+                <td style={style.tableTd}>{item.External_x0020_JV}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Internal JV</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.Internal_x0020_JV}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableRowGrey} colSpan={2}>Project Location</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Region</td>
-                <td style={style.tableTd}>{item.Id}</td>
+                <td style={style.tableTd}>{item.Project_x0020_RegionTerm}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Area</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.Project_x0020_AreaTerm}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Location</td>
-                <td style={style.tableTd}>{item.Id}</td>
+                <td style={style.tableTd}>{item.Project_x0020_LocationTerm}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Sector</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.SectorTerm}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Sub-Sector</td>
-                <td style={style.tableTd}>{item.Id}</td>
+                <td style={style.tableTd}>{item.SubsectorTerm}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Funding Sector</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.Funding_x0020_SectorTerm}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Form of procurement</td>
-                <td style={style.tableTd}>{item.Id}</td>
+                <td style={style.tableTd}>{item.Form_x0020_of_x0020_ProcurementTerm}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Procurement subtype</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.FormofProcurementSubTypeTerm}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Form of Contract</td>
-                <td style={style.tableTd}>{item.Id}</td>
+                <td style={style.tableTd}>{item.Form_x0020_of_x0020_ContractTerm}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Design stage at appointment</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.Design_x0020_Stage_x0020_at_x002Term}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableRowEmpty} colSpan={2}/>
@@ -106,7 +106,7 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Value at contract award</td>
-                <td style={style.tableTd}>{item.Id}</td>
+                <td style={style.tableTd}>{`£${item.Value_x0020_at_x0020_award.toLocaleString('en')}.00`}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Value at Contract completion</td>

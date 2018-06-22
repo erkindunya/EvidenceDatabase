@@ -1,4 +1,4 @@
-import { sp, setup, Web } from 'sp-pnp-js';
+import { sp, setup, Web,Util, Site, Item } from 'sp-pnp-js';
 
 setup({
   sp: {
@@ -8,4 +8,4 @@ setup({
   },
 });
 
-export { Web, sp };
+export { Web, sp, Util, Site, Item };

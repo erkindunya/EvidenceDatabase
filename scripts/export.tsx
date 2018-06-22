@@ -35,10 +35,11 @@ async function queryData(listId:number, dataList:string, sheet: Datasheet,bite: 
     sheet = await datasheetRepo.getByIdAsync(dataList,listId);
     bite = await evidenceBiteRepo.getByIdAsync("Project Evidence Bites",listId);
     const title = sheet.Title;
+    console.log(title);
     callback(sheet,bite);
     return title;
   } catch (error) {
-      return error;
+    return error;
   }
 }
 
@@ -99,7 +100,8 @@ class App extends React.Component<IState, IProps> {
       isLoaded: true,
       });
     }).then(title => {
-      exportElementToWord(title);
+      console.log(title);
+      // exportElementToWord(title);
     });
   }
   public render() {
