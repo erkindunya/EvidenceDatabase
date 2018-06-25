@@ -26,14 +26,12 @@ interface IFields{
   curPath: string;
   biteList: string;
 }
-
-async function queryData(listId:number, dataList:string, sheet: Datasheet,bite: EvidenceBite, callback: (s: Datasheet,b: EvidenceBite) => void) : Promise<any> {
-  // Create customers repository
+async function queryData(biteList:any,listId:number, dataList:string, sheet: Datasheet,bite: EvidenceBite, callback: (s: Datasheet,b: EvidenceBite) => void) : Promise<any> {
   const datasheetRepo = new DatasheetsRepository();
   const evidenceBiteRepo = new EvidenceBiteRepository();
   try {
     sheet = await datasheetRepo.getByIdAsync(dataList,listId);
-    bite = await evidenceBiteRepo.getByIdAsync("Project Evidence Bites",listId);
+    bite = await evidenceBiteRepo.getByIdAsync('Project Evidence Bites',listId);
     const title = sheet.Title;
     console.log(title);
     callback(sheet,bite);
@@ -42,7 +40,6 @@ async function queryData(listId:number, dataList:string, sheet: Datasheet,bite: 
     return error;
   }
 }
-
 function exportElementToWord(title:string):void {
   const html = document.getElementById('mainExportContainer').innerHTML;
   if (!window.Blob) {
@@ -63,7 +60,6 @@ function exportElementToWord(title:string):void {
   else link.click();  // other browsers
   document.body.removeChild(link);
 }
-
 class App extends React.Component<IState, IProps> {
   private dataList:string;
   private itemId;
@@ -81,7 +77,6 @@ class App extends React.Component<IState, IProps> {
     };
   }
 
-
   private getParameterByName(name, url) {
     if (!url) url === window.location.href;
     const nameTrimmed = name.replace(/[\[\]]/g, '\\$&');
@@ -95,22 +90,25 @@ class App extends React.Component<IState, IProps> {
   public componentDidMount() {
     const sheet = new Datasheet();
     const bite = new EvidenceBite();
-    queryData(this.itemId,this.dataList,sheet, bite, (s, b) => {
+    const biteList = this.props.parameter[0].biteList;
+    queryData(biteList,this.itemId,this.dataList,sheet, bite, (s, b) => {
       this.setState({
       dataBites: b,
       dataItems: s,
       isLoaded: true,
       });
     }).then(title => {
-      console.log(title);
-      // exportElementToWord(title);
+      exportElementToWord(title);
     });
   }
-  public render() {
-    const {dataItems,dataBites,isLoaded} = this.state;
+  
+  public render() {     
+    const {dataItems,dataBites,isLoaded} = this.state; 
     if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
+      //document.getElementById("mainExportContainer").innerHTML = "";
+      //document.getElementById('mainExportContainer').hidden = true;
       return (
         <div>
           <DatasheetComp dataSheetItems={dataItems}/>
@@ -133,5 +131,3 @@ export async function exportToWord(path:string,list:string) {
     document.getElementById('mainExportContainer') as HTMLElement,
   );
 }
-
-

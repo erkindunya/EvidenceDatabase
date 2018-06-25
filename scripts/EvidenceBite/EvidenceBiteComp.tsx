@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import '../../styles/export.css'; 
 import {Style} from '../../styles/style';
 
 const EvidenceBiteComp = (props:any) => {
@@ -39,18 +38,13 @@ const EvidenceBiteComp = (props:any) => {
                         <td style={style.tableTdFirstChild} key={'edb_topic_td_'+index}>Topic</td>
                         <td style={style.tableTd} key={'edb_topic_td2_'+index}>{item.TopicTerm}</td>
                     </tr>
-                    <tr style={style.tableTr} key={'edb_category_'+index}>
-                        <td style={style.tableTdFirstChild} key={'edb_category_td_'+index}>Category 1</td>
-                        <td style={style.tableTd} key={'edb_category_td2'+index}>{item.Business_x0020_CategoriesTerm}</td>
-                    </tr>
-                    <tr style={style.tableTr} key={'edb_category2_'+index}>
-                        <td style={style.tableTdFirstChild} key={'edb_category2_td_'+index}>Category 2</td>
-                        <td style={style.tableTd} key={'edb_category2_td2_'+index}>{item.Business_x0020_CategoriesTerm}</td>
-                    </tr>
-                    <tr style={style.tableTr} key={'edb_category3_'+index}>
-                        <td style={style.tableTdFirstChild} key={'edb_category3_td_'+index}>Category 3</td>
-                        <td style={style.tableTd} key={'edb_category3_td2'+index}>{item.Business_x0020_CategoriesTerm}</td>
-                    </tr>
+                    {item.Business_x0020_Categories.results.map((term:any,i:number) => 
+                        <tr style={style.tableTr} key={'edb_category_'+index+'_'+i}>
+                            <td style={style.tableTdFirstChild} key={'edb_category_td_'+index+'_'+i}>Category {i+1}</td>
+                            <td style={style.tableTd} key={'edb_category_td2'+index+'_'+i}>{term.Label}</td>
+                        </tr>
+                    )
+                    }
                     <tr style={style.tableTr} key={'edb_emptyRow_'+index}>
                         <td style={style.tableRowEmpty} key={'edb_emptyRow_td_'+index} colSpan={2}/>
                     </tr>

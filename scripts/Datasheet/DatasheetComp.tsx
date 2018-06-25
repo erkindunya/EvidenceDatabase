@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import '../../styles/style'; 
 import {Style} from '../../styles/style';
 import {formatUkDate} from '../lib/Field';
 
@@ -34,7 +33,7 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Otherwise known as</td>
-                <td style={style.tableTd}>{item.Otherwise_x0020_known_x0020_as.Title}</td>
+                <td style={style.tableTd}>{item.Otherwise_x0020_known_x0020_as}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Contract/CRM number</td>
@@ -107,11 +106,11 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Value at contract award</td>
-                <td style={style.tableTd}>{`£${item.Value_x0020_at_x0020_award.toLocaleString('en')}.00`}</td>
+                <td style={style.tableTd}>{item.Value_x0020_at_x0020_award? `£${item.Value_x0020_at_x0020_award.toLocaleString('en')}.00`:''}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Value at Contract completion</td>
-                <td style={style.tableTd}>{`£${item.Value_x0020_at_x0020_completion.toLocaleString('en')}.00`}</td>
+                <td style={style.tableTd}>{item.Value_x0020_at_x0020_completion?`£${item.Value_x0020_at_x0020_completion.toLocaleString('en')}.00`:''}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Reason for aggred change</td>

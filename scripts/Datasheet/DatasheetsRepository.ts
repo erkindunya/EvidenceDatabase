@@ -1,18 +1,19 @@
 import 'airbnb-browser-shims';
 import { Web, Util }  from '../lib/sp';
-import {getQueryAttributes} from '../lib/Field';
+import { getQueryAttributes } from '../lib/Field';
 
 export class DatasheetsRepository {
   public getByIdAsync(listName: string, id: number): Promise<any> {
     return new Promise((resolve, reject) => {
-       const web = new Web('');
-       const queryAttrs = getQueryAttributes(listName);
-       const items:any = web.lists.getByTitle(listName).items.getById(id);
-       const query:any = items.select.apply(items,queryAttrs.select).expand.apply(items,queryAttrs.expand);
-       query.get().then((results) => {
+      const web = new Web('');
+      const queryAttrs = getQueryAttributes(listName);
+      const items:any = web.lists.getByTitle(listName).items.getById(id);
+      const query:any = items.select.apply(items,queryAttrs.select)
+      .expand.apply(items,queryAttrs.expand);
+      query.get().then((results) => {
         resolve(this.getMetaData(results));
-      }).catch(e => {
-          reject(e);
+      }).catch((e) => {
+        reject(e);
       });
     });
   }
@@ -34,59 +35,74 @@ export class DatasheetsRepository {
     let scopeOfKierInvolvement = '';
     let preConstructionBRREAM = '';
     let epcRating = '';
-    for (let item of results.TaxCatchAll.results) {
+    for (const item of results.TaxCatchAll.results) {
       switch (item.ID) {
-        case  results.Stage_x0020_of_x0020_Project ? results.Stage_x0020_of_x0020_Project.WssId : '' :
+        case  results.Stage_x0020_of_x0020_Project ? 
+        results.Stage_x0020_of_x0020_Project.WssId : '' :
           stageOfProject = item.Term;
-        break;
-        case results.Kier_x0020_Delivery_x0020_Region? results.Kier_x0020_Delivery_x0020_Region :'' :
+          break;
+        case results.Kier_x0020_Delivery_x0020_Region ? 
+        results.Kier_x0020_Delivery_x0020_Region :'' :
           kierDeliveryRegion = item.Term;
-        break;
-        case results.Project_x0020_Region ? results.Project_x0020_Region.WssId: '' :
+          break;
+        case results.Project_x0020_Region ? 
+        results.Project_x0020_Region.WssId : '' :
           projectRegion = item.Term;
-        break;
-        case results.Project_x0020_Area ? results.Project_x0020_Area.WssId: '' :
+          break;
+        case results.Project_x0020_Area ? 
+        results.Project_x0020_Area.WssId : '' :
           projectArea = item.Term;
-        break;
-        case results.Project_x0020_Location? results.Project_x0020_Location.WssId: '' :
+          break;
+        case results.Project_x0020_Location ? 
+        results.Project_x0020_Location.WssId : '' :
           projectLocation = item.Term;
-        break;
-        case results.Project_x0020_Location ? results.Project_x0020_Location.WssId: '' :
+          break;
+        case results.Project_x0020_Location ? 
+        results.Project_x0020_Location.WssId : '' :
           projectLocation = item.Term;
-        break;
-        case results.Sector? results.Sector.WssId: '': 
+          break;
+        case results.Sector ? results.Sector.WssId : '': 
           sector = item.Term;
-        break;
-        case results.Subsector? results.Subsector.WssId: '' :
+          break;
+        case results.Subsector ? results.Subsector.WssId : '' :
           subSector = item.Term;
-        break;
-        case results.Funding_x0020_Sector ? results.Funding_x0020_Sector.WssId: '' :
+          break;
+        case results.Funding_x0020_Sector ? 
+        results.Funding_x0020_Sector.WssId : '' :
           fundingSector = item.Term;
-        break;
-        case results.Form_x0020_of_x0020_Procurement ? results.Form_x0020_of_x0020_Procurement.WssId: '' :
+          break;
+        case results.Form_x0020_of_x0020_Procurement ? 
+        results.Form_x0020_of_x0020_Procurement.WssId : '' :
           formOfProcuremnet = item.Term;
-        break;
-        case results.FormofProcurementSubType ? results.FormofProcurementSubType.WssId: '' :
+          break;
+        case results.FormofProcurementSubType ? 
+        results.FormofProcurementSubType.WssId : '' :
           formOfProcuremnetSubType = item.Term;
-        break;
-        case results.Form_x0020_of_x0020_Contract? results.Form_x0020_of_x0020_Contract.WssId: '' :
+          break;
+        case results.Form_x0020_of_x0020_Contract ? 
+        results.Form_x0020_of_x0020_Contract.WssId : '' :
           formOfContract = item.Term;
-        break;
-        case results.Design_x0020_Stage_x0020_at_x002 ? results.Design_x0020_Stage_x0020_at_x002.WssId: '' :
+          break;
+        case results.Design_x0020_Stage_x0020_at_x002 ? 
+        results.Design_x0020_Stage_x0020_at_x002.WssId : '' :
           designStageAtAppointment = item.Term;
-        break;
-        case results.Work_x0020_Description ? results.Work_x0020_Description.WssId: '':
+          break;
+        case results.Work_x0020_Description ? 
+        results.Work_x0020_Description.WssId : '':
           workDescription = item.Term;
-        break;
-        case results.Scope_x0020_of_x0020_Kier_x0020_ ? results.Scope_x0020_of_x0020_Kier_x0020_.WssId: '' :
+          break;
+        case results.Scope_x0020_of_x0020_Kier_x0020_ ? 
+        results.Scope_x0020_of_x0020_Kier_x0020_.WssId : '' :
           scopeOfKierInvolvement = item.Term;
-        break;
-        case results.Pre_x002d_Construction_x0020_BRE0 ? results.Pre_x002d_Construction_x0020_BRE0.WssId: '' :
+          break;
+        case results.Pre_x002d_Construction_x0020_BRE0 ? 
+        results.Pre_x002d_Construction_x0020_BRE0.WssId : '' :
           preConstructionBRREAM = item.Term;
-        break;
-        case results.EPC_x0020_Rating ? results.EPC_x0020_Rating.WssId : '':
+          break;
+        case results.EPC_x0020_Rating ? 
+        results.EPC_x0020_Rating.WssId : '':
           epcRating = item.Term;
-        break;
+          break;
       }
     }
     itemsCollector.push(Util.extend(results, {
