@@ -1,43 +1,58 @@
 import { EvidenceBite } from './EvidenceBite';
-import { sp, Web } from '../lib/sp';
+import {getQueryAttributes} from '../lib/Field';
+import { Web, Util} from '../lib/sp';
 
 export class EvidenceBiteRepository {
-  private web: any;
+  private web: Web;
   constructor() {
-    this.web = sp.web;
+    this.web = new Web('');
   }
   public getByIdAsync(listName: string, id: number): Promise<any> {
-    const [expand,select] = this.getQueryAttributes(listName);
-    const promise = new Promise((resolve) => {
-      const evidenceBites = this.web.lists.getByTitle(listName).items
+    // const [expand,select] = getQueryAttributes(listName);
+    const queryAttrs = getQueryAttributes(listName);
+    return new Promise((resolve,reject) => {
+       this.web.lists.getByTitle(listName).items
       .filter(`ProjectDatasheetID eq ${id}`)
-      .select(select)
-      .expand(expand).get() as EvidenceBite;
-      resolve(evidenceBites);
+      .select(queryAttrs.select)
+      .expand(queryAttrs.expand)
+      .get()
+      .then((results) => {
+        resolve(this.getMetaData(results));
+      })
+      .catch(e => {
+        reject(e);
+      });
     });
-    return promise;
   }
-  private getQueryAttributes(listName:string):string[] {
-    let queryAttrs:string[] = [];
-    if (listName === 'Project Datasheet') { 
-      queryAttrs = [
-        'TaxCatchAll,Author,Bid_x0020_Lead,Design_x0020_Manager, \
-        Project_x0020__x002F__x0020_Cont,Champion,CRM_x0020_Opportunity_x0020_Auth, \
-        QS_x0020__x002F__x0020_Commercia,Reviewer,Editor',
-        '*,TaxCatchAll/ID,TaxCatchAll/Term,Author/Id,Author/Title,\
-        Bid_x0020_Lead/Id,Bid_x0020_Lead/Title,Design_x0020_Manager/Id,Design_x0020_Manager/Title, \
-        Project_x0020__x002F__x0020_Cont/Id,Project_x0020__x002F__x0020_Cont/Title,\
-        Champion/Id,Champion/Title, \
-        CRM_x0020_Opportunity_x0020_Auth/Id,CRM_x0020_Opportunity_x0020_Auth/Title, \
-        QS_x0020__x002F__x0020_Commercia/Id,QS_x0020__x002F__x0020_Commercia/Title, \
-        Reviewer/Id,Reviewer/Title,Editor/Id,Editor/Title'];
-    } else {
-      queryAttrs = [
-        'TaxCatchAll',
-        'Title,EvidenceProjectStage,Business_x0020_Function,Topic, \
-        Evidence_x0020_Bite_x0020_Headli,Evidence_x0020_Bite_x0020_Descri, \
-        Evidence_x0020_Bite_x0020_Benefi,TaxCatchAll,TaxCatchAll/ID,TaxCatchAll/Term'];
-    }
-    return queryAttrs;
+
+
+  private getMetaData(results:any):string[] { 
+    const itemsCollector = [];
+    let businessFunction = '';
+    let topic = '';
+    let businessCategories = [];
+    results.map((result) => {
+      for (let item of result.TaxCatchAll.results) {
+        switch (item.ID) {
+          case  result.Business_x0020_Function ? result.Business_x0020_Function.WssId : '' :
+            businessFunction = item.Term;
+          break;
+          case  result.Topic ? result.Topic.WssId : '' :
+            topic = item.Term;
+          break;
+          case  result.Business_x0020_Categories.results[0] ? result.Business_x0020_Categories.results[0].WssId : '' :
+            for (let itemResult of result.Business_x0020_Categories.results) {
+              businessCategories.push(itemResult.Term);
+            }
+          break;
+        }
+      }
+      itemsCollector.push(Util.extend(result, {
+        Business_x0020_FunctionTerm: businessFunction,
+        TopicTerm : topic,
+        Business_x0020_CategoriesTerm : businessCategories[0],
+      }));
+    });  
+    return itemsCollector;
   }
 }

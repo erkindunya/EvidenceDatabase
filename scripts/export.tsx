@@ -67,6 +67,7 @@ function exportElementToWord(title:string):void {
 class App extends React.Component<IState, IProps> {
   private dataList:string;
   private itemId;
+
   constructor(props: IProps) {
     super(props); 
     const path = this.props.parameter[0].curPath;
@@ -79,6 +80,7 @@ class App extends React.Component<IState, IProps> {
       isLoaded: false,
     };
   }
+
 
   private getParameterByName(name, url) {
     if (!url) url === window.location.href;
@@ -131,3 +133,5 @@ export async function exportToWord(path:string,list:string) {
     document.getElementById('mainExportContainer') as HTMLElement,
   );
 }
+
+
