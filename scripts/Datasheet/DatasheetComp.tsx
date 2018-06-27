@@ -106,14 +106,14 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Value at contract award</td>
-                <td style={style.tableTd}>{item.Value_x0020_at_x0020_award? `£${item.Value_x0020_at_x0020_award.toLocaleString('en')}.00`:''}</td>
+                <td style={style.tableTd}>{item.Value_x0020_at_x0020_award? `£${item.Value_x0020_at_x0020_award.toLocaleString('en')}`:''}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Value at Contract completion</td>
-                <td style={style.tableTd}>{item.Value_x0020_at_x0020_completion?`£${item.Value_x0020_at_x0020_completion.toLocaleString('en')}.00`:''}</td>
+                <td style={style.tableTd}>{item.Value_x0020_at_x0020_completion?`£${item.Value_x0020_at_x0020_completion.toLocaleString('en')}`:''}</td>
             </tr>
             <tr style={style.tableTr}>
-                <td style={style.tableTdFirstChild}>Reason for aggred change</td>
+                <td style={style.tableTdFirstChild}>Reason for agreed change</td>
                 <td style={style.tableTd}>{item.Reason_x0020_for_x0020_agreed_x0}</td>
             </tr>
             <tr style={style.tableTr}>
@@ -148,7 +148,24 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Work Description</td>
-                <td style={style.tableTd}>{item.Work_x0020_DescriptionTerm}</td>
+                <td style={style.tableTd}><ul>{
+                    item.Work_x0020_Description.results
+                    .sort((a, b) => {
+                        var nameA = a.Label.toUpperCase(); // ignore upper and lowercase
+                        var nameB = b.Label.toUpperCase(); // ignore upper and lowercase
+                        if (nameA < nameB) {
+                          return -1;
+                        }
+                        if (nameA > nameB) {
+                          return 1;
+                        }
+                        // names must be equal
+                        return 0;
+                    })
+                    .map((term:any,i:number) => 
+                        <li key={'edbWD_'+i}>{term.Label}</li>    
+                )}
+                </ul></td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableRowEmpty} colSpan={2}/>
@@ -174,7 +191,26 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Scope of Kier involvement</td>
-                <td style={style.tableTd}>{item.Scope_x0020_of_x0020_Kier_x0020_Term}</td>
+                <td style={style.tableTd}>
+                    <ul>{
+                        item.Scope_x0020_of_x0020_Kier_x0020_.results
+                        .sort((a, b) => {
+                            var nameA = a.Label.toUpperCase(); // ignore upper and lowercase
+                            var nameB = b.Label.toUpperCase(); // ignore upper and lowercase
+                            if (nameA < nameB) {
+                            return -1;
+                            }
+                            if (nameA > nameB) {
+                            return 1;
+                            }
+                            // names must be equal
+                            return 0;
+                        })
+                        .map((term:any,i:number) => 
+                            <li key={'edbSOKI_'+i}>{term.Label}</li>    
+                    )}
+                    </ul>
+                </td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableRowGrey} colSpan={2}>Designers / Supply Chain</td>
@@ -243,7 +279,7 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Number of RIDDOR reportable accidents</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.Health_x0020__x0026__x0020_Safet}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Accident Free Man Hours</td>
@@ -258,23 +294,23 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>% Deviation from cost estimate</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.Cost_x0020_Predictability} %</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>% Deviation from time estimate</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.Time_x0020_Predictability} %</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Defects</td>
-                <td style={style.tableTd}>{item.Defects}</td>
+                <td style={style.tableTd}>{item.Defects} %</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Client Satisfaction- Product</td>
-                <td style={style.tableTd}>{item.Client_x0020_Satisfaction_x0020_}</td>
+                <td style={style.tableTd}>{item.Client_x0020_Satisfaction_x0020_} %</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Client Satisfaction- Service</td>
-                <td style={style.tableTd}>{item.Client_x0020_Satisfaction_x0020_0}</td>
+                <td style={style.tableTd}>{item.Client_x0020_Satisfaction_x0020_0} %</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Pre-Construction BREEAM/DREAM rating</td>
@@ -282,19 +318,19 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Score</td>
-                <td style={style.tableTd}>{item.Handover_x0020_BREEAM_x002F_DREA}</td>
+                <td style={style.tableTd}>{item.Pre_x002d_Construction_x0020_BRE}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Handover BREEAM/DREAM rating</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.Handover_x0020_BREEAM_x002F_DREA0Term}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Score</td>
-                <td style={style.tableTd}>{item.Title}</td>
+                <td style={style.tableTd}>{item.Handover_x0020_BREEAM_x002F_DREA}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>CEEQUAL rating</td>
-                <td style={style.tableTd}>{item.CEEQUAL_x0020_Rating}</td>
+                <td style={style.tableTd}>{item.CEEQUAL_x0020_RatingTerm}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Score</td>
@@ -317,11 +353,11 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>{less}20 miles</td>
-                <td style={style.tableTd}>{item.Local_x0020_spend_x0020_within_x}</td>
+                <td style={style.tableTd}>{item.Local_x0020_spend_x0020_within_x} %</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Within 40 miles</td>
-                <td style={style.tableTd}>{item.Local_x0020_spend_x0020_within_x0}</td>
+                <td style={style.tableTd}>{item.Local_x0020_spend_x0020_within_x0} %</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableRowEmpty} colSpan={2}/>

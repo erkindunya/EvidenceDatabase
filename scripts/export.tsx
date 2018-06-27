@@ -98,17 +98,16 @@ class App extends React.Component<IState, IProps> {
       isLoaded: true,
       });
     }).then(title => {
-      exportElementToWord(title);
+      // exportElementToWord(title);
     });
   }
-  
   public render() {     
     const {dataItems,dataBites,isLoaded} = this.state; 
     if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
       // document.getElementById("mainExportContainer").innerHTML = "";
-      document.getElementById('mainExportContainer').hidden = true;
+      // document.getElementById('mainExportContainer').hidden = true;
       return (
         <div>
           <DatasheetComp dataSheetItems={dataItems}/>

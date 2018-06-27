@@ -31,10 +31,12 @@ export class DatasheetsRepository {
     let formOfProcuremnetSubType = '';
     let formOfContract = '';
     let designStageAtAppointment = '';
-    let workDescription = '';
-    let scopeOfKierInvolvement = '';
+    // let workDescription = '';
+    // let scopeOfKierInvolvement = '';
     let preConstructionBRREAM = '';
     let epcRating = '';
+    let handoverBreeam = '';
+    let ceequalRating = '';
     for (const item of results.TaxCatchAll.results) {
       switch (item.ID) {
         case  results.Stage_x0020_of_x0020_Project ? 
@@ -87,14 +89,14 @@ export class DatasheetsRepository {
         results.Design_x0020_Stage_x0020_at_x002.WssId : '' :
           designStageAtAppointment = item.Term;
           break;
-        case results.Work_x0020_Description ? 
-        results.Work_x0020_Description.WssId : '':
-          workDescription = item.Term;
-          break;
-        case results.Scope_x0020_of_x0020_Kier_x0020_ ? 
-        results.Scope_x0020_of_x0020_Kier_x0020_.WssId : '' :
-          scopeOfKierInvolvement = item.Term;
-          break;
+        // case results.Work_x0020_Description ? 
+        // results.Work_x0020_Description.WssId : '':
+        //   workDescription = item.Term;
+        //   break;
+        // case results.Scope_x0020_of_x0020_Kier_x0020_ ? 
+        // results.Scope_x0020_of_x0020_Kier_x0020_.WssId : '' :
+        //   scopeOfKierInvolvement = item.Term;
+        //   break;
         case results.Pre_x002d_Construction_x0020_BRE0 ? 
         results.Pre_x002d_Construction_x0020_BRE0.WssId : '' :
           preConstructionBRREAM = item.Term;
@@ -102,6 +104,14 @@ export class DatasheetsRepository {
         case results.EPC_x0020_Rating ? 
         results.EPC_x0020_Rating.WssId : '':
           epcRating = item.Term;
+          break;
+        case results.Handover_x0020_BREEAM_x002F_DREA0 ? 
+        results.Handover_x0020_BREEAM_x002F_DREA0.WssId : '':
+          handoverBreeam = item.Term;
+          break;
+        case results.CEEQUAL_x0020_Rating ? 
+        results.CEEQUAL_x0020_Rating.WssId : '':
+          ceequalRating = item.Term;
           break;
       }
     }
@@ -118,10 +128,12 @@ export class DatasheetsRepository {
       FormofProcurementSubTypeTerm: formOfProcuremnetSubType,
       Form_x0020_of_x0020_ContractTerm: formOfContract,
       Design_x0020_Stage_x0020_at_x002Term: designStageAtAppointment,
-      Work_x0020_DescriptionTerm: workDescription,
-      Scope_x0020_of_x0020_Kier_x0020_Term: scopeOfKierInvolvement,
+      // Work_x0020_DescriptionTerm: workDescription,
+      // Scope_x0020_of_x0020_Kier_x0020_Term: scopeOfKierInvolvement,
       Pre_x002d_Construction_x0020_BRE0Term: preConstructionBRREAM,
       EPC_x0020_RatingTerm: epcRating,
+      Handover_x0020_BREEAM_x002F_DREA0Term: handoverBreeam,
+      CEEQUAL_x0020_RatingTerm: ceequalRating,
     }));
     return itemsCollector[0];
   }
