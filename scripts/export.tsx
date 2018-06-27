@@ -107,8 +107,8 @@ class App extends React.Component<IState, IProps> {
     if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
-      //document.getElementById("mainExportContainer").innerHTML = "";
-      //document.getElementById('mainExportContainer').hidden = true;
+      // document.getElementById("mainExportContainer").innerHTML = "";
+      document.getElementById('mainExportContainer').hidden = true;
       return (
         <div>
           <DatasheetComp dataSheetItems={dataItems}/>
