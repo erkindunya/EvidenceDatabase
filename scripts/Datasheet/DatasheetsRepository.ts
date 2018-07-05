@@ -24,10 +24,10 @@ export class DatasheetsRepository {
     let projectRegion = '';
     let projectArea = '';
     let projectLocation = '';
-    let sector = '';
-    let subSector = '';
-    let fundingSector = '';
-    let formOfProcuremnet = '';
+    // let sector = '';
+    // let subSector = '';
+    // let fundingSector = '';
+    // let formOfProcuremnet = '';
     let formOfProcuremnetSubType = '';
     let formOfContract = '';
     let designStageAtAppointment = '';
@@ -43,8 +43,7 @@ export class DatasheetsRepository {
         results.Stage_x0020_of_x0020_Project.WssId : '' :
           stageOfProject = item.Term;
           break;
-        case results.Kier_x0020_Delivery_x0020_Region ? 
-        results.Kier_x0020_Delivery_x0020_Region :'' :
+        case results.Kier_x0020_Delivery_x0020_Region ? results.Kier_x0020_Delivery_x0020_Region.WssId :'' :
           kierDeliveryRegion = item.Term;
           break;
         case results.Project_x0020_Region ? 
@@ -63,20 +62,20 @@ export class DatasheetsRepository {
         results.Project_x0020_Location.WssId : '' :
           projectLocation = item.Term;
           break;
-        case results.Sector ? results.Sector.WssId : '': 
-          sector = item.Term;
-          break;
-        case results.Subsector ? results.Subsector.WssId : '' :
-          subSector = item.Term;
-          break;
-        case results.Funding_x0020_Sector ? 
-        results.Funding_x0020_Sector.WssId : '' :
-          fundingSector = item.Term;
-          break;
-        case results.Form_x0020_of_x0020_Procurement ? 
-        results.Form_x0020_of_x0020_Procurement.WssId : '' :
-          formOfProcuremnet = item.Term;
-          break;
+        // case results.Sector ? results.Sector.WssId : '': 
+        //   sector = item.Term;
+        //   break;
+        // case results.Subsector ? results.Subsector.WssId : '' :
+        //   subSector = item.Term;
+        //   break;
+        // case results.Funding_x0020_Sector ? 
+        // results.Funding_x0020_Sector.WssId : '' :
+        //   fundingSector = item.Term;
+        //   break;
+        // case results.Form_x0020_of_x0020_Procurement ? 
+        // results.Form_x0020_of_x0020_Procurement.WssId : '' :
+        //   formOfProcuremnet = item.Term;
+        //   break;
         case results.FormofProcurementSubType ? 
         results.FormofProcurementSubType.WssId : '' :
           formOfProcuremnetSubType = item.Term;
@@ -121,10 +120,10 @@ export class DatasheetsRepository {
       Project_x0020_RegionTerm: projectRegion,
       Project_x0020_AreaTerm: projectArea,
       Project_x0020_LocationTerm: projectLocation,
-      SectorTerm: sector,
-      SubsectorTerm: subSector,
-      Funding_x0020_SectorTerm: fundingSector,
-      Form_x0020_of_x0020_ProcurementTerm: formOfProcuremnet,
+      // SectorTerm: sector,
+      // SubsectorTerm: subSector,
+      // Funding_x0020_SectorTerm: fundingSector,
+      // Form_x0020_of_x0020_ProcurementTerm: formOfProcuremnet,
       FormofProcurementSubTypeTerm: formOfProcuremnetSubType,
       Form_x0020_of_x0020_ContractTerm: formOfContract,
       Design_x0020_Stage_x0020_at_x002Term: designStageAtAppointment,

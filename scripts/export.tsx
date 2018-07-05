@@ -31,9 +31,12 @@ async function queryData(biteList:any,listId:number, dataList:string, sheet: Dat
   const evidenceBiteRepo = new EvidenceBiteRepository();
   try {
     sheet = await datasheetRepo.getByIdAsync(dataList,listId);
-    bite = await evidenceBiteRepo.getByIdAsync('Project Evidence Bites',listId);
+    if (biteList !== '') {
+      bite = await evidenceBiteRepo.getByIdAsync(biteList,listId);
+    } else {
+      bite = null;
+    }
     const title = sheet.Title;
-    console.log(title);
     callback(sheet,bite);
     return title;
   } catch (error) {
@@ -91,6 +94,7 @@ class App extends React.Component<IState, IProps> {
     const sheet = new Datasheet();
     const bite = new EvidenceBite();
     const biteList = this.props.parameter[0].biteList;
+    console.log(biteList);
     queryData(biteList,this.itemId,this.dataList,sheet, bite, (s, b) => {
       this.setState({
       dataBites: b,
@@ -98,20 +102,23 @@ class App extends React.Component<IState, IProps> {
       isLoaded: true,
       });
     }).then(title => {
-      // exportElementToWord(title);
+      exportElementToWord(title);
     });
   }
+  
   public render() {     
     const {dataItems,dataBites,isLoaded} = this.state; 
     if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
       // document.getElementById("mainExportContainer").innerHTML = "";
-      // document.getElementById('mainExportContainer').hidden = true;
+      document.getElementById('mainExportContainer').hidden = true;
       return (
         <div>
           <DatasheetComp dataSheetItems={dataItems}/>
-          <EvidenceBiteComp evidenceItems={dataBites}/>
+          {dataBites !== null &&
+            <EvidenceBiteComp evidenceItems={dataBites}/>
+          }
         </div>
       );
     }

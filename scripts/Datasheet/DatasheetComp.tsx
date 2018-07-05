@@ -19,7 +19,7 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Author</td>
-                <td style={style.tableTd}>{item.Author.Title}</td>
+                <td style={style.tableTd}>{item.Champion.Title}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Stage of Project</td>
@@ -41,7 +41,7 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Client</td>
-                <td style={style.tableTd}>{item.Id}</td>
+                <td style={style.tableTd}>{item.Client}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Kier delivery region</td>
@@ -49,7 +49,7 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>External JV</td>
-                <td style={style.tableTd}>{item.External_x0020_JV}</td>
+                <td style={style.tableTd}>{item.IsExternalJV === false ? "No":"Yes" }</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Internal JV</td>
@@ -71,20 +71,96 @@ const DatasheetComp = (props:any) => {
                 <td style={style.tableTd}>{item.Project_x0020_LocationTerm}</td>
             </tr>
             <tr style={style.tableTr}>
-                <td style={style.tableTdFirstChild}>Sector</td>
-                <td style={style.tableTd}>{item.SectorTerm}</td>
+                <td style={style.tableTdFirstChild}>Sector</td>      
+                <td style={style.tableTd}>
+                    <ul>{
+                        item.Sector.results
+                        .sort((a, b) => {
+                            var nameA = a.Label.toUpperCase(); // ignore upper and lowercase
+                            var nameB = b.Label.toUpperCase(); // ignore upper and lowercase
+                            if (nameA < nameB) {
+                            return -1;
+                            }
+                            if (nameA > nameB) {
+                            return 1;
+                            }
+                            // names must be equal
+                            return 0;
+                        })
+                        .map((term:any,i:number) => 
+                            <li key={'edbSECTOR_'+i}>{term.Label}</li>    
+                    )}
+                    </ul>
+                </td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Sub-Sector</td>
-                <td style={style.tableTd}>{item.SubsectorTerm}</td>
+                <td style={style.tableTd}>
+                    <ul>{
+                        item.Subsector.results
+                        .sort((a, b) => {
+                            var nameA = a.Label.toUpperCase(); // ignore upper and lowercase
+                            var nameB = b.Label.toUpperCase(); // ignore upper and lowercase
+                            if (nameA < nameB) {
+                            return -1;
+                            }
+                            if (nameA > nameB) {
+                            return 1;
+                            }
+                            // names must be equal
+                            return 0;
+                        })
+                        .map((term:any,i:number) => 
+                            <li key={'edbSubsector_'+i}>{term.Label}</li>    
+                    )}
+                    </ul>
+                </td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Funding Sector</td>
-                <td style={style.tableTd}>{item.Funding_x0020_SectorTerm}</td>
+                <td style={style.tableTd}>
+                    <ul>{
+                        item.Funding_x0020_Sector.results
+                        .sort((a, b) => {
+                            var nameA = a.Label.toUpperCase(); // ignore upper and lowercase
+                            var nameB = b.Label.toUpperCase(); // ignore upper and lowercase
+                            if (nameA < nameB) {
+                            return -1;
+                            }
+                            if (nameA > nameB) {
+                            return 1;
+                            }
+                            // names must be equal
+                            return 0;
+                        })
+                        .map((term:any,i:number) => 
+                            <li key={'edbfundingSec_'+i}>{term.Label}</li>    
+                    )}
+                    </ul>
+                </td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Form of procurement</td>
-                <td style={style.tableTd}>{item.Form_x0020_of_x0020_ProcurementTerm}</td>
+                <td style={style.tableTd}>
+                    <ul>{
+                        item.Form_x0020_of_x0020_Procurement.results
+                        .sort((a, b) => {
+                            var nameA = a.Label.toUpperCase(); // ignore upper and lowercase
+                            var nameB = b.Label.toUpperCase(); // ignore upper and lowercase
+                            if (nameA < nameB) {
+                            return -1;
+                            }
+                            if (nameA > nameB) {
+                            return 1;
+                            }
+                            // names must be equal
+                            return 0;
+                        })
+                        .map((term:any,i:number) => 
+                            <li key={'edbFormOfProc_'+i}>{term.Label}</li>    
+                    )}
+                    </ul>
+                </td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Procurement subtype</td>
@@ -367,7 +443,7 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Are client references available on request?</td>
-                <td style={style.tableTd}>{item.Client_x0020_Reference_x0020_ava}</td>
+                <td style={style.tableTd}>{item.Client_x0020_Reference_x0020_ava ? "Yes": "No"}</td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Testimonial 1</td>
