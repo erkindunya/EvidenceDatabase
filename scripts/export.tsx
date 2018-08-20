@@ -1,6 +1,7 @@
 import 'airbnb-browser-shims';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { unmountComponentAtNode } from "react-dom";
 import {Datasheet} from './Datasheet/Datasheet';
 import DatasheetComp from './Datasheet/DatasheetComp';
 import { DatasheetsRepository } from './Datasheet/DatasheetsRepository';
@@ -62,6 +63,7 @@ function exportElementToWord(title:string):void {
     navigator.msSaveOrOpenBlob(blob, `${title}.doc`); // IE10-11
   else link.click();  // other browsers
   document.body.removeChild(link);
+  unmountComponentAtNode(document.getElementById('mainExportContainer'));
 }
 class App extends React.Component<IState, IProps> {
   private dataList:string;
@@ -89,6 +91,7 @@ class App extends React.Component<IState, IProps> {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
   }
+  
 
   public componentDidMount() {
     const sheet = new Datasheet();
@@ -126,6 +129,7 @@ class App extends React.Component<IState, IProps> {
 }
 
 export async function exportToWord(path:string,list:string) {
+  // document.getElementById('mainExportContainer').innerHTML = "";
   const parameters = [{
     curPath: path, 
     biteList: list,
