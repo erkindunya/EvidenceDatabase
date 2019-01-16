@@ -5274,6 +5274,8 @@
               </Query>
               <ViewFields>
                 <FieldRef Name="Evidence_x0020_Bite_x0020_Headli" />
+                <FieldRef Name="Evidence_x0020_Bite_x0020_Descri" />
+                <FieldRef Name="Evidence_x0020_Bite_x0020_Benefi" />
                 <FieldRef Name="Business_x0020_Function" />
                 <FieldRef Name="Topic" />
                 <FieldRef Name="Business_x0020_Categories" />
@@ -5283,16 +5285,14 @@
                 <FieldRef Name="NonSectorSpecific" />
                 <FieldRef Name="Sector" />
                 <FieldRef Name="Subsector" />
-                <FieldRef Name="LinkTitle" />
                 <FieldRef Name="Project_x0020_Region" />
                 <FieldRef Name="Project_x0020_Area" />
-                <FieldRef Name="Project_x0020_Location" />
                 <FieldRef Name="_ModerationStatus" />
                 <FieldRef Name="LinkTitleNoMenu" />
                 <FieldRef Name="NonLocationSpecific" />
-                <FieldRef Name="GenericE1" />
                 <FieldRef Name="WF_x0020_Status" />
-                <FieldRef Name="Reviewer" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Project_x0020_Location" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
               <Aggregations Value="Off" />
