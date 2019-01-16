@@ -630,9 +630,6 @@
             <pnp:NavigationNode Title="Workspace" Url="{site}/Pages/WorkSpace.aspx" />
             <pnp:NavigationNode Title="WorkSpace Admin" Url="{site}/Pages/WorkSpace Admin.aspx" />
             <pnp:NavigationNode Title="Reviewer WorkSpace" Url="{site}/Pages/Reviewer WorkSpace.aspx" />
-            <pnp:NavigationNode Title="Recent" Url="{site}" IsExternal="true">
-              <pnp:NavigationNode Title="DueDateTest" Url="{site}/Lists/DueDateTest/AllItems.aspx" />
-            </pnp:NavigationNode>
             <pnp:NavigationNode Title="Generic Evidence Bites" Url="{site}/Pages/Evidence-Results-GEB.aspx" />
             <pnp:NavigationNode Title="diagnostic display template" Url="{site}/Pages/diagnostic-display-template.aspx" />
             <pnp:NavigationNode Title="Project Datasheet1" Url="{site}/Lists/Project Datasheet1/AllItems.aspx" />
@@ -5643,50 +5640,6 @@
               <JSLink>clienttemplates.js</JSLink>
             </View>
           </pnp:Views>
-        </pnp:ListInstance>
-        <pnp:ListInstance Title="DueDateTest" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/DueDateTest" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/DueDateTest/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/DueDateTest/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/DueDateTest/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
-          <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
-          </pnp:ContentTypeBindings>
-          <pnp:Views>
-            <View Name="{711841A0-C043-4E2D-881F-1590359A79F4}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/EDBUAT/Lists/DueDateTest/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query>
-                <OrderBy>
-                  <FieldRef Name="ID" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="LinkTitle" />
-                <FieldRef Name="DueDate" />
-                <FieldRef Name="Checkifd" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-          </pnp:Views>
-          <pnp:Fields>
-            <Field Type="DateTime" DisplayName="DueDate" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" FriendlyDisplayFormat="Disabled" ID="{83d2c614-8b99-465b-8f59-122608aa6ee8}" SourceID="{{listid:DueDateTest}}" StaticName="DueDate" Name="DueDate" ColName="datetime1" RowOrdinal="0" />
-            <Field DisplayName="Check if dueDate changed" Type="WorkflowStatus" Required="FALSE" ID="{09101b56-9148-4447-a44a-3cc97a7438dd}" SourceID="{{listid:DueDateTest}}" StaticName="Checkifd" Name="Checkifd" ColName="nvarchar3" RowOrdinal="0" Version="2" WorkflowStatusURL="_layouts/15/WrkStat.aspx" ReadOnly="TRUE">
-              <CHOICES>
-                <CHOICE>Starting</CHOICE>
-                <CHOICE>Failed on Start</CHOICE>
-                <CHOICE>In Progress</CHOICE>
-                <CHOICE>Error Occurred</CHOICE>
-                <CHOICE>Canceled</CHOICE>
-                <CHOICE>Completed</CHOICE>
-                <CHOICE>Failed on Start (retrying)</CHOICE>
-                <CHOICE>Error Occurred (retrying)</CHOICE>
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-              </CHOICES>
-            </Field>
-          </pnp:Fields>
         </pnp:ListInstance>
         <pnp:ListInstance Title="ErrorLogging" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/ErrorLogging" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" NoCrawl="true" DefaultDisplayFormUrl="{site}/Lists/ErrorLogging/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/ErrorLogging/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/ErrorLogging/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
