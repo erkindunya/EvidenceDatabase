@@ -39,7 +39,6 @@
             <pnp:NavigationNode Title="Environment" Url="{site}/Pages/Environment.aspx" />
             <pnp:NavigationNode Title="Project Delivery" Url="{site}/Pages/Project-Delivery.aspx" />
             <pnp:NavigationNode Title="Regional Data" Url="{site}/Pages/Regional-Data.aspx" />
-            <pnp:NavigationNode Title="Search Results" Url="{site}/Pages/results.aspx" />
             <pnp:NavigationNode Title="Evidence Bites" Url="{site}/Pages/Evidence-Results.aspx" />
             <pnp:NavigationNode Title="Add Data" Url="{site}/Pages/Add-Data.aspx" />
             <pnp:NavigationNode Title="Quality Assurance" Url="{site}/Pages/Quality-Assurance.aspx" />
@@ -51,13 +50,10 @@
             <pnp:NavigationNode Title="People" Url="{site}/Pages/People.aspx" />
             <pnp:NavigationNode Title="Health and Safety" Url="{site}/Pages/Health-Safety.aspx" />
             <pnp:NavigationNode Title="Regional Data Results" Url="{site}/Pages/Regional-Data-Results.aspx" />
-            <pnp:NavigationNode Title="Evidence Bites" Url="{site}/Pages/Evidence-Business-Functions.aspx" />
             <pnp:NavigationNode Title="PAS 91 Results" Url="{site}/Pages/PAS91-Results.aspx" />
             <pnp:NavigationNode Title="Answer Plans" Url="{site}/Pages/AnswerPlan-Results.aspx" />
             <pnp:NavigationNode Title="Evidence Results" Url="{site}/Pages/Evidence-Results-All.aspx" />
             <pnp:NavigationNode Title="Advanced Search" Url="{site}/Pages/advanced.aspx" />
-            <pnp:NavigationNode Title="Regional Datasheets" Url="{site}/Pages/RegionalDatasheets.aspx" />
-            <pnp:NavigationNode Title="Regional Case Studies" Url="{site}/Pages/RegionalCasestudies.aspx" />
             <pnp:NavigationNode Title="Project Delivery" Url="{site}/Pages/Evidence-Project-Delivery.aspx" />
             <pnp:NavigationNode Title="Project Delivery - Collaboration" Url="{site}/Pages/ProjectDeliveryCollaboration.aspx" />
             <pnp:NavigationNode Title="Project Delivery - Aftercare" Url="{site}/Pages/ProjectDeliveryAftercare.aspx" />
@@ -68,18 +64,13 @@
             <pnp:NavigationNode Title="Project Delivery - Risk" Url="{site}/Pages/ProjectDeliveryRisk.aspx" />
             <pnp:NavigationNode Title="Project Delivery - Training and Resiliance" Url="{site}/Pages/ProjectDeliveryTrainingandResiliance.aspx" />
             <pnp:NavigationNode Title="Project Delivery - Commercial Management" Url="{site}/Pages/ProjectDeliveryCommercialManagement.aspx" />
-            <pnp:NavigationNode Title="Data Sheets" Url="{site}/Pages/Datasheets.aspx" />
             <pnp:NavigationNode Title="Best Answers - " Url="{site}/Pages/BestAnswers.aspx" />
             <pnp:NavigationNode Title="Help documents" Url="{site}/Pages/Help-Library.aspx" />
-            <pnp:NavigationNode Title="WorkSpace" Url="{site}/Pages/WorkSpace.aspx" />
-            <pnp:NavigationNode Title="WorkSpace Admin" Url="{site}/Pages/WorkSpace Admin.aspx" />
-            <pnp:NavigationNode Title="Reviewer WorkSpace" Url="{site}/Pages/Reviewer WorkSpace.aspx" />
             <pnp:NavigationNode Title="Evidence" Url="{site}/Pages/Evidence.aspx" />
             <pnp:NavigationNode Title="PAS 91" Url="{site}/PAS 91/Forms/PAS 91.aspx" />
             <pnp:NavigationNode Title="Regional Data" Url="{site}/Pages/Regional-Data.aspx" />
-            <pnp:NavigationNode Title="test" Url="https://ext.kier.co.uk/sites/hive/forms/Pages/start.aspx/qualboardreports" IsExternal="true" />
-            <pnp:NavigationNode Title="Generic Evidence Bites" Url="{site}/Pages/Evidence-Results-GEB.aspx" />
-            <pnp:NavigationNode Title="diagnostic display template" Url="{site}/Pages/diagnostic-display-template.aspx" />
+            <pnp:NavigationNode Title="WorkSpace Admin" Url="{site}/Pages/WorkSpace Admin.aspx" />
+            <pnp:NavigationNode Title="Reviewer WorkSpace" Url="{site}/Pages/Reviewer WorkSpace.aspx" IsExternal="true" />
           </pnp:StructuralNavigation>
         </pnp:GlobalNavigation>
         <pnp:CurrentNavigation NavigationType="StructuralLocal">
@@ -91,7 +82,6 @@
             <pnp:NavigationNode Title="Environment" Url="{site}/Pages/Environment.aspx" />
             <pnp:NavigationNode Title="Project Delivery" Url="{site}/Pages/Project-Delivery.aspx" />
             <pnp:NavigationNode Title="Regional Data" Url="{site}/Pages/Regional-Data.aspx" />
-            <pnp:NavigationNode Title="Search Results" Url="{site}/Pages/results.aspx" />
             <pnp:NavigationNode Title="Evidence Bites" Url="{site}/Pages/Evidence-Results.aspx" />
             <pnp:NavigationNode Title="Add Data" Url="{site}/Pages/Add-Data.aspx" />
             <pnp:NavigationNode Title="Quality Assurance" Url="{site}/Pages/Quality-Assurance.aspx" />
@@ -103,13 +93,10 @@
             <pnp:NavigationNode Title="People" Url="{site}/Pages/People.aspx" />
             <pnp:NavigationNode Title="Health and Safety" Url="{site}/Pages/Health-Safety.aspx" />
             <pnp:NavigationNode Title="Regional Data Results" Url="{site}/Pages/Regional-Data-Results.aspx" />
-            <pnp:NavigationNode Title="Evidence Bites" Url="{site}/Pages/Evidence-Business-Functions.aspx" />
             <pnp:NavigationNode Title="PAS 91 Results" Url="{site}/Pages/PAS91-Results.aspx" />
             <pnp:NavigationNode Title="Answer Plans" Url="{site}/Pages/AnswerPlan-Results.aspx" />
             <pnp:NavigationNode Title="Evidence Results" Url="{site}/Pages/Evidence-Results-All.aspx" />
             <pnp:NavigationNode Title="Advanced Search" Url="{site}/Pages/advanced.aspx" />
-            <pnp:NavigationNode Title="Regional Datasheets" Url="{site}/Pages/RegionalDatasheets.aspx" />
-            <pnp:NavigationNode Title="Regional Case Studies" Url="{site}/Pages/RegionalCasestudies.aspx" />
             <pnp:NavigationNode Title="Project Delivery" Url="{site}/Pages/Evidence-Project-Delivery.aspx" />
             <pnp:NavigationNode Title="Project Delivery - Collaboration" Url="{site}/Pages/ProjectDeliveryCollaboration.aspx" />
             <pnp:NavigationNode Title="Project Delivery - Aftercare" Url="{site}/Pages/ProjectDeliveryAftercare.aspx" />
@@ -120,22 +107,16 @@
             <pnp:NavigationNode Title="Project Delivery - Risk" Url="{site}/Pages/ProjectDeliveryRisk.aspx" />
             <pnp:NavigationNode Title="Project Delivery - Training and Resiliance" Url="{site}/Pages/ProjectDeliveryTrainingandResiliance.aspx" />
             <pnp:NavigationNode Title="Project Delivery - Commercial Management" Url="{site}/Pages/ProjectDeliveryCommercialManagement.aspx" />
-            <pnp:NavigationNode Title="Data Sheets" Url="{site}/Pages/Datasheets.aspx" />
             <pnp:NavigationNode Title="Best Answers - " Url="{site}/Pages/BestAnswers.aspx" />
             <pnp:NavigationNode Title="Help documents" Url="{site}/Pages/Help-Library.aspx" />
-            <pnp:NavigationNode Title="WorkSpace" Url="{site}/Pages/WorkSpace.aspx" />
-            <pnp:NavigationNode Title="WorkSpace Admin" Url="{site}/Pages/WorkSpace Admin.aspx" />
-            <pnp:NavigationNode Title="Reviewer WorkSpace" Url="{site}/Pages/Reviewer WorkSpace.aspx" />
-            <pnp:NavigationNode Title="Evidence Database" Url="{site}" />
+            <pnp:NavigationNode Title="Evidence Database" Url="{site}/" />
             <pnp:NavigationNode Title="Evidence" Url="{site}/Pages/Evidence.aspx" />
             <pnp:NavigationNode Title="PAS 91" Url="{site}/PAS 91/Forms/PAS 91.aspx" />
             <pnp:NavigationNode Title="Regional Data" Url="{site}/Pages/Regional-Data.aspx" />
-            <pnp:NavigationNode Title="Workspace" Url="{site}/Pages/WorkSpace.aspx" />
             <pnp:NavigationNode Title="WorkSpace Admin" Url="{site}/Pages/WorkSpace Admin.aspx" />
-            <pnp:NavigationNode Title="Reviewer WorkSpace" Url="{site}/Pages/Reviewer WorkSpace.aspx" />
-            <pnp:NavigationNode Title="Generic Evidence Bites" Url="{site}/Pages/Evidence-Results-GEB.aspx" />
-            <pnp:NavigationNode Title="diagnostic display template" Url="{site}/Pages/diagnostic-display-template.aspx" />
-            <pnp:NavigationNode Title="Project Datasheet1" Url="{site}/Lists/Project Datasheet1/AllItems.aspx" />
+            <pnp:NavigationNode Title="Reviewer WorkSpace" Url="{site}/Pages/Reviewer WorkSpace.aspx" IsExternal="true" />
+            <pnp:NavigationNode Title="WorkSpace Admin" Url="{site}/Pages/WorkSpace Admin.aspx" />
+            <pnp:NavigationNode Title="Reviewer WorkSpace" Url="{site}/Pages/Reviewer WorkSpace.aspx" IsExternal="true" />
           </pnp:StructuralNavigation>
         </pnp:CurrentNavigation>
       </pnp:Navigation>
