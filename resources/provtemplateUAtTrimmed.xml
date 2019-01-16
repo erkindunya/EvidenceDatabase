@@ -5741,7 +5741,6 @@
               <pnp:RoleAssignment Principal="i:0#.w|kier\yvonne.tandy" RoleDefinition="Contribute" />
               <pnp:RoleAssignment Principal="i:0#.w|kier\andy.boutle" RoleDefinition="Read" />
               <pnp:RoleAssignment Principal="i:0#.w|kier\louise.dawes" RoleDefinition="Read" />
-              <pnp:RoleAssignment Principal="i:0#.w|kier\steve.davies" RoleDefinition="Read" />
               <pnp:RoleAssignment Principal="i:0#.w|kier\carol.abbott" RoleDefinition="Read" />
               <pnp:RoleAssignment Principal="i:0#.w|kier\louise.wilson" RoleDefinition="Read" />
               <pnp:RoleAssignment Principal="i:0#.w|kier\lyndsey.cann" RoleDefinition="Read" />
