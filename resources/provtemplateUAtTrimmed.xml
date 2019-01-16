@@ -6638,6 +6638,8 @@
                 <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
                 <FieldRef Name="Modified" />
                 <FieldRef Name="Editor" />
+                <FieldRef Name="Evidence" />
+                <FieldRef Name="ID" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
               <Aggregations Value="Off" />
@@ -6862,8 +6864,7 @@
                   <FieldRef Name="Modified" Ascending="FALSE" />
                 </OrderBy>
               </Query>
-              <ViewFields>
-                <FieldRef Name="WF_x0020_Status" />
+               <ViewFields>
                 <FieldRef Name="LinkTitle" />
                 <FieldRef Name="Evidence_x0020_Bite_x0020_Headli" />
                 <FieldRef Name="Evidence_x0020_Bite_x0020_Descri" />
@@ -6874,15 +6875,13 @@
                 <FieldRef Name="Author" />
                 <FieldRef Name="Modified" />
                 <FieldRef Name="_ModerationStatus" />
-                <FieldRef Name="ProjectDatasheetID" />
-                <FieldRef Name="IsDraft" />
                 <FieldRef Name="Evidence" />
-                <FieldRef Name="Champion" />
-                <FieldRef Name="EvidenceProjectStage" />
-                <FieldRef Name="GetChamp" />
-                <FieldRef Name="Created" />
-                <FieldRef Name="Kier_x0020_album_x0020_link" />
-                <FieldRef Name="Editor" />
+                <FieldRef Name="Award_x0020_1" />
+                <FieldRef Name="Award_x0020_2" />
+                <FieldRef Name="Award_x0020_3" />
+                <FieldRef Name="Award_x0020_4" />
+                <FieldRef Name="Award_x0020_5" />
+                <FieldRef Name="WF_x0020_Status" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
               <Aggregations Value="Off" />
