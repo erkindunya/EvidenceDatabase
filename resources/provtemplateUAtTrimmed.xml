@@ -6931,6 +6931,43 @@
               <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
             </View>
+            <View Name="{074C4988-4369-483B-A540-0053C05CC70B}" MobileView="TRUE" Type="HTML" DisplayName="Tracker LB" Url="/Lists/Project Evidence Bites/Tracker LB.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Evidence_x0020_Bite_x0020_Headli" />
+                <FieldRef Name="Business_x0020_Function" />
+                <FieldRef Name="Topic" />
+                <FieldRef Name="Business_x0020_Categories" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="_ModerationStatus" />
+                <FieldRef Name="Evidence" />
+                <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
+                <FieldRef Name="Stage_x0020_of_x0020_Project" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+              <View Name="{25EEE52E-768B-48CD-A976-3506D7BE22B7}" MobileView="TRUE" Type="HTML" DisplayName="Tracker View" Url="/Lists/Project Evidence Bites/Tracker View.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Evidence_x0020_Bite_x0020_Headli" />
+                <FieldRef Name="Evidence_x0020_Bite_x0020_Descri" />
+                <FieldRef Name="Evidence_x0020_Bite_x0020_Benefi" />
+                <FieldRef Name="Business_x0020_Function" />
+                <FieldRef Name="Topic" />
+                <FieldRef Name="Business_x0020_Categories" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="WF_x0020_Status" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
             <View Name="{0FFD2996-9C52-464E-8AD7-15175FA32323}" MobileView="TRUE" Type="HTML" DisplayName="Workflow Task View" Url="/sites/EDBUAT/Lists/Project Evidence Bites/Workflow Task View.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query />
               <ViewFields>
