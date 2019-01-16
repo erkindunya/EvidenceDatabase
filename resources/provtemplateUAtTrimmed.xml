@@ -5802,6 +5802,7 @@
               <ViewFields>
                 <FieldRef Name="DocIcon" />
                 <FieldRef Name="LinkFilename" />
+                <FieldRef Name="PAS_x0020_Module_x0020_Type" />
                 <FieldRef Name="Modified" />
                 <FieldRef Name="Editor" />
                 <FieldRef Name="PAS_x0020_Module_x0020_Type" />
