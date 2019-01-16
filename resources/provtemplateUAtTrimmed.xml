@@ -3593,7 +3593,7 @@
             <CHOICE>Standing Order</CHOICE>
           </CHOICES>
         </Field>
-        <Field Type="Text" DisplayName="WF Status" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Construction EvidenceDB" ID="{9e284cfc-7e1c-45e0-8cca-a6c7ce0fa52f}" SourceID="{5160792e-a75a-4f7e-b9d3-71bc72527cad}" StaticName="WF_x0020_Status" Name="WF_x0020_Status" FromParent="FALSE">
+        <Field Type="Text" DisplayName="WF Status" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Construction EvidenceDB" ID="{603a1488-127b-4589-9971-193f6afcd87a}" SourceID="{5160792e-a75a-4f7e-b9d3-71bc72527cad}" StaticName="WF_x0020_Status" Name="WF_x0020_Status" FromParent="FALSE">
         </Field>
         <Field Type="Boolean" Name="ICT_x0020_Novated" ID="{b6a35efd-d7f1-4a17-961c-d5848ea95dd8}" Description="" DisplayName="ICT Novated" StaticName="ICT_x0020_Novated" Group="Construction EvidenceDB" Hidden="" Required="FALSE" Sealed="" EnforceUniqueValues="FALSE" Indexed="FALSE" SourceID="{4c51aa80-6adb-4a5e-b07a-bda4a15932da}" FromParent="FALSE">
           <Default>0</Default>
@@ -3935,7 +3935,7 @@
             <pnp:FieldRef ID="1c1519ae-bff2-4bc2-9f32-d331ed2aebab" Name="Champion" />
             <pnp:FieldRef ID="eec1ba50-6c2f-4957-853e-d5747f939946" Name="e17d49d0109541a7bb783732ec5f7a2a" Hidden="true" />
             <pnp:FieldRef ID="e17d49d0-1095-41a7-bb78-3732ec5f7a2a" Name="OfficeName" />
-            <pnp:FieldRef ID="9e284cfc-7e1c-45e0-8cca-a6c7ce0fa52f" Name="WF_x0020_Status" />
+            <pnp:FieldRef ID="603a1488-127b-4589-9971-193f6afcd87a" Name="WF_x0020_Status" />
             <pnp:FieldRef ID="dad5b8ad-eebc-4bf1-901b-9f0bab55168b" Name="CRM_ID" />
             <pnp:FieldRef ID="457baa7a-6f44-402f-bf07-fbbca9bc5dfc" Name="isBestBid" />
             <pnp:FieldRef ID="d9ebdd3d-baaa-4e4d-a6c6-5be4877c05a0" Name="isNonDisclosureAgreement" />
@@ -4114,7 +4114,7 @@
             <pnp:FieldRef ID="80bf40a2-7df9-49cc-aa73-e4ac7bad347b" Name="RAG1" Required="true" />
             <pnp:FieldRef ID="c13ba1b9-d89c-494d-975f-b5a6b8de47cf" Name="RAGStatus" />
             <pnp:FieldRef ID="1c1519ae-bff2-4bc2-9f32-d331ed2aebab" Name="Champion" />
-            <pnp:FieldRef ID="9e284cfc-7e1c-45e0-8cca-a6c7ce0fa52f" Name="WF_x0020_Status" />
+            <pnp:FieldRef ID="603a1488-127b-4589-9971-193f6afcd87a" Name="WF_x0020_Status" />
             <pnp:FieldRef ID="068c98d6-0513-47b7-8d42-e9b2eec83d97" Name="IsDraft" />
             <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" />
             <pnp:FieldRef ID="d9ebdd3d-baaa-4e4d-a6c6-5be4877c05a0" Name="isNonDisclosureAgreement" />
@@ -6571,7 +6571,7 @@
             <pnp:FieldRef ID="80bf40a2-7df9-49cc-aa73-e4ac7bad347b" Name="_x0052_AG1" Required="true" DisplayName="RAG" />
             <pnp:FieldRef ID="c13ba1b9-d89c-494d-975f-b5a6b8de47cf" Name="RAGStatus" DisplayName="RAG Status" />
             <pnp:FieldRef ID="1c1519ae-bff2-4bc2-9f32-d331ed2aebab" Name="Champion" DisplayName="Champion" />
-            <pnp:FieldRef ID="9e284cfc-7e1c-45e0-8cca-a6c7ce0fa52f" Name="WF_x0020_Status" DisplayName="WF Status" />
+            <pnp:FieldRef ID="603a1488-127b-4589-9971-193f6afcd87a" Name="WF_x0020_Status" DisplayName="WF Status" />
             <pnp:FieldRef ID="7d04250e-f06e-488c-b5ec-f11c8c416ffb" Name="CRM_x005F_x0020_Opportunity_x005" DisplayName="CRM_x0020_Opportunity_x0020_Auth0" />
             <pnp:FieldRef ID="387f7038-78a1-42b5-adef-80a6ab78386e" Name="CRM_x0020_Number" DisplayName="CRM Number" />
           </pnp:FieldRefs>
@@ -7202,7 +7202,7 @@
             <pnp:FieldRef ID="80bf40a2-7df9-49cc-aa73-e4ac7bad347b" Name="_x0052_AG1" Required="true" DisplayName="RAG" />
             <pnp:FieldRef ID="c13ba1b9-d89c-494d-975f-b5a6b8de47cf" Name="RAGStatus" DisplayName="RAG Status" />
             <pnp:FieldRef ID="1c1519ae-bff2-4bc2-9f32-d331ed2aebab" Name="Champion" DisplayName="Champion" />
-            <pnp:FieldRef ID="9e284cfc-7e1c-45e0-8cca-a6c7ce0fa52f" Name="WF_x0020_Status" DisplayName="WF Status" />
+            <pnp:FieldRef ID="603a1488-127b-4589-9971-193f6afcd87a" Name="WF_x0020_Status" DisplayName="WF Status" />
             <pnp:FieldRef ID="068c98d6-0513-47b7-8d42-e9b2eec83d97" Name="IsDraft" DisplayName="IsDraft" />
             <pnp:FieldRef ID="d9ebdd3d-baaa-4e4d-a6c6-5be4877c05a0" Name="isNonDisclosureAgreement" DisplayName="Is Non-Disclosure Agreement" />
             <pnp:FieldRef ID="457baa7a-6f44-402f-bf07-fbbca9bc5dfc" Name="isBestBid" DisplayName="Is Best Bid" />
