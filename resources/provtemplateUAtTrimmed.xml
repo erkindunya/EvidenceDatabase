@@ -6241,35 +6241,24 @@
             <pnp:FieldRef ID="34ab8b21-5cdc-4634-b64c-613e58db2e55" Name="PAS_x0020_Module_x0020_Type" DisplayName="PAS Module Type" />
           </pnp:FieldRefs>
         </pnp:ListInstance>
-        <pnp:ListInstance Title="Project Datasheet" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Project Datasheet1" EnableVersioning="true" EnableModeration="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Project Datasheet1/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Project Datasheet1/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Project Datasheet1/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
+        <pnp:ListInstance Title="Project Datasheet" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Project Datasheet" EnableVersioning="true" EnableModeration="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Project Datasheet/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Project Datasheet/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Project Datasheet/NewForm.aspx" ImageUrl="{site}/_layouts/15/images/itgen.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0100E371B76ADC985B49AD3159C3A66C6E8D01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x010074F4C280A7F26F499365B27B6BA4988201" Default="true" />
             <pnp:ContentTypeBinding ContentTypeID="0x01" />
             <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
           <pnp:Views>
-            <View Name="{C75FF42B-DFF8-444C-8259-275EF6FAC644}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Tracker View" Url="/sites/EDBUAT/Lists/Project Datasheet1/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{4C252747-9C6C-4D78-B0AC-B7135E86E66A}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Tracker View" Url="/Lists/Project Datasheet/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query>
                 <OrderBy>
-                  <FieldRef Name="ID" Ascending="FALSE" />
+                  <FieldRef Name="ID" />
                 </OrderBy>
               </Query>
               <ViewFields>
-                <FieldRef Name="CRM_ID" />
-                <FieldRef Name="Client_x0020_Reference_x0020_ava" />
-                <FieldRef Name="isBestBid" />
-                <FieldRef Name="Planned_x0020_start_x0020_on_x00" />
-                <FieldRef Name="Planned_x0020_completion_x0020_d" />
-                <FieldRef Name="Actual_x0020_completion_x0020_da" />
-                <FieldRef Name="Status" />
-                <FieldRef Name="DSTStage" />
-                <FieldRef Name="DSTStage0" />
                 <FieldRef Name="Title" />
-                <FieldRef Name="IsDraft" />
-                <FieldRef Name="WF_x0020_Status" />
-                <FieldRef Name="Champion" />
                 <FieldRef Name="Sector" />
                 <FieldRef Name="Stage_x0020_of_x0020_Project" />
+                <FieldRef Name="Status" />
                 <FieldRef Name="Author" />
                 <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
                 <FieldRef Name="Created" />
@@ -6278,27 +6267,21 @@
                 <FieldRef Name="ID" />
                 <FieldRef Name="_ModerationStatus" />
                 <FieldRef Name="Contract_x0020_Number" />
-                <FieldRef Name="LinkTitleNoMenu" />
+                <FieldRef Name="IsDraft" />
+                <FieldRef Name="WF_x0020_Status" />
                 <FieldRef Name="Award_x0020_1" />
                 <FieldRef Name="Award_x0020_2" />
                 <FieldRef Name="Award_x0020_3" />
                 <FieldRef Name="Award_x0020_4" />
                 <FieldRef Name="Award_x0020_5" />
-                <FieldRef Name="TaskID" />
-                <FieldRef Name="ChampionTest" />
-                <FieldRef Name="CRM_x005F_x0020_Opportunity_x005" />
-                <FieldRef Name="CRMStgWFFlg" />
-                <FieldRef Name="OfficeName" />
-                <FieldRef Name="isNonDisclosureAgreement" />
-                <FieldRef Name="CRM_x0020_Opportunity_x0020_Auth" />
-                <FieldRef Name="CRM_x0020_Opportunity_x0020_Auth0" />
-                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Actual_x0020_start_x0020_on_x002" />
+                <FieldRef Name="Actual_x0020_completion_x0020_da" />
               </ViewFields>
               <RowLimit Paged="TRUE">100</RowLimit>
               <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{03B692A3-94C3-4510-8EA8-40BF9413F266}" Type="HTML" TabularView="FALSE" ModerationType="Contributor" DisplayName="My submissions" Url="/sites/EDBUAT/Lists/Project Datasheet1/my-sub.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{BA763B13-226C-4820-91A5-84B36DE28E48}" Type="HTML" TabularView="FALSE" ModerationType="Contributor" DisplayName="My submissions" Url="/Lists/Project Datasheet/my-sub.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query>
                 <GroupBy>
                   <FieldRef Name="_ModerationStatus" Ascending="FALSE" />
@@ -6315,7 +6298,7 @@
               <RowLimit Paged="TRUE">30</RowLimit>
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{021BB150-CFAF-4FAF-BDD6-E7215CEDBB53}" Type="HTML" TabularView="FALSE" ModerationType="Moderator" DisplayName="Approve/reject Items" Url="/sites/EDBUAT/Lists/Project Datasheet1/mod-view.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{D3BCF2FF-D834-4242-AFF6-27F36998C592}" Type="HTML" TabularView="FALSE" ModerationType="Moderator" DisplayName="Approve/reject Items" Url="/Lists/Project Datasheet/mod-view.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query>
                 <GroupBy>
                   <FieldRef Name="_ModerationStatus" Ascending="FALSE" />
@@ -6333,7 +6316,36 @@
               <RowLimit Paged="TRUE">30</RowLimit>
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{64ABC7A1-709F-4630-97A9-856464B5371B}" MobileView="TRUE" Type="HTML" DisplayName="Contract Award Data" Url="/sites/EDBUAT/Lists/Project Datasheet1/Contract Award Data.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{F570965A-A332-407B-9EAF-AD4F534D53EC}" MobileView="TRUE" Type="HTML" DisplayName="BRJ" Url="/Lists/Project Datasheet/BRJ.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="Title" />
+                <FieldRef Name="_x0052_AG1" />
+                <FieldRef Name="RAGStatus" />
+                <FieldRef Name="Sector" />
+                <FieldRef Name="Stage_x0020_of_x0020_Project" />
+                <FieldRef Name="Status" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="ID" />
+                <FieldRef Name="_ModerationStatus" />
+                <FieldRef Name="Contract_x0020_Number" />
+                <FieldRef Name="IsDraft" />
+                <FieldRef Name="WF_x0020_Status" />
+                <FieldRef Name="Award_x0020_1" />
+                <FieldRef Name="Award_x0020_2" />
+                <FieldRef Name="Award_x0020_3" />
+                <FieldRef Name="Award_x0020_4" />
+                <FieldRef Name="Award_x0020_5" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{C1042E44-AA12-41A4-BA47-8464EFF02C1F}" MobileView="TRUE" Type="HTML" DisplayName="Contract Award Data" Url="/Lists/Project Datasheet/Contract Award Data.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query />
               <ViewFields>
                 <FieldRef Name="Title" />
@@ -6348,12 +6360,14 @@
                 <FieldRef Name="Actual_x0020_completion_x0020_da" />
                 <FieldRef Name="FormofProcurementSubType" />
                 <FieldRef Name="Actual_x0020_start_x0020_on_x002" />
+                <FieldRef Name="_ModerationComments" />
+                <FieldRef Name="Approver_x0020_Comments" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
               <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{F34D9B1D-B38F-4802-AE61-23665A93DE02}" MobileView="TRUE" Type="HTML" DisplayName="Data Cleanse" Url="/sites/EDBUAT/Lists/Project Datasheet1/Data Cleanse.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{3607D579-B37C-4FCD-81A0-CDDCCB5BABAE}" MobileView="TRUE" Type="HTML" DisplayName="Data Cleanse" Url="/Lists/Project Datasheet/Data Cleanse.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query />
               <ViewFields>
                 <FieldRef Name="Title" />
@@ -6440,7 +6454,7 @@
               <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{6B67072F-F6BB-4D0D-975D-7A7F3A9D5EE4}" MobileView="TRUE" Type="HTML" DisplayName="DWP" Url="/sites/EDBUAT/Lists/Project Datasheet1/DWP.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{0EEF6FD3-7DA8-4B1F-8952-5BEEC52196EB}" MobileView="TRUE" Type="HTML" DisplayName="DWP" Url="/Lists/Project Datasheet/DWP.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query />
               <ViewFields>
                 <FieldRef Name="Title" />
@@ -6462,7 +6476,7 @@
               <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{3667A4F3-70D3-41EC-B41D-07AE4B2E9105}" MobileView="TRUE" Type="HTML" DisplayName="handout" Url="/sites/EDBUAT/Lists/Project Datasheet1/handout.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{6E758329-D7E5-4210-938C-6377DB904721}" MobileView="TRUE" Type="HTML" DisplayName="handout" Url="/Lists/Project Datasheet/handout.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query />
               <ViewFields>
                 <FieldRef Name="Title" />
@@ -6477,7 +6491,7 @@
               <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{D97CE0B5-B499-46A5-ABA5-1C7A5E0904D5}" MobileView="TRUE" Type="HTML" DisplayName="missing info" Url="/sites/EDBUAT/Lists/Project Datasheet1/missing info.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{72060B4B-2DC0-42E0-BB21-82A0AA8CBBF1}" MobileView="TRUE" Type="HTML" DisplayName="missing info" Url="/Lists/Project Datasheet/missing info.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query>
                 <GroupBy Collapse="TRUE" GroupLimit="30">
                   <FieldRef Name="Author" />
@@ -6570,7 +6584,7 @@
               <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{877A84A2-1A5F-4E16-AC68-E012F42F30B8}" MobileView="TRUE" Type="HTML" DisplayName="Missing" Url="/sites/EDBUAT/Lists/Project Datasheet1/Missing.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{2F19F435-477D-4BE1-8A54-EA5AE141964F}" MobileView="TRUE" Type="HTML" DisplayName="Missing" Url="/Lists/Project Datasheet/Missing.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query>
                 <GroupBy Collapse="TRUE" GroupLimit="30">
                   <FieldRef Name="_ModerationStatus" />
@@ -6610,7 +6624,7 @@
               <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{FE4D8C8F-2425-4987-B772-9473082231F9}" MobileView="TRUE" Type="HTML" DisplayName="MOJ prep" Url="/sites/EDBUAT/Lists/Project Datasheet1/MOJ prep.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{B6C9B7E2-3D02-43F9-BA7B-878D9568F32C}" MobileView="TRUE" Type="HTML" DisplayName="MOJ prep" Url="/Lists/Project Datasheet/MOJ prep.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query />
               <ViewFields>
                 <FieldRef Name="Title" />
@@ -6627,7 +6641,35 @@
               <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{17849842-B56C-4F18-914A-664111073F3B}" MobileView="TRUE" Type="HTML" DisplayName="Social Value" Url="/sites/EDBUAT/Lists/Project Datasheet1/Social Value.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{7EDDD716-1AF8-4FC6-8A20-126D2612DCA3}" MobileView="TRUE" Type="HTML" DisplayName="RIDDOR" Url="/Lists/Project Datasheet/RIDDOR.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Health_x0020__x0026__x0020_Safet" />
+                </OrderBy>
+                <Where>
+                  <Gt>
+                    <FieldRef Name="Health_x0020__x0026__x0020_Safet" />
+                    <Value Type="Number">0</Value>
+                  </Gt>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="Title" />
+                <FieldRef Name="Sector" />
+                <FieldRef Name="Stage_x0020_of_x0020_Project" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="WF_x0020_Status" />
+                <FieldRef Name="Health_x0020__x0026__x0020_Safet" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{9032A2C0-C0CE-4222-9CB4-992BBA4C2DC8}" MobileView="TRUE" Type="HTML" DisplayName="Social Value" Url="/Lists/Project Datasheet/Social Value.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query />
               <ViewFields>
                 <FieldRef Name="Title" />
@@ -6666,7 +6708,7 @@
               <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{CB44C12C-869C-4CD9-94F2-39B7BAA57475}" MobileView="TRUE" Type="HTML" DisplayName="Property" Url="/sites/EDBUAT/Lists/Project Datasheet1/time and budget.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{714C2801-264C-46A6-B31A-236CF9F1105C}" MobileView="TRUE" Type="HTML" DisplayName="Property" Url="/Lists/Project Datasheet/time and budget.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query />
               <ViewFields>
                 <FieldRef Name="Title" />
@@ -6689,7 +6731,7 @@
               <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{C0CB8B79-EA38-4351-BB83-53D53F072E40}" MobileView="TRUE" Type="HTML" DisplayName="Workflow Task View" Url="/sites/EDBUAT/Lists/Project Datasheet1/Workflow Task View.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+            <View Name="{6B8F261E-20FE-4F3F-B192-C67317E294AA}" MobileView="TRUE" Type="HTML" DisplayName="Workflow Task View" Url="/Lists/Project Datasheet/Workflow Task View.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
               <Query />
               <ViewFields>
                 <FieldRef Name="Approver_x0020_Comments" />
@@ -6704,36 +6746,8 @@
               <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{C3CF2FEA-01BE-4C11-B8C1-7216C1E0CBCF}" MobileView="TRUE" Type="HTML" DisplayName="Leeds" Url="/sites/EDBUAT/Lists/Project Datasheet1/Leeds.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query>
-                <Where>
-                  <Geq>
-                    <FieldRef Name="Created" />
-                    <Value Type="DateTime">2018-12-20T00:00:00Z</Value>
-                  </Geq>
-                </Where>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="ID" />
-                <FieldRef Name="LinkTitleNoMenu" />
-                <FieldRef Name="Status" />
-                <FieldRef Name="Champion" />
-                <FieldRef Name="Author" />
-                <FieldRef Name="Created" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="Editor" />
-                <FieldRef Name="DSTStage" />
-                <FieldRef Name="Project_x0020_Description" />
-                <FieldRef Name="Project_x0020_Region" />
-                <FieldRef Name="Project_x0020_Area" />
-                <FieldRef Name="Project_x0020_Location" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
           </pnp:Views>
-          <pnp:Fields>
+           <pnp:Fields>
             <Field Type="Boolean" Name="Client_x0020_Reference_x0020_ava0" ID="{c6b8a362-0a77-4a61-9b6f-245eecc224eb}" Description="" DisplayName="Client Reference available for 2?" StaticName="Client_x0020_Reference_x0020_available_x0020_for_x0020_2_x003f_" Group="Construction EvidenceDB" Hidden="" Required="FALSE" Sealed="" EnforceUniqueValues="FALSE" Indexed="FALSE" SourceID="{4c51aa80-6adb-4a5e-b07a-bda4a15932da}" ColName="bit29" RowOrdinal="0" FromParent="FALSE">
               <Default>0</Default>
             </Field>
@@ -7009,684 +7023,7 @@
             </pnp:BreakRoleInheritance>
           </pnp:Security>
           <pnp:UserCustomActions>
-            <pnp:CustomAction Name="{be5f5ec5-db11-47f7-b9b8-3b4791e54d7b}" Location="EditControlBlock" Title="Change Champion" Sequence="0" Rights="" Url="~site/_layouts/15/NintexWorkflow/StartWorkflow.aspx?List={ListId}&amp;ID={ItemId}&amp;TemplateID=5ee0d8a4-72d6-4051-8a58-0112e65c8375&amp;Source={Source}" ImageUrl="~site/_layouts/15/NintexWorkflow/Images/StartWorkflowECB.png" RegistrationType="None" ClientSideComponentId="00000000-0000-0000-0000-000000000000" />
-          </pnp:UserCustomActions>
-        </pnp:ListInstance>
-        <pnp:ListInstance Title="Project Datasheet old" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Project Datasheet" EnableVersioning="true" EnableModeration="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" NoCrawl="true" DefaultDisplayFormUrl="{site}/Lists/Project Datasheet/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Project Datasheet/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Project Datasheet/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
-          <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0100E371B76ADC985B49AD3159C3A66C6E8D01" Default="true" />
-            <pnp:ContentTypeBinding ContentTypeID="0x01" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
-          </pnp:ContentTypeBindings>
-          <pnp:Views>
-            <View Name="{164DB45E-06C2-4E4F-BED9-2E08931A6EC2}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Tracker View" Url="/sites/EDBUAT/Lists/Project Datasheet/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query>
-                <OrderBy>
-                  <FieldRef Name="ID" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="Status" />
-                <FieldRef Name="Title" />
-                <FieldRef Name="Sector" />
-                <FieldRef Name="Stage_x0020_of_x0020_Project" />
-                <FieldRef Name="Author" />
-                <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
-                <FieldRef Name="Created" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="Editor" />
-                <FieldRef Name="ID" />
-                <FieldRef Name="_ModerationStatus" />
-                <FieldRef Name="Contract_x0020_Number" />
-                <FieldRef Name="LinkTitleNoMenu" />
-                <FieldRef Name="IsDraft" />
-                <FieldRef Name="WF_x0020_Status" />
-                <FieldRef Name="Champion" />
-                <FieldRef Name="RAGStatus" />
-                <FieldRef Name="_x0052_AG1" />
-                <FieldRef Name="Award_x0020_1" />
-                <FieldRef Name="Award_x0020_2" />
-                <FieldRef Name="LinkTitle" />
-                <FieldRef Name="Reviewer" />
-                <FieldRef Name="TaskID" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">100</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{208AD345-A0DE-45FC-A4A3-BBB69E1266AB}" Type="HTML" TabularView="FALSE" ModerationType="Contributor" DisplayName="My submissions" Url="/sites/EDBUAT/Lists/Project Datasheet/my-sub.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query>
-                <GroupBy>
-                  <FieldRef Name="_ModerationStatus" Ascending="FALSE" />
-                </GroupBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="DocIcon" />
-                <FieldRef Name="LinkTitle" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="Editor" />
-                <FieldRef Name="_ModerationStatus" />
-                <FieldRef Name="_ModerationComments" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{F833E011-055D-4E4A-9428-368A91A32638}" Type="HTML" TabularView="FALSE" ModerationType="Moderator" DisplayName="Approve/reject Items" Url="/sites/EDBUAT/Lists/Project Datasheet/mod-view.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query>
-                <GroupBy>
-                  <FieldRef Name="_ModerationStatus" Ascending="FALSE" />
-                </GroupBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="DocIcon" />
-                <FieldRef Name="LinkTitle" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="Author" />
-                <FieldRef Name="Editor" />
-                <FieldRef Name="_ModerationStatus" />
-                <FieldRef Name="_ModerationComments" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{8BFC5BEE-C29A-4B3B-B2BD-39AC31C6F431}" MobileView="TRUE" Type="HTML" DisplayName="Contract Award Data" Url="/sites/EDBUAT/Lists/Project Datasheet/Contract Award Data.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query />
-              <ViewFields>
-                <FieldRef Name="Title" />
-                <FieldRef Name="Sector" />
-                <FieldRef Name="Stage_x0020_of_x0020_Project" />
-                <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
-                <FieldRef Name="Created" />
-                <FieldRef Name="Author" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="Editor" />
-                <FieldRef Name="Actual_x0020_completion_x0020_da" />
-                <FieldRef Name="FormofProcurementSubType" />
-                <FieldRef Name="Actual_x0020_start_x0020_on_x002" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{E320D8A7-6D0F-4C5B-BA5F-B2668B477428}" MobileView="TRUE" Type="HTML" DisplayName="Data Cleanse" Url="/sites/EDBUAT/Lists/Project Datasheet/Data Cleanse.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query />
-              <ViewFields>
-                <FieldRef Name="Title" />
-                <FieldRef Name="Author" />
-                <FieldRef Name="Contract_x0020_Number" />
-                <FieldRef Name="Client" />
-                <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
-                <FieldRef Name="Project_x0020_Location" />
-                <FieldRef Name="Project_x0020_Region" />
-                <FieldRef Name="Project_x0020_Area" />
-                <FieldRef Name="Stage_x0020_of_x0020_Project" />
-                <FieldRef Name="Sector" />
-                <FieldRef Name="Actual_x0020_completion_x0020_da" />
-                <FieldRef Name="Value_x0020_at_x0020_award" />
-                <FieldRef Name="Value_x0020_at_x0020_completion" />
-                <FieldRef Name="Accident_x0020_free_x0020_man_x0" />
-                <FieldRef Name="Actual_x0020_start_x0020_on_x002" />
-                <FieldRef Name="Agreed_x0020_cost_x0020_variance" />
-                <FieldRef Name="_ModerationStatus" />
-                <FieldRef Name="Building_x0020_Area" />
-                <FieldRef Name="CCS_x0020_Scheme" />
-                <FieldRef Name="Champion" />
-                <FieldRef Name="Client_x0020_Satisfaction_x0020_" />
-                <FieldRef Name="Client_x0020_Satisfaction_x0020_0" />
-                <FieldRef Name="Created" />
-                <FieldRef Name="Defects" />
-                <FieldRef Name="Design_x0020_Stage_x0020_at_x002" />
-                <FieldRef Name="Extension_x0020_of_x0020_time_x0" />
-                <FieldRef Name="Form_x0020_of_x0020_Contract" />
-                <FieldRef Name="Form_x0020_of_x0020_Procurement" />
-                <FieldRef Name="FormofProcurementSubType" />
-                <FieldRef Name="Funding_x0020_Sector" />
-                <FieldRef Name="Health_x0020__x0026__x0020_Safet" />
-                <FieldRef Name="Kier_x0020_album_x0020_link" />
-                <FieldRef Name="Other_x0020_of_x0020_Form_x0020_" />
-                <FieldRef Name="Pre_x002d_Construction_x0020_Dur" />
-                <FieldRef Name="Project_x0020_Description" />
-                <FieldRef Name="Reason_x0020_for_x0020_agreed_x0" />
-                <FieldRef Name="Reason_x0020_for_x0020_extension" />
-                <FieldRef Name="Scope_x0020_of_x0020_Kier_x0020_" />
-                <FieldRef Name="Subsector" />
-                <FieldRef Name="Time_x0020_Predictability" />
-                <FieldRef Name="Architect" />
-                <FieldRef Name="Award_x0020_1" />
-                <FieldRef Name="Award_x0020_2" />
-                <FieldRef Name="Award_x0020_3" />
-                <FieldRef Name="Bid_x0020_Lead" />
-                <FieldRef Name="CEEQUAL_x0020_Rating" />
-                <FieldRef Name="CEEQUAL_x0020_Score" />
-                <FieldRef Name="Client_x0020_Reference_x0020_ava" />
-                <FieldRef Name="Client_x0020_Reference_x0020_ava0" />
-                <FieldRef Name="Client_x0020_Reference_x0020_ava1" />
-                <FieldRef Name="Considerate_x0020_constructors_x" />
-                <FieldRef Name="Cost_x0020_Predictability" />
-                <FieldRef Name="Design_x0020_Manager" />
-                <FieldRef Name="EPC_x0020_Rating" />
-                <FieldRef Name="External_x0020_JV" />
-                <FieldRef Name="Handover_x0020_BREEAM_x002F_DREA0" />
-                <FieldRef Name="Handover_x0020_BREEAM_x002F_DREA" />
-                <FieldRef Name="Internal_x0020_JV" />
-                <FieldRef Name="Kier_x0020_Apprentices_x0020_Emp" />
-                <FieldRef Name="Local_x0020_spend_x0020_within_x" />
-                <FieldRef Name="Local_x0020_spend_x0020_within_x0" />
-                <FieldRef Name="M_x002B_E_x0020_Engineering" />
-                <FieldRef Name="M_x002B_E_x0020_Installers" />
-                <FieldRef Name="Planned_x0020_completion_x0020_d" />
-                <FieldRef Name="Planned_x0020_start_x0020_on_x00" />
-                <FieldRef Name="Pre_x002d_Construction_x0020_BRE0" />
-                <FieldRef Name="Pre_x002d_Construction_x0020_BRE" />
-                <FieldRef Name="Project_x0020__x002F__x0020_Cont" />
-                <FieldRef Name="QS_x0020__x002F__x0020_Commercia" />
-                <FieldRef Name="Source_x0020_1" />
-                <FieldRef Name="Source_x0020_2" />
-                <FieldRef Name="Source_x0020_3" />
-                <FieldRef Name="Structural_x0020__x0026__x0020_C1" />
-                <FieldRef Name="Supply_x0020_chain_x0020_Apprent" />
-                <FieldRef Name="Testimonial_x0020_3" />
-                <FieldRef Name="Testimonial1" />
-                <FieldRef Name="Testimonial2" />
-                <FieldRef Name="Work_x0020_Description" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{5C18BB4D-1B7A-4A8B-A68B-C336B59F5FB6}" MobileView="TRUE" Type="HTML" DisplayName="DWP" Url="/sites/EDBUAT/Lists/Project Datasheet/DWP.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query />
-              <ViewFields>
-                <FieldRef Name="Title" />
-                <FieldRef Name="Sector" />
-                <FieldRef Name="Stage_x0020_of_x0020_Project" />
-                <FieldRef Name="Author" />
-                <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
-                <FieldRef Name="Created" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="Editor" />
-                <FieldRef Name="ID" />
-                <FieldRef Name="_ModerationStatus" />
-                <FieldRef Name="Value_x0020_at_x0020_completion" />
-                <FieldRef Name="Work_x0020_Description" />
-                <FieldRef Name="Actual_x0020_completion_x0020_da" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{26A0B8E4-663D-4B0D-9FBE-58D732DCE7DE}" MobileView="TRUE" Type="HTML" DisplayName="handout" Url="/sites/EDBUAT/Lists/Project Datasheet/handout.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query />
-              <ViewFields>
-                <FieldRef Name="Title" />
-                <FieldRef Name="Sector" />
-                <FieldRef Name="Stage_x0020_of_x0020_Project" />
-                <FieldRef Name="Author" />
-                <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
-                <FieldRef Name="Created" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{25D984CF-09FF-43E9-9B14-A13942618C4E}" MobileView="TRUE" Type="HTML" DisplayName="missing info" Url="/sites/EDBUAT/Lists/Project Datasheet/missing info.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query>
-                <GroupBy Collapse="TRUE" GroupLimit="30">
-                  <FieldRef Name="Author" />
-                </GroupBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="Author" />
-                <FieldRef Name="Created" />
-                <FieldRef Name="Stage_x0020_of_x0020_Project" />
-                <FieldRef Name="Title" />
-                <FieldRef Name="Contract_x0020_Number" />
-                <FieldRef Name="Client" />
-                <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
-                <FieldRef Name="External_x0020_JV" />
-                <FieldRef Name="Internal_x0020_JV" />
-                <FieldRef Name="Project_x0020_Region" />
-                <FieldRef Name="Sector" />
-                <FieldRef Name="Funding_x0020_Sector" />
-                <FieldRef Name="Form_x0020_of_x0020_Procurement" />
-                <FieldRef Name="Form_x0020_of_x0020_Contract" />
-                <FieldRef Name="Design_x0020_Stage_x0020_at_x002" />
-                <FieldRef Name="Value_x0020_at_x0020_award" />
-                <FieldRef Name="Value_x0020_at_x0020_completion" />
-                <FieldRef Name="Planned_x0020_start_x0020_on_x00" />
-                <FieldRef Name="Planned_x0020_completion_x0020_d" />
-                <FieldRef Name="Actual_x0020_start_x0020_on_x002" />
-                <FieldRef Name="Actual_x0020_completion_x0020_da" />
-                <FieldRef Name="Pre_x002d_Construction_x0020_Dur" />
-                <FieldRef Name="Project_x0020_Description" />
-                <FieldRef Name="Bid_x0020_Lead" />
-                <FieldRef Name="QS_x0020__x002F__x0020_Commercia" />
-                <FieldRef Name="Project_x0020__x002F__x0020_Cont" />
-                <FieldRef Name="Design_x0020_Manager" />
-                <FieldRef Name="Architect" />
-                <FieldRef Name="Architect_x0020_Not_x0020_applic" />
-                <FieldRef Name="Acoustician" />
-                <FieldRef Name="Acoustician_x0020_Not_x0020_appl" />
-                <FieldRef Name="Structural_x0020__x0026__x0020_C1" />
-                <FieldRef Name="Structural_x0020__x0026__x0020_C2" />
-                <FieldRef Name="FF_x002B_E" />
-                <FieldRef Name="FF_x002B_E_x0020_Not_x0020_appli" />
-                <FieldRef Name="M_x002B_E_x0020_Engineering" />
-                <FieldRef Name="M_x002B_E_x0020_Engineering_x0021" />
-                <FieldRef Name="ICT" />
-                <FieldRef Name="ICT_x0020_Not_x0020_applicable" />
-                <FieldRef Name="Cost_x0020_Advisiors" />
-                <FieldRef Name="Cost_x0020_Advisors_x0020_Not_x0" />
-                <FieldRef Name="Planning_x0020_Consultant" />
-                <FieldRef Name="Planning_x0020_Consultant_x0020_1" />
-                <FieldRef Name="M_x002B_E_x0020_Installers" />
-                <FieldRef Name="M_x002B_E_x0020_Installers_x00201" />
-                <FieldRef Name="Environmental" />
-                <FieldRef Name="Environmental_x0020_Not_x0020_ap" />
-                <FieldRef Name="Project_x0020_Management" />
-                <FieldRef Name="Project_x0020_Management_x0020_N0" />
-                <FieldRef Name="Landscape" />
-                <FieldRef Name="Landscape_x0020_Not_x0020_applic" />
-                <FieldRef Name="Specialist_x0020_adviser" />
-                <FieldRef Name="Specialist_x0020_adviser_x0020_N0" />
-                <FieldRef Name="Building_x0020_Area" />
-                <FieldRef Name="Health_x0020__x0026__x0020_Safet" />
-                <FieldRef Name="Accident_x0020_free_x0020_man_x0" />
-                <FieldRef Name="Considerate_x0020_constructors_x" />
-                <FieldRef Name="CCS_x0020_Scheme" />
-                <FieldRef Name="Cost_x0020_Predictability" />
-                <FieldRef Name="Time_x0020_Predictability" />
-                <FieldRef Name="Defects" />
-                <FieldRef Name="Client_x0020_Satisfaction_x0020_" />
-                <FieldRef Name="Client_x0020_Satisfaction_x0020_0" />
-                <FieldRef Name="Pre_x002d_Construction_x0020_BRE0" />
-                <FieldRef Name="Pre_x002d_Construction_x0020_BRE" />
-                <FieldRef Name="Handover_x0020_BREEAM_x002F_DREA0" />
-                <FieldRef Name="Handover_x0020_BREEAM_x002F_DREA" />
-                <FieldRef Name="CEEQUAL_x0020_Rating" />
-                <FieldRef Name="CEEQUAL_x0020_Score" />
-                <FieldRef Name="Local_x0020_spend_x0020_within_x" />
-                <FieldRef Name="Local_x0020_spend_x0020_within_x0" />
-                <FieldRef Name="Kier_x0020_Apprentices_x0020_Emp" />
-                <FieldRef Name="Supply_x0020_chain_x0020_Apprent" />
-                <FieldRef Name="Client_x0020_Reference_x0020_ava" />
-                <FieldRef Name="EPC_x0020_Rating" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{8138A4F5-FCE4-4D91-BE3E-C499F5EB15F6}" MobileView="TRUE" Type="HTML" DisplayName="Missing" Url="/sites/EDBUAT/Lists/Project Datasheet/Missing.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query>
-                <GroupBy Collapse="TRUE" GroupLimit="30">
-                  <FieldRef Name="_ModerationStatus" />
-                </GroupBy>
-                <OrderBy>
-                  <FieldRef Name="IsDraft" />
-                  <FieldRef Name="Modified" Ascending="FALSE" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="ID" />
-                <FieldRef Name="RAGStatus" />
-                <FieldRef Name="LinkTitle" />
-                <FieldRef Name="_ModerationStatus" />
-                <FieldRef Name="IsDraft" />
-                <FieldRef Name="_UIVersionString" />
-                <FieldRef Name="Author" />
-                <FieldRef Name="Editor" />
-                <FieldRef Name="Reviewer" />
-                <FieldRef Name="Created" />
-                <FieldRef Name="Modified" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{B73FD3B0-6C54-465F-A302-1923364670F4}" MobileView="TRUE" Type="HTML" DisplayName="MOJ prep" Url="/sites/EDBUAT/Lists/Project Datasheet/MOJ prep.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query />
-              <ViewFields>
-                <FieldRef Name="Title" />
-                <FieldRef Name="Sector" />
-                <FieldRef Name="Stage_x0020_of_x0020_Project" />
-                <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
-                <FieldRef Name="Actual_x0020_completion_x0020_da" />
-                <FieldRef Name="Actual_x0020_start_x0020_on_x002" />
-                <FieldRef Name="Client" />
-                <FieldRef Name="Subsector" />
-                <FieldRef Name="Value_x0020_at_x0020_completion" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{723F9FCD-A2E1-49BD-A061-DF99B99F4B10}" MobileView="TRUE" Type="HTML" DisplayName="Social Value" Url="/sites/EDBUAT/Lists/Project Datasheet/Social Value.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query />
-              <ViewFields>
-                <FieldRef Name="Title" />
-                <FieldRef Name="Sector" />
-                <FieldRef Name="Stage_x0020_of_x0020_Project" />
-                <FieldRef Name="Author" />
-                <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
-                <FieldRef Name="Created" />
-                <FieldRef Name="ID" />
-                <FieldRef Name="_ModerationStatus" />
-                <FieldRef Name="Actual_x0020_completion_x0020_da" />
-                <FieldRef Name="Actual_x0020_start_x0020_on_x002" />
-                <FieldRef Name="Bid_x0020_Lead" />
-                <FieldRef Name="Champion" />
-                <FieldRef Name="Client" />
-                <FieldRef Name="Contract_x0020_Number" />
-                <FieldRef Name="CRM_x0020_Opportunity_x0020_Auth" />
-                <FieldRef Name="Design_x0020_Stage_x0020_at_x002" />
-                <FieldRef Name="Form_x0020_of_x0020_Contract" />
-                <FieldRef Name="Form_x0020_of_x0020_Procurement" />
-                <FieldRef Name="FormofProcurementSubType" />
-                <FieldRef Name="Funding_x0020_Sector" />
-                <FieldRef Name="Internal_x0020_JV" />
-                <FieldRef Name="Other_x0020_of_x0020_Form_x0020_" />
-                <FieldRef Name="Otherwise_x0020_known_x0020_as" />
-                <FieldRef Name="Pre_x002d_Construction_x0020_Dur" />
-                <FieldRef Name="Project_x0020_Description" />
-                <FieldRef Name="Project_x0020_Location" />
-                <FieldRef Name="Project_x0020_Region" />
-                <FieldRef Name="Value_x0020_at_x0020_award" />
-                <FieldRef Name="Value_x0020_at_x0020_completion" />
-                <FieldRef Name="Work_x0020_Description" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{E48736E5-2D9F-485A-B6E5-A1A34589CC87}" MobileView="TRUE" Type="HTML" DisplayName="Property" Url="/sites/EDBUAT/Lists/Project Datasheet/time and budget.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query />
-              <ViewFields>
-                <FieldRef Name="Title" />
-                <FieldRef Name="Stage_x0020_of_x0020_Project" />
-                <FieldRef Name="Sector" />
-                <FieldRef Name="Subsector" />
-                <FieldRef Name="Kier_x0020_Delivery_x0020_Region" />
-                <FieldRef Name="Actual_x0020_completion_x0020_da" />
-                <FieldRef Name="Value_x0020_at_x0020_completion" />
-                <FieldRef Name="Client" />
-                <FieldRef Name="Form_x0020_of_x0020_Contract" />
-                <FieldRef Name="Form_x0020_of_x0020_Procurement" />
-                <FieldRef Name="FormofProcurementSubType" />
-                <FieldRef Name="Project_x0020_Area" />
-                <FieldRef Name="Project_x0020_Location" />
-                <FieldRef Name="Project_x0020_Region" />
-                <FieldRef Name="Project_x0020_Description" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{19579BA8-405F-4208-AB8E-CDA0BAB60F97}" MobileView="TRUE" Type="HTML" DisplayName="Workflow Task View" Url="/sites/EDBUAT/Lists/Project Datasheet/Workflow Task View.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query />
-              <ViewFields>
-                <FieldRef Name="Approver_x0020_Comments" />
-                <FieldRef Name="Author" />
-                <FieldRef Name="Created" />
-                <FieldRef Name="Editor" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="_ModerationStatus" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-          </pnp:Views>
-          <pnp:Fields>
-            <Field Type="Boolean" Name="Client_x0020_Reference_x0020_ava0" ID="{c6b8a362-0a77-4a61-9b6f-245eecc224eb}" Description="" DisplayName="Client Reference available for 2?" StaticName="Client_x0020_Reference_x0020_available_x0020_for_x0020_2_x003f_" Group="Construction EvidenceDB" Hidden="" Required="FALSE" Sealed="" EnforceUniqueValues="FALSE" Indexed="FALSE" SourceID="{4c51aa80-6adb-4a5e-b07a-bda4a15932da}" ColName="bit29" RowOrdinal="0" FromParent="FALSE">
-              <Default>0</Default>
-            </Field>
-            <Field Type="Boolean" Name="Client_x0020_Reference_x0020_ava1" ID="{5133d897-291e-48f8-80d5-2aab48f48b36}" Description="" DisplayName="Client Reference available for 3?" StaticName="Client_x0020_Reference_x0020_available_x0020_for_x0020_3_x003f_" Group="Construction EvidenceDB" Hidden="" Required="FALSE" Sealed="" EnforceUniqueValues="FALSE" Indexed="FALSE" SourceID="{4c51aa80-6adb-4a5e-b07a-bda4a15932da}" ColName="bit30" RowOrdinal="0" FromParent="FALSE">
-              <Default>0</Default>
-            </Field>
-            <Field Type="Text" DisplayName="Discipline Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Construction EvidenceDB" ID="{cbbcd7dd-0081-4530-a207-85b5d205bff0}" SourceID="{4c51aa80-6adb-4a5e-b07a-bda4a15932da}" StaticName="Discipline_x0020_Name" Name="Discipline_x0020_Name" ColName="nvarchar19" RowOrdinal="0" FromParent="FALSE" />
-            <Field Type="Boolean" DisplayName="Discipline Name Novated" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="Construction EvidenceDB" ID="{d167f317-7ef4-4ab1-b456-6c5a8e26d1a8}" SourceID="{4c51aa80-6adb-4a5e-b07a-bda4a15932da}" StaticName="Discipline_x0020_Name_x0020_Novated" Name="Discipline_x0020_Name_x0020_Nova" Required="FALSE" ColName="bit31" RowOrdinal="0" FromParent="FALSE">
-              <Default>1</Default>
-            </Field>
-            <Field Type="Boolean" DisplayName="Discipline Name Client Name" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="Construction EvidenceDB" ID="{6ea889b9-3195-4a9b-aa2f-f0a50e01b58b}" SourceID="{4c51aa80-6adb-4a5e-b07a-bda4a15932da}" StaticName="Discipline_x0020_Name_x0020_Client_x0020_Name" Name="Discipline_x0020_Name_x0020_Clie" ColName="bit32" RowOrdinal="0" FromParent="FALSE">
-              <Default>1</Default>
-            </Field>
-            <Field Type="Boolean" DisplayName="Client Reference available for 4?" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="Construction EvidenceDB" ID="{12def1b1-85a5-4c54-a3d6-7a0313f5405d}" SourceID="{4c51aa80-6adb-4a5e-b07a-bda4a15932da}" StaticName="Client_x0020_Reference_x0020_available_x0020_for_x0020_4_x003f_" Name="Client_x0020_Reference_x0020_ava2" ColName="bit33" RowOrdinal="0" FromParent="FALSE">
-              <Default>0</Default>
-            </Field>
-            <Field Type="Boolean" DisplayName="Client Reference available for 5?" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="Construction EvidenceDB" ID="{c8a85650-656d-41f9-95b7-ffb95a0fbdcf}" SourceID="{4c51aa80-6adb-4a5e-b07a-bda4a15932da}" StaticName="Client_x0020_Reference_x0020_available_x0020_for_x0020_5_x003f_" Name="Client_x0020_Reference_x0020_ava3" ColName="bit34" RowOrdinal="0" FromParent="FALSE">
-              <Default>0</Default>
-            </Field>
-            <Field Type="Boolean" DisplayName="CRMStgWFFlg" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e3aa3f95-3642-4403-bfdb-6777040e3f96}" SourceID="{3c9ffd18-70f2-4923-8945-0d4a559dcd22}" StaticName="CRMStgWFFlg" Name="CRMStgWFFlg" ColName="bit52" RowOrdinal="0" FromParent="FALSE">
-              <Default>0</Default>
-            </Field>
-            <Field Type="User" DisplayName="ChampionTest" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{4a8c514c-ed76-42e0-83ba-14baa3ec3e77}" SourceID="{{listid:Project Datasheet old}}" StaticName="ChampionTest" Name="ChampionTest" ColName="int29" RowOrdinal="0" />
-            <Field DisplayName="Status (1)" Type="WorkflowStatus" Required="FALSE" ID="{c5c1ea8b-a4fd-47f8-9da0-a07e8255a0b1}" SourceID="{{listid:Project Datasheet old}}" StaticName="Status1" Name="Status1" ColName="nvarchar32" RowOrdinal="0" Version="6" WorkflowStatusURL="_layouts/15/WrkStat.aspx" ReadOnly="TRUE">
-              <CHOICES>
-                <CHOICE>Starting</CHOICE>
-                <CHOICE>Failed on Start</CHOICE>
-                <CHOICE>In Progress</CHOICE>
-                <CHOICE>Error Occurred</CHOICE>
-                <CHOICE>Canceled</CHOICE>
-                <CHOICE>Completed</CHOICE>
-                <CHOICE>Failed on Start (retrying)</CHOICE>
-                <CHOICE>Error Occurred (retrying)</CHOICE>
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE>Draft</CHOICE>
-                <CHOICE>Sent for approval</CHOICE>
-                <CHOICE>Approved</CHOICE>
-                <CHOICE>Change requested</CHOICE>
-              </CHOICES>
-            </Field>
-            <Field DisplayName="Status" Type="WorkflowStatus" Required="FALSE" ID="{587e59a5-990e-46ff-96b0-23c998c13938}" SourceID="{{listid:Project Datasheet old}}" StaticName="Status" Name="Status" ColName="nvarchar30" RowOrdinal="0" Version="2" WorkflowStatusURL="_layouts/15/WrkStat.aspx" ReadOnly="TRUE">
-              <CHOICES>
-                <CHOICE>Starting</CHOICE>
-                <CHOICE>Failed on Start</CHOICE>
-                <CHOICE>In Progress</CHOICE>
-                <CHOICE>Error Occurred</CHOICE>
-                <CHOICE>Canceled</CHOICE>
-                <CHOICE>Completed</CHOICE>
-                <CHOICE>Failed on Start (retrying)</CHOICE>
-                <CHOICE>Error Occurred (retrying)</CHOICE>
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE>Draft</CHOICE>
-                <CHOICE>Sent for approval</CHOICE>
-                <CHOICE>Approved</CHOICE>
-                <CHOICE>Change requested</CHOICE>
-              </CHOICES>
-            </Field>
-          </pnp:Fields>
-          <pnp:FieldRefs>
-            <pnp:FieldRef ID="f09c781d-d19a-4a94-a66c-2e1727125d85" Name="ieda0bd879b14b2f81d4e6ccf0508489" Hidden="true" DisplayName="Funding Sector_0" />
-            <pnp:FieldRef ID="b2db2758-28b4-465f-a051-3dc295b56805" Name="k5eba45c380b49e08af65268d40c0385" Hidden="true" DisplayName="CEEQUAL Rating_0" />
-            <pnp:FieldRef ID="8b23b875-111a-4753-8d5e-64114568d70c" Name="ke7ed454062c4e91bb854a967a5adec7" Hidden="true" DisplayName="Form of Procurement  Subtype_0" />
-            <pnp:FieldRef ID="3590955e-dcc0-44ab-93aa-b2ff82c4ee21" Name="ee40fea2c8eb4f6dabfaba77d1978827" Hidden="true" DisplayName="Subsector_0" />
-            <pnp:FieldRef ID="a6c599be-3b83-4716-8be6-446dffdab67c" Name="p7e20f048f534cdeb50c59c1c14b3f17" Hidden="true" DisplayName="Project Area_0" />
-            <pnp:FieldRef ID="e2995517-95cd-4bfe-851c-80b1d8565256" Name="e2d77b07f9b343f2b6ca4d3ff45c1bec" Hidden="true" DisplayName="Project Region_0" />
-            <pnp:FieldRef ID="3c7a3a15-daab-4a1a-80e8-6d9b1fa1bac4" Name="o0d7d56fb19a4b90ab470421c8cf08c4" Hidden="true" DisplayName="Work Description_1" />
-            <pnp:FieldRef ID="34cc3b44-381c-4a0d-ba5a-17640ff40b17" Name="pb149ee738454af3a587a90fe23f7e54" Hidden="true" DisplayName="Stage of Project_1" />
-            <pnp:FieldRef ID="1dceaf1d-4085-4db7-999d-e8bb43a1d6a4" Name="j2bca67262c64a52b0becb41f43f8557" Hidden="true" DisplayName="Sector_1" />
-            <pnp:FieldRef ID="e865ba3e-b535-4c81-ab06-c54956af4b23" Name="i5b3d6701115466c993d5c593b0eb41e" Hidden="true" DisplayName="Scope of Kier Involvement_0" />
-            <pnp:FieldRef ID="def3272d-f00a-4f6f-87d5-7cd2e549cd77" Name="lf384a82166f48aba3b150df43f51686" Hidden="true" DisplayName="Project Location_1" />
-            <pnp:FieldRef ID="c31ca2d0-3aa1-408d-8f86-cbd6e5d55605" Name="l3dc466114e2450f962dd4c0a9fd83da" Hidden="true" DisplayName="Pre-Construction BREEAM/DREAM_0" />
-            <pnp:FieldRef ID="3497f65f-639f-4cbf-8d59-9b56b95e57ef" Name="h3061057c8c240d58d9d70b5aa0b9266" Hidden="true" DisplayName="Kier Delivery Region_1" />
-            <pnp:FieldRef ID="9836ac82-66a9-424c-a81d-8e8caa9fc3c4" Name="ka8eaef9fede4617adfa069e506e6afe" Hidden="true" DisplayName="Handover BREEAM/DREAM_1" />
-            <pnp:FieldRef ID="37f60696-62ab-46d0-8fd9-3a0e51d6dc0e" Name="p5e67e2c03604e1b80cb8b895dbaff6c" Hidden="true" DisplayName="Form of Procurement_0" />
-            <pnp:FieldRef ID="6fa1ef51-5ce7-49fa-b0a2-1e6f9e65ef51" Name="bf91dd7e85a34cd18abe822600ed180a" Hidden="true" DisplayName="Form of Contract_1" />
-            <pnp:FieldRef ID="1fb68096-1094-4895-ad66-6faa50a72dd5" Name="nbd5a9f7971246008661609ce57969b0" Hidden="true" DisplayName="EPC Rating_1" />
-            <pnp:FieldRef ID="f29e5c29-4c47-43c9-843b-08afb8f4fdd6" Name="g5d450c6a9a8435c9e256c35adb37eab" Hidden="true" DisplayName="Design Stage at Appointment_0" />
-            <pnp:FieldRef ID="2507cd7e-bc83-4547-9c37-25ee9173f2b2" Name="Accident_x0020_free_x0020_man_x0" DisplayName="Accident free man hours" />
-            <pnp:FieldRef ID="7339076c-75e8-4d3b-bf68-0e65de4ae530" Name="Acoustician" DisplayName="Acoustician" />
-            <pnp:FieldRef ID="13782f41-02ba-44c4-9297-ae8640a1db65" Name="Acoustician_x0020__x0020_Client_" DisplayName="Acoustician  Client Team" />
-            <pnp:FieldRef ID="071fa067-f9ea-4d46-a84a-e2fb225be5aa" Name="Acoustician_x0020_Novated" DisplayName="Acoustician Novated" />
-            <pnp:FieldRef ID="070e1991-8185-4629-912d-749d0d5c1488" Name="Actual_x0020_completion_x0020_da" DisplayName="Actual completion date" />
-            <pnp:FieldRef ID="28694447-904e-4b8a-baca-fd7a5d550458" Name="Actual_x0020_start_x0020_on_x002" DisplayName="Actual start on site date" />
-            <pnp:FieldRef ID="b71d545c-a0a8-4411-ae7c-8a34825fecde" Name="Agreed_x0020_cost_x0020_variance" DisplayName="Agreed cost variance?" />
-            <pnp:FieldRef ID="930c731c-9292-4701-9ac5-cb665e72e6aa" Name="Architect" DisplayName="Architect" />
-            <pnp:FieldRef ID="4d42214f-8ce8-4b9d-b421-e552a50580bc" Name="Architect_x0020__x0020_Client_x0" DisplayName="Architect  Client Team" />
-            <pnp:FieldRef ID="a556bcaf-3f0d-4854-914c-0a22fd0f28cf" Name="Architect_x0020_Novated" DisplayName="Architect Novated" />
-            <pnp:FieldRef ID="8a2c6e43-a7c9-4f31-8892-5d425ab4085f" Name="Bid_x0020_Lead" DisplayName="Bid Lead" />
-            <pnp:FieldRef ID="5977b873-f0c1-413a-8c76-0f6f36f09234" Name="Building_x0020_Area" DisplayName="Building Area" />
-            <pnp:FieldRef ID="4bf3ef9b-3216-4c1c-b1da-f3b5d48c208c" Name="CCS_x0020_Scheme" DisplayName="CCS Scheme" />
-            <pnp:FieldRef ID="69c5a622-bbb1-4142-ad4e-743a534e19ef" Name="Client" DisplayName="Client" />
-            <pnp:FieldRef ID="76d0a767-9495-4682-bf9f-606ae030f758" Name="Client_x0020_Satisfaction_x0020_" DisplayName="Client Satisfaction - Product" />
-            <pnp:FieldRef ID="6383552a-8e20-4342-a843-098348d5a492" Name="Client_x0020_Satisfaction_x0020_0" DisplayName="Client Satisfaction - Service" />
-            <pnp:FieldRef ID="78252497-bb1c-467a-a154-79754ecab960" Name="Considerate_x0020_constructors_x" DisplayName="Considerate constructors Score" />
-            <pnp:FieldRef ID="77d0c54e-b461-4583-bd81-06e6d594721d" Name="Contract_x0020_Number" DisplayName="CRM Number" />
-            <pnp:FieldRef ID="46cab66c-159f-4d7d-b237-6ab8120e5a14" Name="Cost_x0020_Advisiors" DisplayName="Cost Advisiors" />
-            <pnp:FieldRef ID="b31f149c-c813-4fe0-973d-c88b6beb2717" Name="Cost_x0020_Advisiors_x0020__x002" DisplayName="Cost Advisiors  Client Team" />
-            <pnp:FieldRef ID="feed8761-6a4a-42b9-ad5d-c7d6a8777a0c" Name="Cost_x0020_Advisiors_x0020_Novat" DisplayName="Cost Advisiors Novated" />
-            <pnp:FieldRef ID="ba28e8cd-7fde-4a3c-8834-e7128502e3b6" Name="Cost_x0020_Predictability" DisplayName="Cost Predictability" />
-            <pnp:FieldRef ID="f16ae1dd-263e-4fdb-aafe-d5522b9c0961" Name="Defects" DisplayName="Defects" />
-            <pnp:FieldRef ID="684a6f25-06d7-40fe-a186-424b404dfa41" Name="Design_x0020_Manager" DisplayName="Design Manager" />
-            <pnp:FieldRef ID="7377f48e-1851-408d-acdd-8c429dc17a31" Name="FF_x002B_E" DisplayName="FF+E" />
-            <pnp:FieldRef ID="e5ff7368-4910-4d0a-a577-64f59be3c33f" Name="FF_x002B_E_x0020__x0020_Client_x" DisplayName="FF+E  Client Team" />
-            <pnp:FieldRef ID="afc10ffa-77c7-4222-af2c-6fce0999ed6d" Name="FF_x002B_E_x0020_Novated" DisplayName="FF+E Novated" />
-            <pnp:FieldRef ID="38caf6c2-22a8-4cca-b685-2de4aece426b" Name="Structural_x0020__x0026__x0020_C" DisplayName="Structural &amp; Civil Eng.  Client Team" />
-            <pnp:FieldRef ID="2face42e-e3a0-4201-a0dc-8dca25a6766b" Name="Structural_x0020__x0026__x0020_C0" DisplayName="Structural &amp; Civil Eng. Novated" />
-            <pnp:FieldRef ID="5ed73513-4631-4609-a555-7c727a29c64f" Name="Supply_x0020_chain_x0020_Apprent" DisplayName="Supply chain Apprentices Employed" />
-            <pnp:FieldRef ID="2ff06d37-f42e-4249-9c6a-84cd0162e2ec" Name="M_x002B_E_x0020_Engineering" DisplayName="M+E Engineering" />
-            <pnp:FieldRef ID="6bbbe28b-066b-479d-bdfa-a1548e3fc808" Name="M_x002B_E_x0020_Engineering_x002" DisplayName="M+E Engineering  Client Team" />
-            <pnp:FieldRef ID="43ed6741-7f8c-43f7-9448-116365b02f85" Name="M_x002B_E_x0020_Engineering_x0020" DisplayName="M+E Engineering Novated" />
-            <pnp:FieldRef ID="f22e4cbe-a8ae-4c9b-ade8-cb5196eb322a" Name="M_x002B_E_x0020_Installers" DisplayName="M+E Installers" />
-            <pnp:FieldRef ID="8ea79bb0-b360-43f1-9262-77b1d3d04e4d" Name="M_x002B_E_x0020_Installers_x0020" DisplayName="M+E Installers  Client Team" />
-            <pnp:FieldRef ID="a23acfc2-98e8-4916-a532-b863ff53a1b7" Name="M_x002B_E_x0020_Installers_x00200" DisplayName="M+E Installers Novated" />
-            <pnp:FieldRef ID="412c116e-dd7b-4e76-839d-049b029d6e96" Name="Landscape" DisplayName="Landscape" />
-            <pnp:FieldRef ID="3c45655c-1eb8-42cb-baad-2ae8d5de144f" Name="Landscape_x0020__x0020_Client_x0" DisplayName="Landscape  Client Team" />
-            <pnp:FieldRef ID="ff4fd920-5e72-485e-ae39-6c09275f3427" Name="Landscape_x0020_Novated" DisplayName="Landscape Novated" />
-            <pnp:FieldRef ID="dcc0d176-6d87-43f1-ac72-fb03e350ee96" Name="Local_x0020_spend_x0020_within_x" DisplayName="Local spend within 20 miles" />
-            <pnp:FieldRef ID="2e13b0b3-56b8-40f2-b22d-9b9fcea46da8" Name="Local_x0020_spend_x0020_within_x0" DisplayName="Local spend within 40 miles" />
-            <pnp:FieldRef ID="f2d8e9c9-8721-44cf-b6bc-6aa4e4a79fb2" Name="Otherwise_x0020_known_x0020_as" DisplayName="Otherwise known as" />
-            <pnp:FieldRef ID="e50b7b71-d932-4fec-a328-20ca945c42a5" Name="Extension_x0020_of_x0020_time_x0" DisplayName="Extension of time given?" />
-            <pnp:FieldRef ID="1d17631e-f470-499b-943e-e239af04377c" Name="Health_x0020__x0026__x0020_Safet" DisplayName="Health &amp; Safety data (AIR)" />
-            <pnp:FieldRef ID="13479474-09b0-4798-9418-bdcedbd88d87" Name="Time_x0020_Predictability" DisplayName="Time Predictability" />
-            <pnp:FieldRef ID="ad53ad48-8710-4d5f-abef-b300954979b7" Name="Environmental" DisplayName="Environmental" />
-            <pnp:FieldRef ID="04d635a7-d1eb-4333-ae13-dc8bb76b74bc" Name="Environmental_x0020__x0020_Clien" DisplayName="Environmental  Client Team" />
-            <pnp:FieldRef ID="0b650776-baf6-4f06-8049-7bd21a0a3fb2" Name="Environmental_x0020_Novated" DisplayName="Environmental Novated" />
-            <pnp:FieldRef ID="3ade5c43-586b-41bb-be67-e3f0ca873126" Name="ICT" DisplayName="ICT" />
-            <pnp:FieldRef ID="dce40005-aaf9-498e-b082-2bf950b41993" Name="ICT_x0020__x0020_Client_x0020_Te" DisplayName="ICT  Client Team" />
-            <pnp:FieldRef ID="b6a35efd-d7f1-4a17-961c-d5848ea95dd8" Name="ICT_x0020_Novated" DisplayName="ICT Novated" />
-            <pnp:FieldRef ID="7035f768-6fea-4d62-93b1-9aa95882bc1c" Name="Project_x0020__x002F__x0020_Cont" DisplayName="Project / Contracts Manager" />
-            <pnp:FieldRef ID="159d2543-8953-43e7-9333-1f0f2d8655e5" Name="Pre_x002d_Construction_x0020_Dur" DisplayName="Pre-Construction Duration" />
-            <pnp:FieldRef ID="2a26df2d-c24a-46cd-8acf-a7b982f6b422" Name="Project_x0020_Description" DisplayName="Project Description" />
-            <pnp:FieldRef ID="a668bd9e-8d40-4d02-aaff-cccb755b2493" Name="Planned_x0020_completion_x0020_d" DisplayName="Planned completion date" />
-            <pnp:FieldRef ID="696e7595-8689-43ed-a40f-c68f0f16557d" Name="Planned_x0020_start_x0020_on_x00" DisplayName="Planned start on site date" />
-            <pnp:FieldRef ID="0c969c4c-493f-413a-902a-7a29a8f7410a" Name="Planning_x0020_Consultant" DisplayName="Planning Consultant" />
-            <pnp:FieldRef ID="69585a67-ba59-40f7-b654-d0bfcf2dc6e2" Name="Planning_x0020_Consultant_x0020_" DisplayName="Planning Consultant  Client Team" />
-            <pnp:FieldRef ID="f2b16221-a533-44d9-a615-46dbb8e1276d" Name="Planning_x0020_Consultant_x0020_0" DisplayName="Planning Consultant Novated" />
-            <pnp:FieldRef ID="1e4f7b78-dc55-4f91-8e5b-e4e250a2c025" Name="Project_x0020_Management" DisplayName="Project Management" />
-            <pnp:FieldRef ID="f4f6787d-842a-49ac-87a1-1e239abf25f0" Name="Project_x0020_Management_x0020__" DisplayName="Project Management  Client Team" />
-            <pnp:FieldRef ID="b8ae4bd4-6f61-4511-bd45-589bf21c37ee" Name="Project_x0020_Management_x0020_N" DisplayName="Project Management Novated" />
-            <pnp:FieldRef ID="1a4c0252-e6c7-411e-a56e-28f5cbccc238" Name="QS_x0020__x002F__x0020_Commercia" DisplayName="QS / Commercial Manager" />
-            <pnp:FieldRef ID="12a2760a-9119-46c2-bb2b-8d390e1e6bed" Name="Reason_x0020_for_x0020_agreed_x0" DisplayName="Reason for agreed change" />
-            <pnp:FieldRef ID="da51157b-8603-4d1a-a507-aa1ffb0b16ab" Name="Reason_x0020_for_x0020_extension" DisplayName="Reason for extension / delay" />
-            <pnp:FieldRef ID="52054858-bca5-48e4-9b90-4228de82f2c3" Name="Value_x0020_at_x0020_award" Required="true" DisplayName="Value at award" />
-            <pnp:FieldRef ID="5814eae6-20b3-437a-a5f8-9347e5b4e50c" Name="Value_x0020_at_x0020_completion" DisplayName="Value at completion" />
-            <pnp:FieldRef ID="12e567bd-17cd-44f5-b40e-a1538d92be6c" Name="Structural_x0020__x0026__x0020_C1" DisplayName="Structural &amp; Civil Eng." />
-            <pnp:FieldRef ID="53bcaeec-275c-4198-93a7-249acfb905e8" Name="Kier_x0020_Apprentices_x0020_Emp" DisplayName="Kier Apprentices Employed" />
-            <pnp:FieldRef ID="05d450c6-a9a8-435c-9e25-6c35adb37eab" Name="Design_x0020_Stage_x0020_at_x002" DisplayName="Design Stage at Appointment" />
-            <pnp:FieldRef ID="7bd5a9f7-9712-4600-8661-609ce57969b0" Name="EPC_x0020_Rating" DisplayName="EPC Rating" />
-            <pnp:FieldRef ID="bf91dd7e-85a3-4cd1-8abe-822600ed180a" Name="Form_x0020_of_x0020_Contract" DisplayName="Form of Contract" />
-            <pnp:FieldRef ID="95e67e2c-0360-4e1b-80cb-8b895dbaff6c" Name="Form_x0020_of_x0020_Procurement" DisplayName="Form of Procurement" />
-            <pnp:FieldRef ID="eb10d755-4455-424d-9bc2-9ca86f2afc6d" Name="Handover_x0020_BREEAM_x002F_DREA" DisplayName="Handover BREEAM/DREAM Score" />
-            <pnp:FieldRef ID="4a8eaef9-fede-4617-adfa-069e506e6afe" Name="Handover_x0020_BREEAM_x002F_DREA0" DisplayName="Handover BREEAM/DREAM" />
-            <pnp:FieldRef ID="13061057-c8c2-40d5-8d9d-70b5aa0b9266" Name="Kier_x0020_Delivery_x0020_Region" DisplayName="Kier Delivery Region" />
-            <pnp:FieldRef ID="0b64ca6a-6348-4f0b-9cdd-57b1b0d00607" Name="Pre_x002d_Construction_x0020_BRE" DisplayName="Pre-Construction BREEAM/DREAM Score" />
-            <pnp:FieldRef ID="53dc4661-14e2-450f-962d-d4c0a9fd83da" Name="Pre_x002d_Construction_x0020_BRE0" DisplayName="Pre-Construction BREEAM/DREAM" />
-            <pnp:FieldRef ID="5f384a82-166f-48ab-a3b1-50df43f51686" Name="Project_x0020_Location" DisplayName="Project Location" />
-            <pnp:FieldRef ID="25b3d670-1115-466c-993d-5c593b0eb41e" Name="Scope_x0020_of_x0020_Kier_x0020_" DisplayName="Scope of Kier Involvement" />
-            <pnp:FieldRef ID="32bca672-62c6-4a52-b0be-cb41f43f8557" Name="Sector" DisplayName="Sector" />
-            <pnp:FieldRef ID="9b149ee7-3845-4af3-a587-a90fe23f7e54" Name="Stage_x0020_of_x0020_Project" DisplayName="Stage of Project" />
-            <pnp:FieldRef ID="80d7d56f-b19a-4b90-ab47-0421c8cf08c4" Name="Work_x0020_Description" DisplayName="Work Description" />
-            <pnp:FieldRef ID="6c568a7a-96b6-4d8e-bac3-c824718c505b" Name="Award_x0020_1" DisplayName="Award 1" />
-            <pnp:FieldRef ID="ad3661d5-353c-4c79-9744-a2077281641a" Name="Award_x0020_2" DisplayName="Award 2" />
-            <pnp:FieldRef ID="0e18a498-8441-4ec7-965c-e324ab310400" Name="Award_x0020_3" DisplayName="Award 3" />
-            <pnp:FieldRef ID="bdba751f-e79f-4c6d-bb6d-c7c297cd7f9f" Name="Client_x0020_Reference_x0020_ava" DisplayName="Client Reference available for 1?" />
-            <pnp:FieldRef ID="20fda522-2c9b-446b-99bb-f723ef462e2e" Name="Source_x0020_1" DisplayName="Source 1" />
-            <pnp:FieldRef ID="5169d242-85a5-440f-ba60-9bae8998a525" Name="Source_x0020_2" DisplayName="Source 2" />
-            <pnp:FieldRef ID="e876e3cf-dca7-42b0-bb73-2ccb8066c5e8" Name="Source_x0020_3" DisplayName="Source 3" />
-            <pnp:FieldRef ID="bccecfb5-e7e9-4ee5-a434-4b68436a0a44" Name="Testimonial_x0020_3" DisplayName="Testimonial 3" />
-            <pnp:FieldRef ID="b6f4cb2e-b71f-4905-be2c-1c7c537983a9" Name="Testimonial1" DisplayName="Testimonial1" />
-            <pnp:FieldRef ID="3781e7cd-24e4-4e92-98df-63129c97e3e4" Name="Testimonial2" DisplayName="Testimonial2" />
-            <pnp:FieldRef ID="2ef822e5-f11c-4d4d-a52d-dc4a17d10fea" Name="CRM_x0020_Opportunity_x0020_Auth" DisplayName="CRM Opportunity Author" />
-            <pnp:FieldRef ID="cfc6a356-fb1d-4e32-867a-d80c0fa8f029" Name="Internal_x0020_JV" DisplayName="Internal JV" />
-            <pnp:FieldRef ID="e2d77b07-f9b3-43f2-b6ca-4d3ff45c1bec" Name="Project_x0020_Region" DisplayName="Project Region" />
-            <pnp:FieldRef ID="97e20f04-8f53-4cde-b50c-59c1c14b3f17" Name="Project_x0020_Area" DisplayName="Project Area" />
-            <pnp:FieldRef ID="ee40fea2-c8eb-4f6d-abfa-ba77d1978827" Name="Subsector" DisplayName="Subsector" />
-            <pnp:FieldRef ID="4e7ed454-062c-4e91-bb85-4a967a5adec7" Name="FormofProcurementSubType" DisplayName="Form of Procurement  Subtype" />
-            <pnp:FieldRef ID="6cc3fb05-56d0-4e73-ad3d-211ad1bad4ad" Name="Testimonial4" DisplayName="Testimonial4" />
-            <pnp:FieldRef ID="c9558e9d-47c0-4792-aaee-b012a9ae312e" Name="Source_x0020_4" DisplayName="Source 4" />
-            <pnp:FieldRef ID="540b8b05-2392-40f3-b0ca-a8916062db85" Name="Testimonial5" DisplayName="Testimonial5" />
-            <pnp:FieldRef ID="cafc7cb4-34ad-4668-95cc-e82569ccd976" Name="Source_x0020_5" DisplayName="Source 5" />
-            <pnp:FieldRef ID="080b4bd6-c8a3-4748-9c5c-5bc748ea5ead" Name="Award_x0020_4" DisplayName="Award 4" />
-            <pnp:FieldRef ID="235a67b4-cb72-4730-a0a7-e84e0b11473b" Name="Award_x0020_5" DisplayName="Award 5" />
-            <pnp:FieldRef ID="9fce74bf-4b25-4b54-b70b-4d91aae89f4c" Name="Approver_x0020_Comments" DisplayName="Approver Comments" />
-            <pnp:FieldRef ID="be62fa23-d735-4331-9a4a-b033d092f8d4" Name="Pre_x002d_Approval_x0020_Status" DisplayName="Pre-Approval Status" />
-            <pnp:FieldRef ID="068c98d6-0513-47b7-8d42-e9b2eec83d97" Name="IsDraft" DisplayName="IsDraft" />
-            <pnp:FieldRef ID="26f1251b-7579-49a6-b5ac-170636522d69" Name="IsExternalJV" DisplayName="IsExternalJV" />
-            <pnp:FieldRef ID="149f33b9-5801-4045-b99a-d4a21a5e3889" Name="External_x0020_JV" DisplayName="External JV" />
-            <pnp:FieldRef ID="51b606fe-4dd0-4ce8-bda6-cf67d99c0fcb" Name="Specialist_x0020_adviser" DisplayName="Specialist adviser" />
-            <pnp:FieldRef ID="18da2842-b85d-4c98-aa30-6802a2eeba95" Name="Specialist_x0020_adviser_x0020_N" DisplayName="Specialist adviser Novated" />
-            <pnp:FieldRef ID="7912c60b-44b1-49e4-86a3-e27e0ac30f24" Name="Specialist_x0020_adviser_x0020_C" DisplayName="Specialist adviser Client Team" />
-            <pnp:FieldRef ID="a5fd43f9-2588-4299-8897-8b1be10bb1c6" Name="Specialist_x0020_adviser_x0020_N0" DisplayName="Specialist adviser Not applicable" />
-            <pnp:FieldRef ID="5402d5c6-bd8a-4071-834f-f599d7c46c45" Name="Architect_x0020_Not_x0020_applic" DisplayName="Architect Not applicable" />
-            <pnp:FieldRef ID="7df7c323-5f08-4c6d-8a65-a6f9053ca092" Name="Acoustician_x0020_Not_x0020_appl" DisplayName="Acoustician Not applicable" />
-            <pnp:FieldRef ID="c1fe9559-0044-4752-b77d-798d6b67980f" Name="Structural_x0020__x0026__x0020_C2" DisplayName="Structural &amp; Civil Eng. Not applicable" />
-            <pnp:FieldRef ID="102edf58-8ffa-4d9d-88de-43fc0c3d65b5" Name="FF_x002B_E_x0020_Not_x0020_appli" DisplayName="FF+E Not applicable" />
-            <pnp:FieldRef ID="de6d7aef-7257-4f49-a846-d248e316ea43" Name="M_x002B_E_x0020_Engineering_x0021" DisplayName="M+E Engineering Not applicable" />
-            <pnp:FieldRef ID="324ac1ef-2f3e-413f-9ffb-f74f24630515" Name="ICT_x0020_Not_x0020_applicable" DisplayName="ICT Not applicable" />
-            <pnp:FieldRef ID="1bc71c72-47d8-4f65-9c0c-92049969a4d6" Name="Cost_x0020_Advisors_x0020_Not_x0" DisplayName="Cost Advisors Not applicable" />
-            <pnp:FieldRef ID="ca8b973a-6b21-4e59-86cd-b178910ed028" Name="Planning_x0020_Consultant_x0020_1" DisplayName="Planning Consultant Not applicable" />
-            <pnp:FieldRef ID="583f3c1c-73c9-433e-b05d-7bee6bca818a" Name="M_x002B_E_x0020_Installers_x00201" DisplayName="M+E Installers Not applicable" />
-            <pnp:FieldRef ID="4bf3be73-3fe1-427b-9571-c7bd60d9ad6d" Name="Environmental_x0020_Not_x0020_ap" DisplayName="Environmental Not applicable" />
-            <pnp:FieldRef ID="c4d9c275-23b6-4a61-bfd6-38720c8ab752" Name="Project_x0020_Management_x0020_N0" DisplayName="Project Management Not applicable" />
-            <pnp:FieldRef ID="6e134cc3-0035-439f-ad1e-6429050e6baf" Name="Landscape_x0020_Not_x0020_applic" DisplayName="Landscape Not applicable" />
-            <pnp:FieldRef ID="45eba45c-380b-49e0-8af6-5268d40c0385" Name="CEEQUAL_x0020_Rating" DisplayName="CEEQUAL Rating" />
-            <pnp:FieldRef ID="701dda59-bb75-4556-b7f9-3103ec7351f7" Name="CEEQUAL_x0020_Score" DisplayName="CEEQUAL Score" />
-            <pnp:FieldRef ID="48f1bdf9-e792-4f62-bbd0-f5b3fe8175a9" Name="Other_x0020_of_x0020_Form_x0020_" DisplayName="Other of Form of Procurement" />
-            <pnp:FieldRef ID="0baef2ea-a6ca-42b4-8f46-ad231456cce3" Name="Kier_x0020_album_x0020_link" DisplayName="Kier album link" />
-            <pnp:FieldRef ID="2eda0bd8-79b1-4b2f-81d4-e6ccf0508489" Name="Funding_x0020_Sector" DisplayName="Funding Sector" />
-            <pnp:FieldRef ID="9886494b-786e-4a5e-9ed5-a0edbb154aca" Name="Reviewer" DisplayName="Reviewer" />
-            <pnp:FieldRef ID="80bf40a2-7df9-49cc-aa73-e4ac7bad347b" Name="_x0052_AG1" Required="true" DisplayName="RAG" />
-            <pnp:FieldRef ID="c13ba1b9-d89c-494d-975f-b5a6b8de47cf" Name="RAGStatus" DisplayName="RAG Status" />
-            <pnp:FieldRef ID="1c1519ae-bff2-4bc2-9f32-d331ed2aebab" Name="Champion" DisplayName="Champion" />
-            <pnp:FieldRef ID="9e284cfc-7e1c-45e0-8cca-a6c7ce0fa52f" Name="WF_x0020_Status" DisplayName="WF Status" />
-            <pnp:FieldRef ID="387f7038-78a1-42b5-adef-80a6ab78386e" Name="CRM_x0020_Number" DisplayName="CRM Number" />
-          </pnp:FieldRefs>
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
-              <pnp:RoleAssignment Principal="Designers" RoleDefinition="Design" />
-              <pnp:RoleAssignment Principal="Hierarchy Managers" RoleDefinition="Manage Hierarchy" />
-              <pnp:RoleAssignment Principal="Approvers" RoleDefinition="Approve" />
-              <pnp:RoleAssignment Principal="Restricted Readers" RoleDefinition="Restricted Read" />
-              <pnp:RoleAssignment Principal="Translation Managers" RoleDefinition="Restricted Interfaces for Translation" />
-              <pnp:RoleAssignment Principal="i:0#.w|kier\leoni.mclachlan" RoleDefinition="Approve" />
-              <pnp:RoleAssignment Principal="i:0#.w|kier\chris.blanshard" RoleDefinition="Read" />
-              <pnp:RoleAssignment Principal="i:0#.w|kier\simon.parsons" RoleDefinition="Read" />
-              <pnp:RoleAssignment Principal="i:0#.w|kier\shipra.sharma" RoleDefinition="Full Control" />
-              <pnp:RoleAssignment Principal="i:0#.w|kier\michael.o'callaghan" RoleDefinition="Read" />
-              <pnp:RoleAssignment Principal="i:0#.w|kier\madeleine.batchelor" RoleDefinition="Read" />
-              <pnp:RoleAssignment Principal="{associatedownergroup}" RoleDefinition="Full Control" />
-              <pnp:RoleAssignment Principal="{associatedvisitorgroup}" RoleDefinition="Read" />
-              <pnp:RoleAssignment Principal="Best Practice Champions" RoleDefinition="Contribute - No Delete" />
-              <pnp:RoleAssignment Principal="Answer Plan Viewers" RoleDefinition="Read" />
-            </pnp:BreakRoleInheritance>
-          </pnp:Security>
-          <pnp:UserCustomActions>
-            <pnp:CustomAction Name="{d5675adc-a629-4afa-9c88-0cc64aad758f}" Location="EditControlBlock" Title="Change Champion" Sequence="0" Rights="" Url="~site/_layouts/15/NintexWorkflow/StartWorkflow.aspx?List={ListId}&amp;ID={ItemId}&amp;TemplateID=0cd1aeda-8e56-4782-8182-bfd49a32c136&amp;Source={Source}" ImageUrl="~site/_layouts/15/NintexWorkflow/Images/StartWorkflowECB.png" RegistrationType="None" ClientSideComponentId="00000000-0000-0000-0000-000000000000" />
-            <pnp:CustomAction Name="{be5f5ec5-db11-47f7-b9b8-3b4791e54d7b}" Location="EditControlBlock" Title="Change Champion" Sequence="0" Rights="" Url="~site/_layouts/15/NintexWorkflow/StartWorkflow.aspx?List={ListId}&amp;ID={ItemId}&amp;TemplateID=b98a449a-1a06-45f3-8009-0c099b107929&amp;Source={Source}" ImageUrl="~site/_layouts/15/NintexWorkflow/Images/StartWorkflowECB.png" RegistrationType="None" ClientSideComponentId="00000000-0000-0000-0000-000000000000" />
-            <pnp:CustomAction Name="{f175baf1-37f0-4aff-bd89-8aeb5769e397}" Location="EditControlBlock" Title="Change Champion" Sequence="0" Rights="" Url="~site/_layouts/15/NintexWorkflow/StartWorkflow.aspx?List={ListId}&amp;ID={ItemId}&amp;TemplateID=5077dfa8-34e4-414a-8278-d29ff77561ce&amp;Source={Source}" ImageUrl="~site/_layouts/15/NintexWorkflow/Images/StartWorkflowECB.png" RegistrationType="None" ClientSideComponentId="00000000-0000-0000-0000-000000000000" />
+            <pnp:CustomAction Name="{be5f5ec5-db11-47f7-b9b8-3b4791e54d7b}" Location="EditControlBlock" Title="Change Champion" Sequence="0" Rights="" Url="~site/_layouts/15/NintexWorkflow/StartWorkflow.aspx?List={ListId}&amp;ID={ItemId}&amp;TemplateID=57819516-2643-4350-aea3-da991bee1404&amp;Source={Source}" ImageUrl="~site/_layouts/15/NintexWorkflow/Images/StartWorkflowECB.png" RegistrationType="None" ClientSideComponentId="00000000-0000-0000-0000-000000000000" />
           </pnp:UserCustomActions>
         </pnp:ListInstance>
         <pnp:ListInstance Title="Project Evidence Bites" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Project Evidence Bites" EnableVersioning="true" EnableModeration="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Project Evidence Bites/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Project Evidence Bites/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Project Evidence Bites/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
