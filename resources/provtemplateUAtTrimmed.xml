@@ -9095,35 +9095,6 @@
             <pnp:FieldRef ID="d4e71f58-7f1d-4ff1-b9bb-a4fef71f692d" Name="Comment" DisplayName="Comment" />
           </pnp:FieldRefs>
         </pnp:ListInstance>
-        <pnp:ListInstance Title="Test" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Test" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Test/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Test/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Test/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
-          <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
-          </pnp:ContentTypeBindings>
-          <pnp:Views>
-            <View Name="{C8686C9C-2705-43EA-871E-62B986F975D0}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/EDBUAT/Lists/Test/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query>
-                <OrderBy>
-                  <FieldRef Name="ID" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="LinkTitle" />
-                <FieldRef Name="CRM_x0020_Number" />
-                <FieldRef Name="Champion" />
-                <FieldRef Name="WF_x0020_Status" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <Aggregations Value="Off" />
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-          </pnp:Views>
-          <pnp:Fields>
-            <Field Type="Text" DisplayName="CRM Number" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{06c7b9e2-4d1b-4dd9-9c79-67bc26bc098a}" SourceID="{9f718c04-ba9b-4483-800f-cdd9531d96f1}" StaticName="CRM_x0020_Number" Name="CRM_x0020_Number" ColName="nvarchar3" RowOrdinal="0" FromParent="FALSE" />
-            <Field Type="Text" DisplayName="Champion" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{7ebaf6e1-c973-4980-8329-16bd3c2fc21c}" SourceID="{{listid:Test}}" StaticName="Champion" Name="Champion" ColName="nvarchar6" RowOrdinal="0" />
-            <Field Type="Text" DisplayName="WF Status" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{402a58a4-782e-44f2-986c-e308a99ac042}" SourceID="{{listid:Test}}" StaticName="WF_x0020_Status" Name="WF_x0020_Status" ColName="nvarchar4" RowOrdinal="0" />
-          </pnp:Fields>
-        </pnp:ListInstance>
         <pnp:ListInstance Title="Testimonial documents" Description="" DocumentTemplate="{site}/Testimonial documents/Forms/template.dotx" TemplateType="101" Url="Testimonial documents" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" ContentTypesEnabled="true" EnableAttachments="false" DefaultDisplayFormUrl="{site}/Testimonial documents/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Testimonial documents/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Testimonial documents/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
             <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
