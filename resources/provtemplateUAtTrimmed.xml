@@ -5805,7 +5805,6 @@
                 <FieldRef Name="PAS_x0020_Module_x0020_Type" />
                 <FieldRef Name="Modified" />
                 <FieldRef Name="Editor" />
-                <FieldRef Name="PAS_x0020_Module_x0020_Type" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
               <Aggregations Value="Off" />
