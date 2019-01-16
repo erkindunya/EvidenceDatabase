@@ -632,7 +632,6 @@
             <pnp:NavigationNode Title="Reviewer WorkSpace" Url="{site}/Pages/Reviewer WorkSpace.aspx" />
             <pnp:NavigationNode Title="Recent" Url="{site}" IsExternal="true">
               <pnp:NavigationNode Title="DueDateTest" Url="{site}/Lists/DueDateTest/AllItems.aspx" />
-              <pnp:NavigationNode Title="ReminderTest" Url="{site}/Lists/ReminderTest/AllItems.aspx" />
             </pnp:NavigationNode>
             <pnp:NavigationNode Title="Generic Evidence Bites" Url="{site}/Pages/Evidence-Results-GEB.aspx" />
             <pnp:NavigationNode Title="diagnostic display template" Url="{site}/Pages/diagnostic-display-template.aspx" />
@@ -8427,70 +8426,6 @@
             <pnp:FieldRef ID="ee40fea2-c8eb-4f6d-abfa-ba77d1978827" Name="Subsector" DisplayName="Subsector" />
             <pnp:FieldRef ID="ba21d8c1-b461-4dd0-9b75-ebb1b9acd85c" Name="Kier_x0020_Division" DisplayName="Kier Division" />
           </pnp:FieldRefs>
-        </pnp:ListInstance>
-        <pnp:ListInstance Title="ReminderTest" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/ReminderTest" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/ReminderTest/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/ReminderTest/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/ReminderTest/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
-          <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
-          </pnp:ContentTypeBindings>
-          <pnp:Views>
-            <View Name="{2ABDFCCE-32BA-481C-9312-025261B1B3FB}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/EDBUAT/Lists/ReminderTest/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query>
-                <OrderBy>
-                  <FieldRef Name="ID" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="LinkTitle" />
-                <FieldRef Name="DueDate" />
-                <FieldRef Name="Flexible" />
-                <FieldRef Name="Escalati" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-          </pnp:Views>
-          <pnp:Fields>
-            <Field DisplayName="Flexible" Type="WorkflowStatus" Required="FALSE" ID="{69e3de3c-793e-41c4-9baa-b0989175d3f3}" SourceID="{{listid:ReminderTest}}" StaticName="Flexible" Name="Flexible" ColName="nvarchar3" RowOrdinal="0" Version="12" WorkflowStatusURL="_layouts/15/WrkStat.aspx" ReadOnly="TRUE">
-              <CHOICES>
-                <CHOICE>Starting</CHOICE>
-                <CHOICE>Failed on Start</CHOICE>
-                <CHOICE>In Progress</CHOICE>
-                <CHOICE>Error Occurred</CHOICE>
-                <CHOICE>Canceled</CHOICE>
-                <CHOICE>Completed</CHOICE>
-                <CHOICE>Failed on Start (retrying)</CHOICE>
-                <CHOICE>Error Occurred (retrying)</CHOICE>
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-              </CHOICES>
-            </Field>
-            <Field Type="DateTime" DisplayName="DueDate" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" FriendlyDisplayFormat="Disabled" ID="{f35045a5-5835-4a77-b920-7f78fba9e684}" SourceID="{{listid:ReminderTest}}" StaticName="DueDate" Name="DueDate" ColName="datetime1" RowOrdinal="0" CalType="0" Version="2" />
-            <Field DisplayName="Escalation Test" Type="WorkflowStatus" Required="FALSE" ID="{bcd1f7aa-25fd-42e4-90cd-430072bbf9b1}" SourceID="{{listid:ReminderTest}}" StaticName="Escalati" Name="Escalati" ColName="nvarchar4" RowOrdinal="0" Version="6" WorkflowStatusURL="_layouts/15/WrkStat.aspx" ReadOnly="TRUE">
-              <CHOICES>
-                <CHOICE>Starting</CHOICE>
-                <CHOICE>Failed on Start</CHOICE>
-                <CHOICE>In Progress</CHOICE>
-                <CHOICE>Error Occurred</CHOICE>
-                <CHOICE>Canceled</CHOICE>
-                <CHOICE>Completed</CHOICE>
-                <CHOICE>Failed on Start (retrying)</CHOICE>
-                <CHOICE>Error Occurred (retrying)</CHOICE>
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-                <CHOICE />
-              </CHOICES>
-            </Field>
-          </pnp:Fields>
         </pnp:ListInstance>
         <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
