@@ -7325,6 +7325,118 @@
             <pnp:FieldRef ID="ba21d8c1-b461-4dd0-9b75-ebb1b9acd85c" Name="Kier_x0020_Division" DisplayName="Kier Division" />
           </pnp:FieldRefs>
         </pnp:ListInstance>
+         <pnp:ListInstance Title="Reusable Content" Description="Items in this list contain HTML or text content which can be inserted into web pages. If an item has automatic update selected, the content will be inserted into web pages as a read-only reference, and the content will update if the item is changed. If the item does not have automatic update selected, the content will be inserted as a copy in the web page, and the content will not update if the item is changed." DocumentTemplate="" TemplateType="100" Url="ReusableContent" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" NoCrawl="true" DefaultDisplayFormUrl="{site}/ReusableContent/DispForm.aspx" DefaultEditFormUrl="{site}/ReusableContent/EditForm.aspx" DefaultNewFormUrl="{site}/ReusableContent/NewForm.aspx" ImageUrl="{site}/_layouts/15/images/itgen.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01002CF74A4DAE39480396EEA7A4BA2BE5FB" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01004D5A79BAFA4A4576B79C56FF3D0D662D" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{D4B5D050-60F4-4C14-8E84-BC96171CEA4F}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/ReusableContent/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="ContentCategory" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="Title" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="ContentCategory" />
+                <FieldRef Name="ShowInRibbon" />
+                <FieldRef Name="AutomaticUpdate" />
+                <FieldRef Name="Comments" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{880A22DC-3EF1-476D-81C7-EA74C1F492EB}" DefaultView="TRUE" Type="HTML" DisplayName="Content Preview" Url="/ReusableContent/Content Preview.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="ContentCategory" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="Title" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="ShowInRibbon" />
+                <FieldRef Name="AutomaticUpdate" />
+                <FieldRef Name="Comments" />
+                <FieldRef Name="ReusableText" />
+                <FieldRef Name="ReusableHtml" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">200</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{92C5F237-67D0-4C58-A5DE-EA847354D680}" Type="HTML" DisplayName="Automatic Update (Yes)" Url="/ReusableContent/Automatic Update Yes.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="ContentCategory" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="Title" />
+                </OrderBy>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AutomaticUpdate" />
+                    <Value Type="Boolean">1</Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="ShowInRibbon" />
+                <FieldRef Name="AutomaticUpdate" />
+                <FieldRef Name="Comments" />
+                <FieldRef Name="ReusableText" />
+                <FieldRef Name="ReusableHtml" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">200</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{4DF890D4-D208-4FB3-82B2-5862C7796C81}" Type="HTML" DisplayName="Automatic Update (No)" Url="/ReusableContent/Automatic Update No.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="ContentCategory" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="Title" />
+                </OrderBy>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AutomaticUpdate" />
+                    <Value Type="Boolean">0</Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="ShowInRibbon" />
+                <FieldRef Name="AutomaticUpdate" />
+                <FieldRef Name="Comments" />
+                <FieldRef Name="ReusableText" />
+                <FieldRef Name="ReusableHtml" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">200</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="9da97a8a-1da5-4a77-98d3-4bc10456e700" Name="Comments" DisplayName="Comments" />
+            <pnp:FieldRef ID="3a4b7f98-8d14-4800-8bf5-9ad1dd6a82ee" Name="ContentCategory" DisplayName="Content Category" />
+            <pnp:FieldRef ID="e977ed93-da24-4fcc-b77d-ac34eea7288f" Name="AutomaticUpdate" DisplayName="Automatic Update" />
+            <pnp:FieldRef ID="32e03f99-6949-466a-a4a6-057c21d4b516" Name="ShowInRibbon" DisplayName="Show in drop-down menu" />
+            <pnp:FieldRef ID="82dd22bf-433e-4260-b26e-5b8360dd9105" Name="ReusableHtml" DisplayName="Reusable HTML" />
+            <pnp:FieldRef ID="890e9d41-5a0e-4988-87bf-0fb9d80f60df" Name="ReusableText" DisplayName="Reusable Text" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
         <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
             <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
