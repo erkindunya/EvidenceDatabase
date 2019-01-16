@@ -7272,15 +7272,13 @@
                 </OrderBy>
               </Query>
               <ViewFields>
-                <FieldRef Name="DocIcon" />
+               <FieldRef Name="DocIcon" />
                 <FieldRef Name="LinkFilename" />
                 <FieldRef Name="Sector" />
                 <FieldRef Name="Subsector" />
                 <FieldRef Name="Project_x0020_Location" />
                 <FieldRef Name="Modified" />
                 <FieldRef Name="Editor" />
-                <FieldRef Name="Kier_x0020_Division" />
-                <FieldRef Name="ID" />
               </ViewFields>
               <RowLimit Paged="TRUE">100</RowLimit>
               <Aggregations Value="Off" />
