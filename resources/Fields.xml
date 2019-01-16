@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/01/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.25.1804.1, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-0DAB93AEA9824789BB66E2B359B58E2D">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-0DAB93AEA9824789BB66E2B359B58E2D" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field Type="Text" DisplayName="First Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="20" Group="NSS Columns" ID="{5049a822-424c-4479-9648-79c4b3214382}" SourceID="{5a15b9ca-4410-4854-bc61-d7fb0ff84e56}" StaticName="NSSFirstName"
+          Name="NSSFirstName">
+        </Field>
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x01010097931465769EE34E9078576A150FF53E" Name="NewStarterSubmissions" Description="" Group="NSS Content Types">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="5049a822-424c-4479-9648-79c4b3214382" Name="NSSFirstName" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

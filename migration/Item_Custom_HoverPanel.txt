@@ -1,0 +1,458 @@
+<head>
+    <title>Default Hover Panel</title>
+
+    <!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string">Displays the default hover panel template.</mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchHoverPanel;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ManagedPropertyMapping msdt:dt="string">&#39;Title&#39;:&#39;Title&#39;,&#39;Path&#39;:&#39;Path&#39;,&#39;Description&#39;:&#39;Description&#39;,&#39;EditorOWSUSER&#39;:&#39;EditorOWSUSER&#39;,&#39;LastModifiedTime&#39;:&#39;LastModifiedTime&#39;,&#39;CollapsingStatus&#39;:&#39;CollapsingStatus&#39;,&#39;DocId&#39;:&#39;DocId&#39;,&#39;HitHighlightedSummary&#39;:&#39;HitHighlightedSummary&#39;,&#39;HitHighlightedProperties&#39;:&#39;HitHighlightedProperties&#39;,&#39;FileExtension&#39;:&#39;FileExtension&#39;,&#39;ViewsLifeTime&#39;:&#39;ViewsLifeTime&#39;,&#39;ParentLink&#39;:&#39;ParentLink&#39;,&#39;FileType&#39;:&#39;FileType&#39;,&#39;IsContainer&#39;:&#39;IsContainer&#39;,&#39;SecondaryFileExtension&#39;:&#39;SecondaryFileExtension&#39;,&#39;DisplayAuthor&#39;:&#39;DisplayAuthor&#39;,&#39;contentType&#39;:&#39;contentType&#39;,&#39;AuthorOWSUSER&#39;:&#39;AuthorOWSUSER&#39;,&#39;Created&#39;:&#39;Created&#39;,&#39;ProjectDescriptionOWSMTXT&#39;:&#39;ProjectDescriptionOWSMTXT&#39;,&#39;EvidenceBiteHeadliOWSMTXT&#39;:&#39;EvidenceBiteHeadliOWSMTXT&#39;,&#39;EvidenceBiteDescriOWSMTXT&#39;:&#39;EvidenceBiteDescriOWSMTXT&#39;,&#39;ListItemID&#39;:&#39;ListItemID&#39;,&#39;owstaxIdStagex0020ofx0020Project&#39;:&#39;owstaxIdStagex0020ofx0020Project&#39;,&#39;owstaxIdBusinessx0020Categories&#39;:&#39;owstaxIdBusinessx0020Categories&#39;</mso:ManagedPropertyMapping>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://content-mykier/sites/EDBUAT/_catalogs/masterpage/Display Templates/Search/Item_Custom_HoverPanel.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Vig, Gabor</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">49500.0000000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">DAVE_Agent.svc</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+
+</head>
+
+<body>
+    <div id="Item_Default_HoverPanel">
+        <!--#_
+        var i = 0;
+        var id = ctx.CurrentItem.csr_id;
+        ctx.CurrentItem.csr_ShowViewLibrary = !Srch.U.isWebPage(ctx.CurrentItem.FileExtension);
+        if(ctx.CurrentItem.IsContainer)
+        {
+            ctx.CurrentItem.csr_FileType = Srch.Res.ct_Folder
+        }
+
+        ctx.currentItem_ShowChangedBySnippet = true;
+		var titleCSSClass = "ms-srch-hover-title ms-dlg-heading ms-srch-ellipsis";
+		var maxViews = 10000;
+_#-->
+        <div class="ms-srch-hover-innerContainer ms-srch-hover-standardSize" id="_#= $htmlEncode(id + HP.ids.inner) =#_">
+            <div class="ms-srch-hover-arrowBorder" id="_#= $htmlEncode(id + HP.ids.arrowBorder) =#_"></div>
+            <div class="ms-srch-hover-arrow" id="_#= $htmlEncode(id + HP.ids.arrow) =#_"></div>
+            <div class="ms-srch-hover-content" id="_#= $htmlEncode(id + HP.ids.content) =#_" data-displaytemplate="DefaultHoverPanel">
+                <div id="_#= $htmlEncode(id + HP.ids.header) =#_" class="ms-srch-hover-header">
+                    <div class="ms-srch-hover-close">
+                        <a href="javascript:HP.Close()" id="', _#=$htmlEncode(id + HP.ids.close)=#_ ,'" title="', _#=$htmlEncode(Srch.Res.hp_Tooltip_Close)=#_ ,'">
+                            <img class="js-callout-closeButtonImage" src=" _#=$urlHtmlEncode(GetThemedImageUrl('spcommon.png'))=#_ " alt=" _#=$htmlEncode(Srch.Res.hp_Tooltip_Close)=#_" />
+                        </a>
+                    </div>
+                    <!--  <div class="_#= $htmlEncode(titleCSSClass)=#_  " id=" _#=$htmlEncode(id + HP.ids.title)=#_ " title=" _#=$htmlEncode(ctx.CurrentItem.Title)=#_ ">
+						_#=$htmlEncode(ctx.CurrentItem.Title)=#_ 
+				   </div> -->
+                    <!--#_
+            	
+			if(!$isNull(ctx.CurrentItem.ViewsLifeTime)) {
+				var formattedViewsLifeTime;
+
+				if (ctx.CurrentItem.ViewsLifeTime > maxViews)	{
+					formattedViewsLifeTime = maxViews.localeFormat("N0") + "+";  
+				} 
+				else {
+					formattedViewsLifeTime = ctx.CurrentItem.ViewsLifeTime.localeFormat("N0"); 
+				}
+				var views = "";
+				titleCSSClass = titleCSSClass + " ms-srch-hover-title-extraMarginForViews";
+				if (ctx.CurrentItem.ViewsLifeTime === 1) {
+					views = Srch.Res.hp_Views_Singular;
+				} 
+				else {
+					views = Srch.Res.hp_Views_Plural;
+				}				   
+                var tooltipViewsEncoded = $htmlEncode(String.format(Srch.Res.hp_Tooltip_Views, formattedViewsLifeTime));
+_#-->
+                    <div class="ms-srch-hover-popularity ms-metadata" title="_#= tooltipViewsEncoded =#_ ">
+                        <div id="_#= $htmlEncode(id + HP.ids.viewsLifeTime) =#_"> _#= $htmlEncode(formattedViewsLifeTime) =#_ </div>
+                        <div> _#= $htmlEncode(views) =#_ </div>
+                    </div>
+                    <!--#_
+			}
+            if (!Srch.U.e(ctx.CurrentItem.Title)) {
+_#-->
+                    <div class="_#= titleCSSClass =#_" id="_#= $htmlEncode(id + HP.ids.title) =#_" title="_#= $htmlEncode(ctx.CurrentItem.Title) =#_">
+                        _#= $htmlEncode(ctx.CurrentItem.Title) =#_
+                    </div>
+                    <!--#_						
+            }
+_#-->
+                </div>
+
+                <!-- Hover Body section start -->
+                <div id="_#= $htmlEncode(id + HP.ids.body) =#_" class="ms-srch-hover-body">
+                    <!-- _#= ctx.RenderBody(ctx) =#_ -->
+                    <!--#_if (ctx.currentItem_ShowChangedBySnippet &&
+            !Srch.U.n(ctx.CurrentItem.Created) &&
+            !$isEmptyString(ctx.CurrentItem.AuthorOWSUSER))
+        {
+            var CreatedById = id + "_CreatedBy";
+            var authorIdentifiers = ctx.CurrentItem.AuthorOWSUSER.split(" | ");
+            var authorEmail = "";
+            if(!$isNull(authorIdentifiers[0]))
+            {
+                authorEmail = authorIdentifiers[0];
+            }
+
+            var authorDisplayName = "";
+            if(!$isNull(authorIdentifiers[1]))
+            {
+                authorDisplayName = authorIdentifiers[1];
+            }
+
+            AddPostRenderCallback(ctx, function()
+            {
+                EnsureScriptFunc("clienttemplates.js", "RenderUserFieldWorker", function()
+                {
+                    EnsureScriptFunc("sp.datetimeutil.js", "SP.DateTimeUtil.SPRelativeDateTime", function()
+                    {
+                        var renderCtx = new ContextInfo();
+                        renderCtx.Templates = {};
+                        renderCtx.Templates["Fields"] = {};
+
+                        var field =
+                        {
+                            "FieldType" : "User",
+                            "DefaultRender" : "1",
+                            "HasUserLink" : "1",
+                            "Type" : "User"
+                        };
+
+                        var listItem =
+                        {
+                            "id" : "",
+                            "title" : authorDisplayName,
+                            "email" : authorEmail
+                        };
+
+                        var listSchema =
+                        {
+                            "EffectivePresenceEnabled" : "1",
+                            "PresenceAlt" : "No presence information",
+                            "UserDispUrl" : "/_layouts/15/userdisp.aspx"
+                        };
+
+                        var htmlUserPresence = RenderUserFieldWorker(renderCtx, field, listItem, listSchema);
+                        var convertedDate = SP.DateTimeUtil.IntlDate.createFromJsLocalDate(ctx.CurrentItem.Created, Srch.U.getCalendarType());
+                        var createdDate = convertedDate.format("d", Sys.CultureInfo.CurrentCulture.name);
+                        var createdTime = convertedDate.format("t", Sys.CultureInfo.CurrentCulture.name);
+
+                        var encodedChangedBySnippet = String.format(
+                            $htmlEncode(Srch.Res.hp_ChangedByAuthorDate),
+                            htmlUserPresence,
+                            $htmlEncode(createdDate),
+                            $htmlEncode(createdTime));
+
+                        var targetElement = document.getElementById(CreatedById);
+                        if(targetElement)
+                        {
+                            targetElement.innerHTML = encodedChangedBySnippet.replace('Changed by','Created By');
+                        }
+
+                        ProcessImn();
+                    });
+                });
+            });
+_#-->
+                    <div class="ms-srch-hover-subTitle ms-srch-hover-text ms-srch-ellipsis" id="_#= $htmlEncode(CreatedById) =#_"></div>
+
+                    <!--#_
+            dataShown = true;
+            changedBySnippetShown = true;
+        }
+		_#-->
+
+                    <!--#_if (ctx.currentItem_ShowChangedBySnippet &&
+            !Srch.U.n(ctx.CurrentItem.LastModifiedTime) &&
+            !$isEmptyString(ctx.CurrentItem.EditorOWSUSER))
+        {
+            var ChangedById = id + "_ChangedBy";
+            var editorIdentifiers = ctx.CurrentItem.EditorOWSUSER.split(" | ");
+            var editorEmail = "";
+            if(!$isNull(editorIdentifiers[0]))
+            {
+                editorEmail = editorIdentifiers[0];
+            }
+
+            var editorDisplayName = "";
+            if(!$isNull(editorIdentifiers[1]))
+            {
+                editorDisplayName = editorIdentifiers[1];
+            }
+
+            AddPostRenderCallback(ctx, function()
+            {
+                EnsureScriptFunc("clienttemplates.js", "RenderUserFieldWorker", function()
+                {
+                    EnsureScriptFunc("sp.datetimeutil.js", "SP.DateTimeUtil.SPRelativeDateTime", function()
+                    {
+                        var renderCtx = new ContextInfo();
+                        renderCtx.Templates = {};
+                        renderCtx.Templates["Fields"] = {};
+
+                        var field =
+                        {
+                            "FieldType" : "User",
+                            "DefaultRender" : "1",
+                            "HasUserLink" : "1",
+                            "Type" : "User"
+                        };
+
+                        var listItem =
+                        {
+                            "id" : "",
+                            "title" : editorDisplayName,
+                            "email" : editorEmail
+                        };
+
+                        var listSchema =
+                        {
+                            "EffectivePresenceEnabled" : "1",
+                            "PresenceAlt" : "No presence information",
+                            "UserDispUrl" : "/_layouts/15/userdisp.aspx"
+                        };
+
+                        var htmlUserPresence = RenderUserFieldWorker(renderCtx, field, listItem, listSchema);
+                        var convertedDate = SP.DateTimeUtil.IntlDate.createFromJsLocalDate(ctx.CurrentItem.LastModifiedTime, Srch.U.getCalendarType());
+                        var changedDate = convertedDate.format("d", Sys.CultureInfo.CurrentCulture.name);
+                        var changedTime = convertedDate.format("t", Sys.CultureInfo.CurrentCulture.name);
+
+                        var encodedChangedBySnippet = String.format(
+                            $htmlEncode(Srch.Res.hp_ChangedByAuthorDate),
+                            htmlUserPresence,
+                            $htmlEncode(changedDate),
+                            $htmlEncode(changedTime));
+
+                        var targetElement = document.getElementById(ChangedById);
+                        if(targetElement)
+                        {
+                            targetElement.innerHTML = encodedChangedBySnippet.replace('Changed','Edited');
+                        }
+
+                        ProcessImn();
+                    });
+                });
+            });
+_#-->
+                    <div class="ms-srch-hover-subTitle ms-srch-hover-text ms-srch-ellipsis" id="_#= $htmlEncode(ChangedById) =#_"></div>
+                    <!--#_
+            dataShown = true;
+            changedBySnippetShown = true;
+        }
+		_#-->
+                    <!--#_
+var CategoryOrStage='';
+var divStyle='';//this variable is used to append if CategoryOrStage contains value
+
+
+	if(typeof ctx.CurrentItem.contentType!=='undefined' && ctx.CurrentItem.contentType!=null)
+			{
+				if(  ctx.CurrentItem.contentType.indexOf('Construction Project Evidence')>=0 || ctx.CurrentItem.contentType.indexOf('Construction Generic Evidence Bite')>=0)
+					{
+						CategoryOrStage=ctx.CurrentItem.owstaxIdBusinessx0020Categories;
+						
+						if(typeof(CategoryOrStage)!='undefined' && CategoryOrStage.indexOf('|')>=0)
+						{
+							CategoryOrStage=CategoryOrStage.split('|')[3];
+							if(CategoryOrStage.indexOf(';')>=0)
+								{
+									CategoryOrStage='Categories : '+ CategoryOrStage.split(';')[0];
+									divStyle='padding: 10px 0px 0px 0px;';
+
+								}
+								else
+								{
+									CategoryOrStage='Categories : '+ CategoryOrStage;
+									divStyle='ms-srch-hover-subTitle ms-srch-hover-text ms-srch-ellipsis';
+								}
+							if(ctx.CurrentItem.owstaxIdBusinessx0020Categories.split('|').length>9)
+							{
+							CategoryOrStage=CategoryOrStage+','+ctx.CurrentItem.owstaxIdBusinessx0020Categories.split('|')[9];
+							}	
+
+						}
+
+					}
+				
+				else if(ctx.CurrentItem.contentType.indexOf('Construction Project Datasheet')>=0)
+					{
+						CategoryOrStage=ctx.CurrentItem.owstaxIdStagex0020ofx0020Project;
+						
+						if(typeof(CategoryOrStage)!='undefined' && CategoryOrStage.indexOf('|')>=0)
+						{
+							CategoryOrStage=CategoryOrStage.split('|')[3];
+							if(CategoryOrStage.indexOf(';')>=0)
+								{
+									CategoryOrStage='Stage: '+ CategoryOrStage.split(';')[0];
+									divStyle='padding: 10px 0px 0px 0px;';
+
+								}
+								else
+								{
+									CategoryOrStage='Stage: '+ CategoryOrStage;
+									divStyle='padding: 10px 0px 0px 0px;';
+								}
+
+						}
+
+					
+						
+					}
+
+	
+	}
+_#-->
+                    <div style="_#= $htmlEncode(divStyle) =#_">_#= $htmlEncode(CategoryOrStage) =#_</div>
+
+
+                </div>
+                <!-- Hover Body section end -->
+                <!-- Hover Footer/ Action  section start -->
+                <div id="_#= $htmlEncode(id + HP.ids.actions) =#_" class="ms-srch-hover-actions">
+                    <!-- _#= ctx.RenderFooter(ctx) =#_ -->
+
+                    <!--#_	
+						var id = ctx.CurrentItem.id;   
+						var appAttribs = "";
+						if (!$isEmptyString(ctx.CurrentItem.csr_OpenApp)) { appAttribs += "openApp=\"" + $htmlEncode(ctx.CurrentItem.csr_OpenApp) + "\"" }; 
+						if (!$isEmptyString(ctx.CurrentItem.csr_OpenControl)) { appAttribs += " openControl=\"" + $htmlEncode(ctx.CurrentItem.csr_OpenControl) + "\"" };
+						
+						if (!Srch.U.e(ctx.CurrentItem.ParentLink))
+						{
+						var itemPath=ctx.CurrentItem.ParentLink;
+							var editId = id + HP.ids.open;
+							var editTitle = Srch.Res.hp_Tooltip_Open;
+							var editText = Srch.Res.hp_Open;
+
+							if (ctx.currentItem_IsOfficeDocument)
+							{
+								editId = id + HP.ids.open;
+								editTitle = Srch.Res.hp_Edit;
+								editText = Srch.Res.hp_Edit;
+								
+							}
+							else if (!Srch.U.e(ctx.CurrentItem.ServerRedirectedURL) && !ctx.CurrentItem.IsContainer)
+							{
+								editId = id + HP.ids.openClient;
+								editTitle = Srch.Res.hp_Tooltip_OpenInClient;
+								editText = Srch.Res.hp_Edit;
+							}
+							//Adding Edit item url
+							if(typeof ctx.CurrentItem.ParentLink!=='undefined' && ctx.CurrentItem.ParentLink !=null && ctx.CurrentItem.ParentLink.indexOf('AllItems.aspx')>=0)
+							{
+								itemPath=ctx.CurrentItem.ParentLink.replace('AllItems.aspx','EditForm.aspx?ID=');
+								itemPath=itemPath+ctx.CurrentItem.ListItemID;
+
+								
+							}
+							else
+							{
+								itemPath=ctx.CurrentItem.ParentLink;
+								if(!$isNull(itemPath))
+								{
+								
+									var LibTitle=itemPath.substring(itemPath.lastIndexOf("/")+1,itemPath.length);
+									itemPath=itemPath.replace(LibTitle,'EditForm.aspx?ID=');
+									itemPath=itemPath+ctx.CurrentItem.ListItemID;
+								}
+								
+							}
+							
+							if(itemPath!=null && itemPath.indexOf('Forms')>=0)
+								{
+									editText='Edit Properties';
+								}
+								else
+								{
+									editText='Edit';
+								}
+							
+							var editHmtl = String.format('<a clicktype="ActionEdit" id="{0}" class="ms-calloutLink ms-uppercase" href="{1}" title="{2}" {3}>{4}</a>', 
+															$htmlEncode(editId), $urlHtmlEncode(itemPath), $htmlEncode(editTitle), appAttribs, $htmlEncode(editText));
+				_#-->
+                    <div class="ms-srch-hover-action">
+                        _#= editHmtl =#_
+                    </div>
+                    <!--#_
+						}
+						if (!Srch.U.isSPFSKU() && ctx.CurrentItem.csr_ShowFollowLink && !$isEmptyString(ctx.CurrentItem.Path)){
+							var isDoc = true;
+							if(!$isNull(ctx.CurrentItem.csr_IsSite) && ctx.CurrentItem.csr_IsSite == true){
+								isDoc = false;
+							}
+				_#-->
+                    <div class="ms-srch-hover-action">
+                        <a id="_#= $htmlEncode(id + HP.ids.follow) =#_" class="ms-calloutLink ms-uppercase" href="javascript:HP.Follow('_#= $scriptEncode(ctx.CurrentItem.Path) =#_', true, _#= isDoc =#_)" title="_#= $htmlEncode(Srch.Res.hp_Tooltip_Follow) =#_">
+									_#= $htmlEncode(Srch.Res.hp_Follow) =#_
+								</a>
+                    </div>
+                    <!--#_
+						}
+				_#-->
+                    <div class="ms-srch-hover-action">
+                        <!--#_
+							var emailLink = HP.GetEmailLink(ctx.CurrentItem.Title, ctx.CurrentItem.Path, ctx.CurrentItem.csr_ClientType, ctx.CurrentItem.ServerRedirectedURL);
+				_#-->
+                        <a clicktype="ActionSend" id="_#= $htmlEncode(id + HP.ids.send) =#_" class="ms-calloutLink ms-uppercase" title="_#= $htmlEncode(Srch.Res.hp_Tooltip_Send) =#_" href="_#= $htmlEncode(emailLink) =#_">
+								_#= $htmlEncode(Srch.Res.hp_Send) =#_
+							</a>
+                    </div>
+                    <!--#_
+				_#-->
+
+                    <!--#_
+						var emailLink = HP.GetEmailLink(ctx.CurrentItem.Title, ctx.CurrentItem.Path, ctx.CurrentItem.csr_ClientType, ctx.CurrentItem.ServerRedirectedURL);
+			_#-->
+
+                    <!-- COB code - added before end of last DIV: -->
+                    <!-- <div class="ms-srch-hover-action">
+                        <a href="javascript:Window.cob.sharepoint.jsdemos.ui.ShowHoverPanelTextBox('_#= (ctx.CurrentItem.id)  =#_')" id="_#= $htmlEncode(id + '_PostToFeed') =#_" class="ms-calloutLink ms-uppercase cob-hp-postaction" title="Export DS">Export DS and EB</a>
+                    </div> -->
+
+                    <!-- <div class="ms-srch-hover-action">
+                        <a href="https://26-uat.kier.group/Style%20Library/EvidenceDB/TestScripts/wordexportalert.js('_#= ctx.CurrentItem.Title =#_')" id="_#= $htmlEncode(id + '_PostToFeed') =#_" class="ms-calloutLink ms-uppercase cob-hp-postaction" title="Export DS">Export DS and EB</a>
+                    </div> -->
+
+                    <!-- <button onclick="thisisanalert()">export</button> -->
+
+                    <!-- <button onclick="thisisanalert('_#= (ctx.CurrentItem.id)  =#_')" id="_#= $htmlEncode(id + '_PostToFeed') =#_" class="ms-calloutLink ms-uppercase cob-hp-postaction" title="Export DS">Export1</button> -->
+
+                    <!-- <button onclick="listItems('_#= (ctx.CurrentItem.id)  =#_') ">Export</button> -->
+
+                    <!-- <a onclick="retrieveListItems('_#= (ctx.CurrentItem.id)  =#_','_#= (ctx.CurrentItem.Title)  =#_','_#= (ctx.CurrentItem.Path)  =#_')" id="_#= $htmlEncode(id + '_PostToFeed') =#_" class="ms-calloutLink ms-uppercase cob-hp-postaction" title="Export DS">Export1</a> -->
+			
+
+		    <div class="ms-srch-hover-action">
+                        <a href="#" onclick="EDB.exportToWord('_#= (ctx.CurrentItem.Path)  =#_','_#= ('')  =#_');return false;" id="_#= $htmlEncode(id + '_PostToFeed') =#_" class="ms-calloutLink ms-uppercase cob-hp-postaction" title="Export Project Datasheet">
+                            Export DS
+                        </a>
+                    </div>
+		    <div class="ms-srch-hover-action">
+                        <a href="#" onclick="EDB.exportToWord('_#= (ctx.CurrentItem.Path)  =#_','_#= ('Project Evidence Bites')  =#_');return false;" id="_#= $htmlEncode(id + '_PostToFeed') =#_" class="ms-calloutLink ms-uppercase cob-hp-postaction" title="Export Project Datasheet & Project Evidence Bites">
+                            Export DS & Bites
+                        </a>
+                    </div>
+
+                    <!-- end COB code -->
+
+                    <!--#_
+			_#-->
+
+                </div>
+                <!-- Hover Footer/ Action  section end -->
+            </div>
+        </div>
+    </div>
+</body>
+<!--#_
+   AddPostRenderCallback(ctx, function(){
+       alert(ctx.Title + "finished rendering!");
+   });
+_#-->
+
+</html>

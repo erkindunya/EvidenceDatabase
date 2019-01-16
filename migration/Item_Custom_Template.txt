@@ -1,0 +1,170 @@
+<head>
+<title>Custom Template</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string">Displays the default result item template.</mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ManagedPropertyMapping msdt:dt="string">&#39;Title&#39;:&#39;Title&#39;,&#39;Path&#39;:&#39;Path&#39;,&#39;Description&#39;:&#39;Description&#39;,&#39;EditorOWSUSER&#39;:&#39;EditorOWSUSER&#39;,&#39;LastModifiedTime&#39;:&#39;LastModifiedTime&#39;,&#39;CollapsingStatus&#39;:&#39;CollapsingStatus&#39;,&#39;DocId&#39;:&#39;DocId&#39;,&#39;HitHighlightedSummary&#39;:&#39;HitHighlightedSummary&#39;,&#39;HitHighlightedProperties&#39;:&#39;HitHighlightedProperties&#39;,&#39;FileExtension&#39;:&#39;FileExtension&#39;,&#39;ViewsLifeTime&#39;:&#39;ViewsLifeTime&#39;,&#39;ParentLink&#39;:&#39;ParentLink&#39;,&#39;FileType&#39;:&#39;FileType&#39;,&#39;IsContainer&#39;:&#39;IsContainer&#39;,&#39;SecondaryFileExtension&#39;:&#39;SecondaryFileExtension&#39;,&#39;DisplayAuthor&#39;:&#39;DisplayAuthor&#39;,&#39;contentType&#39;:&#39;contentType&#39;,&#39;AuthorOWSUSER&#39;:&#39;AuthorOWSUSER&#39;,&#39;Created&#39;:&#39;Created&#39;,&#39;ProjectDescriptionOWSMTXT&#39;:&#39;ProjectDescriptionOWSMTXT&#39;,&#39;EvidenceBiteHeadliOWSMTXT&#39;:&#39;EvidenceBiteHeadliOWSMTXT&#39;,&#39;EvidenceBiteDescriOWSMTXT&#39;:&#39;EvidenceBiteDescriOWSMTXT&#39;,&#39;ListItemID&#39;:&#39;ListItemID&#39;,&#39;owstaxIdStagex0020ofx0020Project&#39;:&#39;owstaxIdStagex0020ofx0020Project&#39;,&#39;isBestBidNewOWSBOOL&#39;:&#39;isBestBidNewOWSBOOL&#39;,&#39;owstaxIdBusinessx0020Categories&#39;:&#39;owstaxIdBusinessx0020Categories&#39;</mso:ManagedPropertyMapping>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://content-mykier/sites/EDBUAT/_catalogs/masterpage/Display Templates/Search/Item_Custom_Template.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Vig, Gabor</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">49300.0000000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">DAVE_Agent.svc</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div id="Item_Default">
+<!--#_ 
+
+        if(!$isNull(ctx.CurrentItem) && !$isNull(ctx.ClientControl)){
+            var id = ctx.ClientControl.get_nextUniqueId();
+            var itemId = id + Srch.U.Ids.item;
+			var hoverId = id + Srch.U.Ids.hover;
+			var hoverUrl = "~sitecollection/_catalogs/masterpage/Display Templates/Search/Item_Custom_HoverPanel.js";
+            $setResultItem(itemId, ctx.CurrentItem);
+			if(ctx.CurrentItem.IsContainer){
+				ctx.CurrentItem.csr_Icon = Srch.U.getFolderIconUrl();
+			}
+			var imageWarningPath='';
+			var TitleHeading='';
+			var anchorColor='';
+			if(typeof ctx.CurrentItem.contentType!=='undefined' && ctx.CurrentItem.contentType!=null)
+			{
+
+				if(ctx.CurrentItem.contentType.indexOf('PAS 91')>=0)
+					{
+						anchorColor='color:#6BB440;';
+						ctx.CurrentItem.csr_Icon ='/sites/EDBUAT/Style%20Library/Images/Pas%2091%20small.png'; 
+					}
+				else if(ctx.CurrentItem.contentType.indexOf('Construction Regional Case study')>=0 || ctx.CurrentItem.contentType.indexOf('Construction Regional Project Datasheets')>=0)
+					{
+						anchorColor='color:#FBAB18;';
+						ctx.CurrentItem.csr_Icon ='/sites/EDBUAT/Style%20Library/Images/Regional%20data%20small.png';
+					}
+				else if(  ctx.CurrentItem.contentType.indexOf('Construction Project Evidence')>=0 )
+					{
+						anchorColor='color:#1E469D;';
+						ctx.CurrentItem.csr_Icon ='/sites/EDBUAT/Style%20Library/Images/Evidence%20small.png';
+						TitleHeading='Project:';
+					}
+				else if(ctx.CurrentItem.contentType.indexOf('Construction Generic Evidence Bite')>=0)
+					{
+						anchorColor='color:#1E469D;';
+						ctx.CurrentItem.csr_Icon ='/sites/EDBUAT/Style%20Library/Images/Generic%20EB.png';
+					}
+				else if(ctx.CurrentItem.contentType.indexOf('Construction Project Datasheet')>=0)
+					{
+						if (ctx.CurrentItem.isBestBidNewOWSBOOL == 1) {
+							imageWarningPath='/sites/EDBUAT/Style%20Library/Images/Alert.png';
+						} else {
+							imageWarningPath='';
+						}
+
+						anchorColor='color:#1E469D;';
+						ctx.CurrentItem.csr_Icon ='/sites/EDBUAT/Style%20Library/Images/Datasheet2.png';
+						TitleHeading='Project:';
+
+					}
+				else if(ctx.CurrentItem.contentType.indexOf('Construction Answer Plan')>=0 || ctx.CurrentItem.contentType.indexOf('Questions and Answers')>=0)
+					{
+						anchorColor='color:#B15D8C;';
+						ctx.CurrentItem.csr_Icon ='/sites/EDBUAT/Style%20Library/Images/Answer%20Plans%20Small.png';
+					}
+				else if(ctx.CurrentItem.contentType.indexOf('Construction Framework KPI')>=0)
+					{
+						anchorColor='color:#385CA8;';
+						ctx.CurrentItem.csr_Icon ='/sites/EDBUAT/Style%20Library/Images/KPI.png';
+					}
+
+			}
+			// to show different description heading based on content type.
+			var DetailsHeading='';
+
+			//ctx.currentItem_ShowHoverPanelCallback = Srch.U.getShowHoverPanelCallback(itemId, hoverId, hoverUrl);
+            //ctx.currentItem_HideHoverPanelCallback = Srch.U.getHideHoverPanelCallback();
+
+			var description='';
+			if(typeof ctx.CurrentItem.ProjectDescriptionOWSMTXT!=='undefined' && !$isNull(ctx.CurrentItem.ProjectDescriptionOWSMTXT))
+			{
+				DetailsHeading='Project Description:';
+				description=ctx.CurrentItem.ProjectDescriptionOWSMTXT;
+			}
+			else
+			{
+				description=ctx.CurrentItem.Path;
+			}
+
+			var imagePath=ctx.CurrentItem.csr_Icon;
+			var itemPath=ctx.CurrentItem.Path;
+
+			var projectTitle=ctx.CurrentItem.Title;
+			if(projectTitle.length>60)
+			{
+				projectTitle=projectTitle.substring(0,60)+'....';
+			}
+
+			var itemTitle=ctx.CurrentItem.Title;
+			if(typeof ctx.CurrentItem.EvidenceBiteHeadliOWSMTXT!=='undefined' && !$isNull(ctx.CurrentItem.EvidenceBiteHeadliOWSMTXT))
+			{
+				itemTitle=ctx.CurrentItem.EvidenceBiteHeadliOWSMTXT;
+				if(typeof ctx.CurrentItem.EvidenceBiteDescriOWSMTXT!=='undefined' && !$isNull(ctx.CurrentItem.EvidenceBiteDescriOWSMTXT))
+					{
+						DetailsHeading='Evidence bite:';
+						description= ctx.CurrentItem.EvidenceBiteDescriOWSMTXT;
+					}
+			}
+			if(description.length>350)
+			{
+				description=description.substring(0,350)+'....';
+			}
+			//To show only evidence bit making Title empty
+			if(typeof ctx.CurrentItem.contentType!=='undefined' && ctx.CurrentItem.contentType!=null)
+			{
+				if(ctx.CurrentItem.contentType.indexOf('Construction Generic Evidence Bite')>=0)
+				{
+					projectTitle='';
+				}
+			}
+			ctx.currentItem_ShowHoverPanelCallback = Srch.U.getShowHoverPanelCallback(itemId, hoverId, hoverUrl);
+            ctx.currentItem_HideHoverPanelCallback = Srch.U.getHideHoverPanelCallback();
+
+			var imageId=id+'_itemIcon';
+			var imageWarningId=id+'_itemIcon'+'Warning';
+			var itemTitleId=id+'_itemTitle';
+			var itemTitleLinkId=id+'_itemTitleLink';
+			var itemProjectTitleId=id+'_itemTitlePath';
+			var itemPathId=id+'_itemPath';
+
+			//style="background-color:yellow;"
+_#-->
+			<div >
+				<div id="_#= $htmlEncode(itemId) =#_" name="Item" data-displaytemplate="DefaultItem" class="ms-srch-item" onmouseover="_#= ctx.currentItem_ShowHoverPanelCallback =#_" onmouseout="_#= ctx.currentItem_HideHoverPanelCallback =#_">
+					<!-- _#=ctx.RenderBody(ctx)=#_ -->
+					<div class="ms-srch-item-icon">
+						<img id="_#= $htmlEncode(imageId) =#_"  src="_#= $htmlEncode(imagePath) =#_" style="display: inline;max-height:32px;max-width:32px;position: relative;top: 4px;"> 
+					</div>
+					<div >
+						<img id="_#= $htmlEncode(imageWarningId) =#_"  src="_#= $htmlEncode(imageWarningPath) =#_" style="float: right; margin: 0px 0px 15px 15px;display: inline;max-height:32px;max-width:32px;position: relative;top: 4px;">                                           
+					</div>
+					<div id="_#= $htmlEncode(itemTitleId) =#_" class="ms-srch-item-title" >
+						<h3 class="ms-srch-ellipsis" style='position: relative;top: 4px;left: 2px;'>
+							<a clicktype="Result" style="_#= $htmlEncode(anchorColor) =#_ ; font-size: 1.25em;"  id="_#= $htmlEncode(itemTitleLinkId) =#_" href="_#= $htmlEncode(itemPath) =#_" class="ms-srch-item-link"  onfocus="EnsureScriptParams('SearchUI.js', 'HP.Show', '_#= $htmlEncode(itemId) =#_', '_#= $htmlEncode(hoverId) =#_', '_#= $htmlEncode(hoverUrl) =#_', false);">_#= $htmlEncode(itemTitle) =#_</a>                
+							<!-- title="_#= $htmlEncode(itemTitle) =#_" -->
+						</h3>
+					</div>
+					<div id="_#= $htmlEncode(itemProjectTitleId) =#_" tabindex="0" class="ms-srch-item-path" style='padding: 8px 0px 5px 40px;color:#333' ><b>_#= $htmlEncode(TitleHeading) =#_ </b> _#= $htmlEncode(projectTitle) =#_</div> 					
+					<div id="_#= $htmlEncode(itemPathId) =#_" tabindex="0" class="ms-srch-item-path" style="padding: 0px 0px 5px 40px;color:#333" > <b>_#= $htmlEncode(DetailsHeading) =#_</b> _#= $htmlEncode(description) =#_
+					</div> 	<!-- title="_#= $htmlEncode(description) =#_" -->
+					<div id="_#= $htmlEncode(hoverId) =#_" class="ms-srch-hover-outerContainer"></div>
+				</div>
+			</div>
+<!--#_ 
+        } 
+_#-->
+    </div>
+</body>
