@@ -8180,38 +8180,6 @@
             </Field>
           </pnp:Fields>
         </pnp:ListInstance>
-        <pnp:ListInstance Title="Project Datasheet Test PS" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Project Datasheet Test PS" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Project Datasheet Test PS/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Project Datasheet Test PS/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Project Datasheet Test PS/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
-          <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
-          </pnp:ContentTypeBindings>
-          <pnp:Views>
-            <View Name="{EA3F18C3-193C-4555-A88B-AEDCC154FF7F}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/EDBUAT/Lists/Project Datasheet Test PS/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23">
-              <Query>
-                <OrderBy>
-                  <FieldRef Name="ID" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="LinkTitle" />
-                <FieldRef Name="Status" />
-                <FieldRef Name="WF_x0020_Status" />
-                <FieldRef Name="Is_x0020_Draft" />
-                <FieldRef Name="Approval_x0020_Status" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-          </pnp:Views>
-          <pnp:Fields>
-            <Field Type="Text" DisplayName="Status" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{43b3b022-3207-4880-9d98-5dad610d11bc}" SourceID="{{listid:Project Datasheet Test PS}}" StaticName="Status" Name="Status" ColName="nvarchar3" RowOrdinal="0" />
-            <Field Type="Text" DisplayName="WF Status" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{f89de626-ffe0-4966-8c46-ee8524894ef8}" SourceID="{{listid:Project Datasheet Test PS}}" StaticName="WF_x0020_Status" Name="WF_x0020_Status" ColName="nvarchar4" RowOrdinal="0" />
-            <Field Type="Boolean" DisplayName="IsDraft" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{cced1ecf-e1b8-4c13-9989-3bbde2947e30}" SourceID="{{listid:Project Datasheet Test PS}}" StaticName="Is_x0020_Draft" Name="Is_x0020_Draft" ColName="bit1" RowOrdinal="0" Required="FALSE" Version="1">
-              <Default>1</Default>
-            </Field>
-            <Field Type="Text" DisplayName="Approval Status" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{34cd1777-ce43-4837-bcb7-66bcb7ce8672}" SourceID="{{listid:Project Datasheet Test PS}}" StaticName="Approval_x0020_Status" Name="Approval_x0020_Status" ColName="nvarchar5" RowOrdinal="0" />
-          </pnp:Fields>
-        </pnp:ListInstance>
         <pnp:ListInstance Title="Project Evidence Bites" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Project Evidence Bites" EnableVersioning="true" EnableModeration="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Project Evidence Bites/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Project Evidence Bites/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Project Evidence Bites/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
             <pnp:ContentTypeBinding ContentTypeID="0x0100E371B76ADC985B49AD3159C3A66C6E8D02" Default="true" />
