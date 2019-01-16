@@ -4965,6 +4965,7 @@
                 <FieldRef Name="Best_x0020_Practice_x0020_Champi" />
                 <FieldRef Name="Approver" />
                 <FieldRef Name="Region" />
+                <FieldRef Name="OfficeName" />
                 <FieldRef Name="Edit" />
                 <FieldRef Name="OfficeName" />
               </ViewFields>
