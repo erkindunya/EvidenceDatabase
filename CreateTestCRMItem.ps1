@@ -2,7 +2,7 @@
 Add-Type -Path "C:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.Runtime.dll"  
   
 $siteURL = "https://content-mykier/sites/EDBUAT"  
-$userId = "gabor.vig"  
+$userId = "ptp_crm_sp_prd.svc"  
 $pwd = Read-Host -Prompt "Enter password" -AsSecureString  
 $ctx = New-Object Microsoft.SharePoint.Client.ClientContext($siteURL)
 $ctx.Credentials = New-Object System.Net.NetworkCredential($userId, $pwd)
