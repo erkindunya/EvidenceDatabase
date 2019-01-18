@@ -8389,7 +8389,7 @@
         </pnp:WebFeatures>
       </pnp:Features>
       <pnp:Files>
-        <pnp:File Src="\\content-mykier@SSL\DavWWWRoot\sites\EDBUAT\_catalogs\masterpage\Category-Delivery Regions.html" Folder="{masterpagecatalog}" Overwrite="true" Level="Draft">
+        <pnp:File Src="_catalogs\masterpage\Category-Delivery Regions.html" Folder="{masterpagecatalog}" Overwrite="true" Level="Draft">
           <pnp:Properties>
             <pnp:Property Key="ContentTypeId" Value="{contenttypeid:Html Page Layout}" />
             <pnp:Property Key="Title" Value="Category-Delivery Regions " />
@@ -8399,7 +8399,7 @@
             <pnp:Property Key="HtmlDesignStatusAndPreview" Value="{masterpagecatalog}/Category-Delivery Regions.html, Conversion successful." />
           </pnp:Properties>
         </pnp:File>
-        <pnp:File Src="\\content-mykier@SSL\DavWWWRoot\sites\EDBUAT\_catalogs\masterpage\Custom Search.html" Folder="{masterpagecatalog}" Overwrite="true" Level="Published">
+        <pnp:File Src="_catalogs\masterpage\Custom Search.html" Folder="{masterpagecatalog}" Overwrite="true" Level="Published">
           <pnp:Properties>
             <pnp:Property Key="ContentTypeId" Value="{contenttypeid:Html Page Layout}" />
             <pnp:Property Key="Title" Value=" Custom Search " />
@@ -8409,7 +8409,7 @@
             <pnp:Property Key="HtmlDesignStatusAndPreview" Value="{masterpagecatalog}/Custom Search.html, Conversion successful." />
           </pnp:Properties>
         </pnp:File>
-        <pnp:File Src="\\content-mykier@SSL\DavWWWRoot\sites\EDBUAT\_catalogs\masterpage\CatalogItem-Delivery Regions.html" Folder="{masterpagecatalog}" Overwrite="true" Level="Draft">
+        <pnp:File Src="_catalogs\masterpage\CatalogItem-Delivery Regions.html" Folder="{masterpagecatalog}" Overwrite="true" Level="Draft">
           <pnp:Properties>
             <pnp:Property Key="ContentTypeId" Value="{contenttypeid:Html Page Layout}" />
             <pnp:Property Key="Title" Value="CatalogItem-Delivery Regions " />
