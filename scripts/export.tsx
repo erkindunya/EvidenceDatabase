@@ -44,6 +44,7 @@ async function queryData(biteList:any,listId:number, dataList:string, sheet: Dat
     return error;
   }
 }
+
 function exportElementToWord(title:string):void {
   const html = document.getElementById('mainExportContainer').innerHTML;
   if (!window.Blob) {

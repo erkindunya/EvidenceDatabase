@@ -8388,7 +8388,7 @@
           <pnp:Feature ID="9bf7bf98-5660-498a-9399-bc656a61ed5d" />
         </pnp:WebFeatures>
       </pnp:Features>
-      <pnp:Files>
+      <!-- <pnp:Files>
         <pnp:File Src="_catalogs\masterpage\Category-Delivery Regions.html" Folder="{masterpagecatalog}" Overwrite="true" Level="Draft">
           <pnp:Properties>
             <pnp:Property Key="ContentTypeId" Value="{contenttypeid:Html Page Layout}" />
@@ -8419,8 +8419,2290 @@
             <pnp:Property Key="HtmlDesignStatusAndPreview" Value="{masterpagecatalog}/CatalogItem-Delivery Regions.html, Conversion successful." />
           </pnp:Properties>
         </pnp:File>
-      </pnp:Files>
+      </pnp:Files> -->
       <pnp:ComposedLook Name="" ColorFile="" FontFile="" BackgroundFile="" Version="0" />
+      <pnp:SearchSettings>
+        <pnp:SiteSearchSettings>
+          <SearchConfigurationSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Portability">
+            <SearchQueryConfigurationSettings>
+              <SearchQueryConfigurationSettings>
+                <BestBets xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" />
+                <DefaultSourceId>00000000-0000-0000-0000-000000000000</DefaultSourceId>
+                <DefaultSourceIdSet>true</DefaultSourceIdSet>
+                <DeployToParent>false</DeployToParent>
+                <DisableInheritanceOnImport>false</DisableInheritanceOnImport>
+                <QueryRuleGroups xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" />
+                <QueryRules xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" />
+                <ResultTypes xmlns:d4p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration" />
+                <Sources xmlns:d4p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration.Query" />
+                <UserSegments xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" />
+              </SearchQueryConfigurationSettings>
+            </SearchQueryConfigurationSettings>
+            <SearchRankingModelConfigurationSettings>
+              <RankingModels xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+            </SearchRankingModelConfigurationSettings>
+            <SearchSchemaConfigurationSettings>
+              <Aliases xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                <d3p1:LastItemName>ActualCompletion</d3p1:LastItemName>
+                <d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                    <d4p1:Key>ValueAtCompletion</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>ValueAtCompletion</d3p1:Name>
+                      <d3p1:ManagedPid>1000000500</d3p1:ManagedPid>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                    <d4p1:Key>PlannedContractStart</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>PlannedContractStart</d3p1:Name>
+                      <d3p1:ManagedPid>1000000600</d3p1:ManagedPid>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                    <d4p1:Key>PlannedCompletion</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>PlannedCompletion</d3p1:Name>
+                      <d3p1:ManagedPid>1000000601</d3p1:ManagedPid>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                    <d4p1:Key>ActualStart</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>ActualStart</d3p1:Name>
+                      <d3p1:ManagedPid>1000000602</d3p1:ManagedPid>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                    <d4p1:Key>ActualCompletion</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>ActualCompletion</d3p1:Name>
+                      <d3p1:ManagedPid>1000000603</d3p1:ManagedPid>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                </d3p1:dictionary>
+              </Aliases>
+              <CategoriesAndCrawledProperties xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                <d3p1:KeyValueOfguidCrawledPropertyInfoCollectionaSYUqUE_P>
+                  <d3p1:Key>ed280121-b677-4e2a-8fbc-0d9e2325b0a2</d3p1:Key>
+                  <d3p1:Value xmlns:d5p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                    <d5p1:LastItemName>ows_q_BOOL_isBestBid</d5p1:LastItemName>
+                    <d5p1:dictionary>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_q_BOOL_isBestBid</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_q_BOOL_isBestBid</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>false</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>ed280121-b677-4e2a-8fbc-0d9e2325b0a2</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                    </d5p1:dictionary>
+                  </d3p1:Value>
+                </d3p1:KeyValueOfguidCrawledPropertyInfoCollectionaSYUqUE_P>
+                <d3p1:KeyValueOfguidCrawledPropertyInfoCollectionaSYUqUE_P>
+                  <d3p1:Key>00130329-0000-0130-c000-000000131346</d3p1:Key>
+                  <d3p1:Value xmlns:d5p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                    <d5p1:LastItemName>ows_Actual_x0020_completion_x0020_da</d5p1:LastItemName>
+                    <d5p1:dictionary>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Stage_x0020_of_x0020_Project</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Stage_x0020_of_x0020_Project</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Kier_x0020_Delivery_x0020_Region</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Kier_x0020_Delivery_x0020_Region</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Project_x0020_Location</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Project_x0020_Location</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Sector</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Sector</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Form_x0020_of_x0020_Contract</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Form_x0020_of_x0020_Contract</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Work_x0020_Description</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Work_x0020_Description</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Business_x0020_Function</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Business_x0020_Function</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_isBestBid</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_isBestBid</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_SubSector</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_SubSector</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Topic</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Topic</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Project_x0020_Region</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Project_x0020_Region</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Project_x0020_Area</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Project_x0020_Area</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Business_x0020_Categories</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Business_x0020_Categories</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Scope_x0020_of_x0020_Kier_x0020_</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Scope_x0020_of_x0020_Kier_x0020_</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Form_x0020_of_x0020_Procurement</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Form_x0020_of_x0020_Procurement</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Handover_x0020_BREEAM/DREA0</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Handover_x0020_BREEAM/DREA0</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Client_x0020_Reference_x0020_ava</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Client_x0020_Reference_x0020_ava</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_FormofProcurementSubType</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_FormofProcurementSubType</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_EvidenceProjectStage</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_EvidenceProjectStage</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Value_x0020_at_x0020_completion</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Value_x0020_at_x0020_completion</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Planned_x0020_start_x0020_on_x00</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Planned_x0020_start_x0020_on_x00</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Planned_x0020_completion_x0020_d</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Planned_x0020_completion_x0020_d</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Actual_x0020_start_x0020_on_x002</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Actual_x0020_start_x0020_on_x002</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Actual_x0020_completion_x0020_da</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Actual_x0020_completion_x0020_da</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                    </d5p1:dictionary>
+                  </d3p1:Value>
+                </d3p1:KeyValueOfguidCrawledPropertyInfoCollectionaSYUqUE_P>
+              </CategoriesAndCrawledProperties>
+              <CrawledProperties xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration" i:nil="true" />
+              <ManagedProperties xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                <d3p1:LastItemName>isBestBidNewOWSBOOL</d3p1:LastItemName>
+                <d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <d4p1:KeyValueOfstringManagedPropertyInfoy6h3NzC8>
+                    <d4p1:Key>isBestBidNewOWSBOOL</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>isBestBidNewOWSBOOL</d3p1:Name>
+                      <d3p1:Aliases i:nil="true" />
+                      <d3p1:CompleteMatching>false</d3p1:CompleteMatching>
+                      <d3p1:Context>0</d3p1:Context>
+                      <d3p1:DeleteDisallowed>false</d3p1:DeleteDisallowed>
+                      <d3p1:Description>is Best Bid New OWS BOOL </d3p1:Description>
+                      <d3p1:EnabledForScoping>false</d3p1:EnabledForScoping>
+                      <d3p1:EntityExtractorBitMap>0</d3p1:EntityExtractorBitMap>
+                      <d3p1:FullTextIndex i:nil="true" />
+                      <d3p1:HasMultipleValues>false</d3p1:HasMultipleValues>
+                      <d3p1:IndexOptions>0</d3p1:IndexOptions>
+                      <d3p1:IsReadOnly>false</d3p1:IsReadOnly>
+                      <d3p1:ManagedType>Text</d3p1:ManagedType>
+                      <d3p1:MappedCrawledProperties i:nil="true" />
+                      <d3p1:MappingDisallowed>false</d3p1:MappingDisallowed>
+                      <d3p1:Pid>3276</d3p1:Pid>
+                      <d3p1:Queryable>true</d3p1:Queryable>
+                      <d3p1:Refinable>false</d3p1:Refinable>
+                      <d3p1:RefinerConfiguration>
+                        <d3p1:Anchoring>Auto</d3p1:Anchoring>
+                        <d3p1:CutoffMaxBuckets>1000</d3p1:CutoffMaxBuckets>
+                        <d3p1:Divisor>1</d3p1:Divisor>
+                        <d3p1:Intervals>4</d3p1:Intervals>
+                        <d3p1:Resolution>1</d3p1:Resolution>
+                        <d3p1:Type>Deep</d3p1:Type>
+                      </d3p1:RefinerConfiguration>
+                      <d3p1:RemoveDuplicates>true</d3p1:RemoveDuplicates>
+                      <d3p1:RespectPriority>false</d3p1:RespectPriority>
+                      <d3p1:Retrievable>true</d3p1:Retrievable>
+                      <d3p1:SafeForAnonymous>true</d3p1:SafeForAnonymous>
+                      <d3p1:Searchable>true</d3p1:Searchable>
+                      <d3p1:Sortable>false</d3p1:Sortable>
+                      <d3p1:SortableType>Enabled</d3p1:SortableType>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                      <d3p1:UpdateGroup i:nil="true" />
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringManagedPropertyInfoy6h3NzC8>
+                </d3p1:dictionary>
+                <d3p1:TotalCount>0</d3p1:TotalCount>
+              </ManagedProperties>
+              <Mappings xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                <d3p1:LastItemName>00130329-0000-0130-c000-000000131346:ows_Actual_x0020_completion_x0020_da-&gt;1000000603</d3p1:LastItemName>
+                <d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>ed280121-b677-4e2a-8fbc-0d9e2325b0a2:ows_q_BOOL_isBestBid-&gt;3259</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>ed280121-b677-4e2a-8fbc-0d9e2325b0a2:ows_q_BOOL_isBestBid-&gt;3259</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_q_BOOL_isBestBid</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>ed280121-b677-4e2a-8fbc-0d9e2325b0a2</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>3259</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Stage_x0020_of_x0020_Project-&gt;1000000011</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Stage_x0020_of_x0020_Project-&gt;1000000011</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Stage_x0020_of_x0020_Project</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000011</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Kier_x0020_Delivery_x0020_Region-&gt;1000000012</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Kier_x0020_Delivery_x0020_Region-&gt;1000000012</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Kier_x0020_Delivery_x0020_Region</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000012</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Project_x0020_Location-&gt;1000000013</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Project_x0020_Location-&gt;1000000013</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Project_x0020_Location</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000013</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Sector-&gt;1000000014</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Sector-&gt;1000000014</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Sector</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000014</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Form_x0020_of_x0020_Contract-&gt;1000000016</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Form_x0020_of_x0020_Contract-&gt;1000000016</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Form_x0020_of_x0020_Contract</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000016</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Work_x0020_Description-&gt;1000000017</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Work_x0020_Description-&gt;1000000017</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Work_x0020_Description</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000017</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Business_x0020_Function-&gt;1000000018</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Business_x0020_Function-&gt;1000000018</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Business_x0020_Function</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000018</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>ed280121-b677-4e2a-8fbc-0d9e2325b0a2:ows_q_BOOL_isBestBid-&gt;3276</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>ed280121-b677-4e2a-8fbc-0d9e2325b0a2:ows_q_BOOL_isBestBid-&gt;3276</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_q_BOOL_isBestBid</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>ed280121-b677-4e2a-8fbc-0d9e2325b0a2</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>3276</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_isBestBid-&gt;3276</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_isBestBid-&gt;3276</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_isBestBid</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>3276</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>200</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_SubSector-&gt;1000000015</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_SubSector-&gt;1000000015</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_SubSector</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000015</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Topic-&gt;1000000019</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Topic-&gt;1000000019</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Topic</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000019</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Project_x0020_Region-&gt;1000000021</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Project_x0020_Region-&gt;1000000021</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Project_x0020_Region</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000021</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Project_x0020_Area-&gt;1000000022</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Project_x0020_Area-&gt;1000000022</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Project_x0020_Area</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000022</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Business_x0020_Categories-&gt;1000000023</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Business_x0020_Categories-&gt;1000000023</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Business_x0020_Categories</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000023</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Scope_x0020_of_x0020_Kier_x0020_-&gt;1000000024</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Scope_x0020_of_x0020_Kier_x0020_-&gt;1000000024</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Scope_x0020_of_x0020_Kier_x0020_</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000024</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Form_x0020_of_x0020_Procurement-&gt;1000000025</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Form_x0020_of_x0020_Procurement-&gt;1000000025</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Form_x0020_of_x0020_Procurement</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000025</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Handover_x0020_BREEAM/DREA0-&gt;1000000026</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Handover_x0020_BREEAM/DREA0-&gt;1000000026</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Handover_x0020_BREEAM/DREA0</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000026</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Client_x0020_Reference_x0020_ava-&gt;1000000027</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Client_x0020_Reference_x0020_ava-&gt;1000000027</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Client_x0020_Reference_x0020_ava</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000027</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_FormofProcurementSubType-&gt;1000000028</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_FormofProcurementSubType-&gt;1000000028</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_FormofProcurementSubType</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000028</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_EvidenceProjectStage-&gt;1000000029</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_EvidenceProjectStage-&gt;1000000029</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_EvidenceProjectStage</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000029</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Value_x0020_at_x0020_completion-&gt;1000000500</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Value_x0020_at_x0020_completion-&gt;1000000500</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Value_x0020_at_x0020_completion</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000500</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Planned_x0020_start_x0020_on_x00-&gt;1000000600</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Planned_x0020_start_x0020_on_x00-&gt;1000000600</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Planned_x0020_start_x0020_on_x00</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000600</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Planned_x0020_completion_x0020_d-&gt;1000000601</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Planned_x0020_completion_x0020_d-&gt;1000000601</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Planned_x0020_completion_x0020_d</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000601</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Actual_x0020_start_x0020_on_x002-&gt;1000000602</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Actual_x0020_start_x0020_on_x002-&gt;1000000602</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Actual_x0020_start_x0020_on_x002</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000602</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Actual_x0020_completion_x0020_da-&gt;1000000603</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Actual_x0020_completion_x0020_da-&gt;1000000603</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Actual_x0020_completion_x0020_da</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000603</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                </d3p1:dictionary>
+              </Mappings>
+              <Overrides xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                <d3p1:LastItemName>1000000603</d3p1:LastItemName>
+                <d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>3259</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>3259</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>3259</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000011</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000011</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000011</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000012</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000012</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000012</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000013</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000013</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000013</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000014</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000014</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000014</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000015</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000015</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000015</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000016</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000016</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000016</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000017</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000017</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000017</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000018</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000018</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000018</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000019</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000019</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000019</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000021</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000021</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000021</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000022</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000022</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000022</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000023</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000023</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000023</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000024</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000024</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000024</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000025</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000025</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000025</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000026</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000026</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000026</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000027</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000027</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000027</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000028</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000028</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000028</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000029</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000029</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000029</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000500</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000500</d3p1:Name>
+                      <d3p1:AliasesOverridden>true</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000500</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000600</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000600</d3p1:Name>
+                      <d3p1:AliasesOverridden>true</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000600</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000601</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000601</d3p1:Name>
+                      <d3p1:AliasesOverridden>true</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000601</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000602</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000602</d3p1:Name>
+                      <d3p1:AliasesOverridden>true</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000602</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000603</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000603</d3p1:Name>
+                      <d3p1:AliasesOverridden>true</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000603</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                </d3p1:dictionary>
+              </Overrides>
+            </SearchSchemaConfigurationSettings>
+          </SearchConfigurationSettings>
+        </pnp:SiteSearchSettings>
+        <pnp:WebSearchSettings>
+          <SearchConfigurationSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Portability">
+            <SearchQueryConfigurationSettings>
+              <SearchQueryConfigurationSettings>
+                <BestBets xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" />
+                <DefaultSourceId>00000000-0000-0000-0000-000000000000</DefaultSourceId>
+                <DefaultSourceIdSet>true</DefaultSourceIdSet>
+                <DeployToParent>false</DeployToParent>
+                <DisableInheritanceOnImport>false</DisableInheritanceOnImport>
+                <QueryRuleGroups xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" />
+                <QueryRules xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" />
+                <ResultTypes xmlns:d4p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration" />
+                <Sources xmlns:d4p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration.Query">
+                  <d4p1:Source>
+                    <d4p1:Active>true</d4p1:Active>
+                    <d4p1:AuthInfo xmlns:d6p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration" i:nil="true" />
+                    <d4p1:BuiltIn>false</d4p1:BuiltIn>
+                    <d4p1:ConnectionTimeout>15000</d4p1:ConnectionTimeout>
+                    <d4p1:ConnectionUrlTemplate />
+                    <d4p1:CreatedDate>2014-11-07T16:27:49.33</d4p1:CreatedDate>
+                    <d4p1:Description>Result source for Regional Data</d4p1:Description>
+                    <d4p1:HasPermissionToReadAuthInfo>true</d4p1:HasPermissionToReadAuthInfo>
+                    <d4p1:Id>5163d37b-ece9-4971-b49c-5dfb700335f0</d4p1:Id>
+                    <d4p1:IndexOffset>0</d4p1:IndexOffset>
+                    <d4p1:LastModifiedDate>2014-11-07T16:27:49.33</d4p1:LastModifiedDate>
+                    <d4p1:MaximumResponseLength>64</d4p1:MaximumResponseLength>
+                    <d4p1:Name>Regional Data</d4p1:Name>
+                    <d4p1:Owner xmlns:d6p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                      <d6p1:DatabaseId>00000000-0000-0000-0000-000000000000</d6p1:DatabaseId>
+                      <d6p1:DisableInheritance>false</d6p1:DisableInheritance>
+                      <d6p1:SPFarmId>baa1b08f-cbca-4af8-95fe-67ba9526f9b6</d6p1:SPFarmId>
+                      <d6p1:SPSiteId>259b1e32-a1ae-4529-ac10-46ef773af0ca</d6p1:SPSiteId>
+                      <d6p1:SPSiteSubscriptionId>0c37852b-34d0-418e-91c6-2ac25af4be5b</d6p1:SPSiteSubscriptionId>
+                      <d6p1:SPWebId>20cd511e-77ba-45a3-93c6-010eab3c20a3</d6p1:SPWebId>
+                    </d4p1:Owner>
+                    <d4p1:ProviderId>fa947043-6046-4f97-9714-40d4c113963d</d4p1:ProviderId>
+                    <d4p1:QueryTransform xmlns:d6p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08">
+                      <d6p1:Id>e9c22105-3c58-463a-be35-05aab6954a15</d6p1:Id>
+                      <d6p1:IsSystem>false</d6p1:IsSystem>
+                      <d6p1:OverridePropertiesForSeralization xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+                      <d6p1:OwnerId>a799ffc5-66be-42f9-b434-4876cc0a64df</d6p1:OwnerId>
+                      <d6p1:ParentId>5163d37b-ece9-4971-b49c-5dfb700335f0</d6p1:ParentId>
+                      <d6p1:ParentType>Source</d6p1:ParentType>
+                      <d6p1:QueryPropertyExpressions>
+                        <d6p1:MaxSize>2147483647</d6p1:MaxSize>
+                        <d6p1:OrderedItems />
+                      </d6p1:QueryPropertyExpressions>
+                      <d6p1:_IsReadOnly>true</d6p1:_IsReadOnly>
+                      <d6p1:_QueryTemplate>{searchTerms} ContentType:Regional (IsDocument:True) Path:{Site.URL}</d6p1:_QueryTemplate>
+                      <d6p1:_SourceId i:nil="true" />
+                    </d4p1:QueryTransform>
+                  </d4p1:Source>
+                  <d4p1:Source>
+                    <d4p1:Active>true</d4p1:Active>
+                    <d4p1:AuthInfo xmlns:d6p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration" i:nil="true" />
+                    <d4p1:BuiltIn>false</d4p1:BuiltIn>
+                    <d4p1:ConnectionTimeout>15000</d4p1:ConnectionTimeout>
+                    <d4p1:ConnectionUrlTemplate />
+                    <d4p1:CreatedDate>2014-11-07T16:25:19.56</d4p1:CreatedDate>
+                    <d4p1:Description />
+                    <d4p1:HasPermissionToReadAuthInfo>true</d4p1:HasPermissionToReadAuthInfo>
+                    <d4p1:Id>55151522-af4d-4ab0-8e6a-486c6784b288</d4p1:Id>
+                    <d4p1:IndexOffset>0</d4p1:IndexOffset>
+                    <d4p1:LastModifiedDate>2014-11-07T16:25:19.56</d4p1:LastModifiedDate>
+                    <d4p1:MaximumResponseLength>64</d4p1:MaximumResponseLength>
+                    <d4p1:Name>All Evidence</d4p1:Name>
+                    <d4p1:Owner xmlns:d6p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                      <d6p1:DatabaseId>00000000-0000-0000-0000-000000000000</d6p1:DatabaseId>
+                      <d6p1:DisableInheritance>false</d6p1:DisableInheritance>
+                      <d6p1:SPFarmId>baa1b08f-cbca-4af8-95fe-67ba9526f9b6</d6p1:SPFarmId>
+                      <d6p1:SPSiteId>259b1e32-a1ae-4529-ac10-46ef773af0ca</d6p1:SPSiteId>
+                      <d6p1:SPSiteSubscriptionId>0c37852b-34d0-418e-91c6-2ac25af4be5b</d6p1:SPSiteSubscriptionId>
+                      <d6p1:SPWebId>20cd511e-77ba-45a3-93c6-010eab3c20a3</d6p1:SPWebId>
+                    </d4p1:Owner>
+                    <d4p1:ProviderId>fa947043-6046-4f97-9714-40d4c113963d</d4p1:ProviderId>
+                    <d4p1:QueryTransform xmlns:d6p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08">
+                      <d6p1:Id>36202f1c-aae4-4665-8623-b045ff40d9a1</d6p1:Id>
+                      <d6p1:IsSystem>false</d6p1:IsSystem>
+                      <d6p1:OverridePropertiesForSeralization xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+                      <d6p1:OwnerId>a799ffc5-66be-42f9-b434-4876cc0a64df</d6p1:OwnerId>
+                      <d6p1:ParentId>55151522-af4d-4ab0-8e6a-486c6784b288</d6p1:ParentId>
+                      <d6p1:ParentType>Source</d6p1:ParentType>
+                      <d6p1:QueryPropertyExpressions>
+                        <d6p1:MaxSize>2147483647</d6p1:MaxSize>
+                        <d6p1:OrderedItems />
+                      </d6p1:QueryPropertyExpressions>
+                      <d6p1:_IsReadOnly>true</d6p1:_IsReadOnly>
+                      <d6p1:_QueryTemplate>{searchTerms}  Path:{Site.URL}  (ContentType:"Construction Project" OR ContentType:"Evidence" OR ContentType:"Construction Framework KPI") (contentclass:STS_ListItem OR IsDocument:True)</d6p1:_QueryTemplate>
+                      <d6p1:_SourceId i:nil="true" />
+                    </d4p1:QueryTransform>
+                  </d4p1:Source>
+                  <d4p1:Source>
+                    <d4p1:Active>true</d4p1:Active>
+                    <d4p1:AuthInfo xmlns:d6p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration" i:nil="true" />
+                    <d4p1:BuiltIn>false</d4p1:BuiltIn>
+                    <d4p1:ConnectionTimeout>15000</d4p1:ConnectionTimeout>
+                    <d4p1:ConnectionUrlTemplate />
+                    <d4p1:CreatedDate>2014-11-07T16:27:22.95</d4p1:CreatedDate>
+                    <d4p1:Description />
+                    <d4p1:HasPermissionToReadAuthInfo>true</d4p1:HasPermissionToReadAuthInfo>
+                    <d4p1:Id>b1d4a619-7a46-4e6c-90e0-5ac6ea3100c1</d4p1:Id>
+                    <d4p1:IndexOffset>0</d4p1:IndexOffset>
+                    <d4p1:LastModifiedDate>2014-11-07T16:27:22.95</d4p1:LastModifiedDate>
+                    <d4p1:MaximumResponseLength>64</d4p1:MaximumResponseLength>
+                    <d4p1:Name>PAS 91</d4p1:Name>
+                    <d4p1:Owner xmlns:d6p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                      <d6p1:DatabaseId>00000000-0000-0000-0000-000000000000</d6p1:DatabaseId>
+                      <d6p1:DisableInheritance>false</d6p1:DisableInheritance>
+                      <d6p1:SPFarmId>baa1b08f-cbca-4af8-95fe-67ba9526f9b6</d6p1:SPFarmId>
+                      <d6p1:SPSiteId>259b1e32-a1ae-4529-ac10-46ef773af0ca</d6p1:SPSiteId>
+                      <d6p1:SPSiteSubscriptionId>0c37852b-34d0-418e-91c6-2ac25af4be5b</d6p1:SPSiteSubscriptionId>
+                      <d6p1:SPWebId>20cd511e-77ba-45a3-93c6-010eab3c20a3</d6p1:SPWebId>
+                    </d4p1:Owner>
+                    <d4p1:ProviderId>fa947043-6046-4f97-9714-40d4c113963d</d4p1:ProviderId>
+                    <d4p1:QueryTransform xmlns:d6p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08">
+                      <d6p1:Id>c4130310-5634-4a37-be7d-a10a6fa29ba5</d6p1:Id>
+                      <d6p1:IsSystem>false</d6p1:IsSystem>
+                      <d6p1:OverridePropertiesForSeralization xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+                      <d6p1:OwnerId>a799ffc5-66be-42f9-b434-4876cc0a64df</d6p1:OwnerId>
+                      <d6p1:ParentId>b1d4a619-7a46-4e6c-90e0-5ac6ea3100c1</d6p1:ParentId>
+                      <d6p1:ParentType>Source</d6p1:ParentType>
+                      <d6p1:QueryPropertyExpressions>
+                        <d6p1:MaxSize>2147483647</d6p1:MaxSize>
+                        <d6p1:OrderedItems />
+                      </d6p1:QueryPropertyExpressions>
+                      <d6p1:_IsReadOnly>true</d6p1:_IsReadOnly>
+                      <d6p1:_QueryTemplate>{searchTerms} ContentType:"PAS 91"  Path:{Site.URL}</d6p1:_QueryTemplate>
+                      <d6p1:_SourceId i:nil="true" />
+                    </d4p1:QueryTransform>
+                  </d4p1:Source>
+                  <d4p1:Source>
+                    <d4p1:Active>true</d4p1:Active>
+                    <d4p1:AuthInfo xmlns:d6p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration" i:nil="true" />
+                    <d4p1:BuiltIn>false</d4p1:BuiltIn>
+                    <d4p1:ConnectionTimeout>15000</d4p1:ConnectionTimeout>
+                    <d4p1:ConnectionUrlTemplate />
+                    <d4p1:CreatedDate>2014-11-07T16:25:47.493</d4p1:CreatedDate>
+                    <d4p1:Description />
+                    <d4p1:HasPermissionToReadAuthInfo>true</d4p1:HasPermissionToReadAuthInfo>
+                    <d4p1:Id>eb20b205-23f1-46fa-87e5-1a2a6af12e29</d4p1:Id>
+                    <d4p1:IndexOffset>0</d4p1:IndexOffset>
+                    <d4p1:LastModifiedDate>2014-11-07T16:25:47.493</d4p1:LastModifiedDate>
+                    <d4p1:MaximumResponseLength>64</d4p1:MaximumResponseLength>
+                    <d4p1:Name>Answer Plans</d4p1:Name>
+                    <d4p1:Owner xmlns:d6p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                      <d6p1:DatabaseId>00000000-0000-0000-0000-000000000000</d6p1:DatabaseId>
+                      <d6p1:DisableInheritance>false</d6p1:DisableInheritance>
+                      <d6p1:SPFarmId>baa1b08f-cbca-4af8-95fe-67ba9526f9b6</d6p1:SPFarmId>
+                      <d6p1:SPSiteId>259b1e32-a1ae-4529-ac10-46ef773af0ca</d6p1:SPSiteId>
+                      <d6p1:SPSiteSubscriptionId>0c37852b-34d0-418e-91c6-2ac25af4be5b</d6p1:SPSiteSubscriptionId>
+                      <d6p1:SPWebId>20cd511e-77ba-45a3-93c6-010eab3c20a3</d6p1:SPWebId>
+                    </d4p1:Owner>
+                    <d4p1:ProviderId>fa947043-6046-4f97-9714-40d4c113963d</d4p1:ProviderId>
+                    <d4p1:QueryTransform xmlns:d6p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08">
+                      <d6p1:Id>5a7223d0-bc22-462c-8e58-3627305fffb9</d6p1:Id>
+                      <d6p1:IsSystem>false</d6p1:IsSystem>
+                      <d6p1:OverridePropertiesForSeralization xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+                      <d6p1:OwnerId>a799ffc5-66be-42f9-b434-4876cc0a64df</d6p1:OwnerId>
+                      <d6p1:ParentId>eb20b205-23f1-46fa-87e5-1a2a6af12e29</d6p1:ParentId>
+                      <d6p1:ParentType>Source</d6p1:ParentType>
+                      <d6p1:QueryPropertyExpressions>
+                        <d6p1:MaxSize>2147483647</d6p1:MaxSize>
+                        <d6p1:OrderedItems />
+                      </d6p1:QueryPropertyExpressions>
+                      <d6p1:_IsReadOnly>true</d6p1:_IsReadOnly>
+                      <d6p1:_QueryTemplate>{searchTerms} ContentType:"Construction Answer Plan"</d6p1:_QueryTemplate>
+                      <d6p1:_SourceId i:nil="true" />
+                    </d4p1:QueryTransform>
+                  </d4p1:Source>
+                  <d4p1:Source>
+                    <d4p1:Active>true</d4p1:Active>
+                    <d4p1:AuthInfo xmlns:d6p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration" i:nil="true" />
+                    <d4p1:BuiltIn>false</d4p1:BuiltIn>
+                    <d4p1:ConnectionTimeout>15000</d4p1:ConnectionTimeout>
+                    <d4p1:ConnectionUrlTemplate />
+                    <d4p1:CreatedDate>2014-11-07T16:26:32.78</d4p1:CreatedDate>
+                    <d4p1:Description>Everything excludes Regional Data</d4p1:Description>
+                    <d4p1:HasPermissionToReadAuthInfo>true</d4p1:HasPermissionToReadAuthInfo>
+                    <d4p1:Id>ece6d9cc-0092-4965-ba17-47ee354bbd0d</d4p1:Id>
+                    <d4p1:IndexOffset>0</d4p1:IndexOffset>
+                    <d4p1:LastModifiedDate>2014-11-07T16:26:32.78</d4p1:LastModifiedDate>
+                    <d4p1:MaximumResponseLength>64</d4p1:MaximumResponseLength>
+                    <d4p1:Name>Everything</d4p1:Name>
+                    <d4p1:Owner xmlns:d6p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                      <d6p1:DatabaseId>00000000-0000-0000-0000-000000000000</d6p1:DatabaseId>
+                      <d6p1:DisableInheritance>false</d6p1:DisableInheritance>
+                      <d6p1:SPFarmId>baa1b08f-cbca-4af8-95fe-67ba9526f9b6</d6p1:SPFarmId>
+                      <d6p1:SPSiteId>259b1e32-a1ae-4529-ac10-46ef773af0ca</d6p1:SPSiteId>
+                      <d6p1:SPSiteSubscriptionId>0c37852b-34d0-418e-91c6-2ac25af4be5b</d6p1:SPSiteSubscriptionId>
+                      <d6p1:SPWebId>20cd511e-77ba-45a3-93c6-010eab3c20a3</d6p1:SPWebId>
+                    </d4p1:Owner>
+                    <d4p1:ProviderId>fa947043-6046-4f97-9714-40d4c113963d</d4p1:ProviderId>
+                    <d4p1:QueryTransform xmlns:d6p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08">
+                      <d6p1:Id>99073a9b-e613-46da-97b6-8d63e23a6bc7</d6p1:Id>
+                      <d6p1:IsSystem>false</d6p1:IsSystem>
+                      <d6p1:OverridePropertiesForSeralization xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+                      <d6p1:OwnerId>a799ffc5-66be-42f9-b434-4876cc0a64df</d6p1:OwnerId>
+                      <d6p1:ParentId>ece6d9cc-0092-4965-ba17-47ee354bbd0d</d6p1:ParentId>
+                      <d6p1:ParentType>Source</d6p1:ParentType>
+                      <d6p1:QueryPropertyExpressions>
+                        <d6p1:MaxSize>2147483647</d6p1:MaxSize>
+                        <d6p1:OrderedItems />
+                      </d6p1:QueryPropertyExpressions>
+                      <d6p1:_IsReadOnly>true</d6p1:_IsReadOnly>
+                      <d6p1:_QueryTemplate>{searchTerms} (-ContentType:"Regional" AND (ContentType:Construction OR ContentType:PAS))Path:{Site.URL}</d6p1:_QueryTemplate>
+                      <d6p1:_SourceId i:nil="true" />
+                    </d4p1:QueryTransform>
+                  </d4p1:Source>
+                </Sources>
+                <UserSegments xmlns:d4p1="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" />
+              </SearchQueryConfigurationSettings>
+            </SearchQueryConfigurationSettings>
+            <SearchRankingModelConfigurationSettings>
+              <RankingModels xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+            </SearchRankingModelConfigurationSettings>
+            <SearchSchemaConfigurationSettings>
+              <Aliases xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                <d3p1:LastItemName>ActualCompletion</d3p1:LastItemName>
+                <d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                    <d4p1:Key>ValueAtCompletion</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>ValueAtCompletion</d3p1:Name>
+                      <d3p1:ManagedPid>1000000500</d3p1:ManagedPid>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                    <d4p1:Key>PlannedContractStart</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>PlannedContractStart</d3p1:Name>
+                      <d3p1:ManagedPid>1000000600</d3p1:ManagedPid>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                    <d4p1:Key>PlannedCompletion</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>PlannedCompletion</d3p1:Name>
+                      <d3p1:ManagedPid>1000000601</d3p1:ManagedPid>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                    <d4p1:Key>ActualStart</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>ActualStart</d3p1:Name>
+                      <d3p1:ManagedPid>1000000602</d3p1:ManagedPid>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                    <d4p1:Key>ActualCompletion</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>ActualCompletion</d3p1:Name>
+                      <d3p1:ManagedPid>1000000603</d3p1:ManagedPid>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringAliasInfoy6h3NzC8>
+                </d3p1:dictionary>
+              </Aliases>
+              <CategoriesAndCrawledProperties xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                <d3p1:KeyValueOfguidCrawledPropertyInfoCollectionaSYUqUE_P>
+                  <d3p1:Key>ed280121-b677-4e2a-8fbc-0d9e2325b0a2</d3p1:Key>
+                  <d3p1:Value xmlns:d5p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                    <d5p1:LastItemName>ows_q_BOOL_isBestBid</d5p1:LastItemName>
+                    <d5p1:dictionary>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_q_BOOL_isBestBid</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_q_BOOL_isBestBid</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>false</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>ed280121-b677-4e2a-8fbc-0d9e2325b0a2</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                    </d5p1:dictionary>
+                  </d3p1:Value>
+                </d3p1:KeyValueOfguidCrawledPropertyInfoCollectionaSYUqUE_P>
+                <d3p1:KeyValueOfguidCrawledPropertyInfoCollectionaSYUqUE_P>
+                  <d3p1:Key>00130329-0000-0130-c000-000000131346</d3p1:Key>
+                  <d3p1:Value xmlns:d5p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                    <d5p1:LastItemName>ows_Actual_x0020_completion_x0020_da</d5p1:LastItemName>
+                    <d5p1:dictionary>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Stage_x0020_of_x0020_Project</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Stage_x0020_of_x0020_Project</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Kier_x0020_Delivery_x0020_Region</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Kier_x0020_Delivery_x0020_Region</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Project_x0020_Location</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Project_x0020_Location</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Sector</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Sector</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Form_x0020_of_x0020_Contract</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Form_x0020_of_x0020_Contract</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Work_x0020_Description</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Work_x0020_Description</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Business_x0020_Function</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Business_x0020_Function</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_isBestBid</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_isBestBid</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_SubSector</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_SubSector</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Topic</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Topic</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Project_x0020_Region</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Project_x0020_Region</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Project_x0020_Area</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Project_x0020_Area</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Business_x0020_Categories</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Business_x0020_Categories</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Scope_x0020_of_x0020_Kier_x0020_</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Scope_x0020_of_x0020_Kier_x0020_</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Form_x0020_of_x0020_Procurement</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Form_x0020_of_x0020_Procurement</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Handover_x0020_BREEAM/DREA0</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Handover_x0020_BREEAM/DREA0</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Client_x0020_Reference_x0020_ava</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Client_x0020_Reference_x0020_ava</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_FormofProcurementSubType</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_FormofProcurementSubType</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_EvidenceProjectStage</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_EvidenceProjectStage</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Value_x0020_at_x0020_completion</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Value_x0020_at_x0020_completion</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Planned_x0020_start_x0020_on_x00</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Planned_x0020_start_x0020_on_x00</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Planned_x0020_completion_x0020_d</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Planned_x0020_completion_x0020_d</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Actual_x0020_start_x0020_on_x002</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Actual_x0020_start_x0020_on_x002</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                      <d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                        <d3p1:Key>ows_Actual_x0020_completion_x0020_da</d3p1:Key>
+                        <d3p1:Value>
+                          <d5p1:Name>ows_Actual_x0020_completion_x0020_da</d5p1:Name>
+                          <d5p1:CategoryName>SharePoint</d5p1:CategoryName>
+                          <d5p1:IsMappedToContents>true</d5p1:IsMappedToContents>
+                          <d5p1:IsNameEnum>false</d5p1:IsNameEnum>
+                          <d5p1:MappedManagedProperties />
+                          <d5p1:Propset>00130329-0000-0130-c000-000000131346</d5p1:Propset>
+                          <d5p1:Samples />
+                          <d5p1:SchemaId>0</d5p1:SchemaId>
+                        </d3p1:Value>
+                      </d3p1:KeyValueOfstringCrawledPropertyInfoy6h3NzC8>
+                    </d5p1:dictionary>
+                  </d3p1:Value>
+                </d3p1:KeyValueOfguidCrawledPropertyInfoCollectionaSYUqUE_P>
+              </CategoriesAndCrawledProperties>
+              <CrawledProperties xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration" i:nil="true" />
+              <ManagedProperties xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                <d3p1:LastItemName>isBestBidNewOWSBOOL</d3p1:LastItemName>
+                <d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <d4p1:KeyValueOfstringManagedPropertyInfoy6h3NzC8>
+                    <d4p1:Key>isBestBidNewOWSBOOL</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>isBestBidNewOWSBOOL</d3p1:Name>
+                      <d3p1:Aliases i:nil="true" />
+                      <d3p1:CompleteMatching>false</d3p1:CompleteMatching>
+                      <d3p1:Context>0</d3p1:Context>
+                      <d3p1:DeleteDisallowed>false</d3p1:DeleteDisallowed>
+                      <d3p1:Description>is Best Bid New OWS BOOL </d3p1:Description>
+                      <d3p1:EnabledForScoping>false</d3p1:EnabledForScoping>
+                      <d3p1:EntityExtractorBitMap>0</d3p1:EntityExtractorBitMap>
+                      <d3p1:FullTextIndex i:nil="true" />
+                      <d3p1:HasMultipleValues>false</d3p1:HasMultipleValues>
+                      <d3p1:IndexOptions>0</d3p1:IndexOptions>
+                      <d3p1:IsReadOnly>false</d3p1:IsReadOnly>
+                      <d3p1:ManagedType>Text</d3p1:ManagedType>
+                      <d3p1:MappedCrawledProperties i:nil="true" />
+                      <d3p1:MappingDisallowed>false</d3p1:MappingDisallowed>
+                      <d3p1:Pid>3276</d3p1:Pid>
+                      <d3p1:Queryable>true</d3p1:Queryable>
+                      <d3p1:Refinable>false</d3p1:Refinable>
+                      <d3p1:RefinerConfiguration>
+                        <d3p1:Anchoring>Auto</d3p1:Anchoring>
+                        <d3p1:CutoffMaxBuckets>1000</d3p1:CutoffMaxBuckets>
+                        <d3p1:Divisor>1</d3p1:Divisor>
+                        <d3p1:Intervals>4</d3p1:Intervals>
+                        <d3p1:Resolution>1</d3p1:Resolution>
+                        <d3p1:Type>Deep</d3p1:Type>
+                      </d3p1:RefinerConfiguration>
+                      <d3p1:RemoveDuplicates>true</d3p1:RemoveDuplicates>
+                      <d3p1:RespectPriority>false</d3p1:RespectPriority>
+                      <d3p1:Retrievable>true</d3p1:Retrievable>
+                      <d3p1:SafeForAnonymous>true</d3p1:SafeForAnonymous>
+                      <d3p1:Searchable>true</d3p1:Searchable>
+                      <d3p1:Sortable>false</d3p1:Sortable>
+                      <d3p1:SortableType>Enabled</d3p1:SortableType>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                      <d3p1:UpdateGroup i:nil="true" />
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringManagedPropertyInfoy6h3NzC8>
+                </d3p1:dictionary>
+                <d3p1:TotalCount>0</d3p1:TotalCount>
+              </ManagedProperties>
+              <Mappings xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                <d3p1:LastItemName>00130329-0000-0130-c000-000000131346:ows_Actual_x0020_completion_x0020_da-&gt;1000000603</d3p1:LastItemName>
+                <d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>ed280121-b677-4e2a-8fbc-0d9e2325b0a2:ows_q_BOOL_isBestBid-&gt;3259</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>ed280121-b677-4e2a-8fbc-0d9e2325b0a2:ows_q_BOOL_isBestBid-&gt;3259</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_q_BOOL_isBestBid</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>ed280121-b677-4e2a-8fbc-0d9e2325b0a2</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>3259</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Stage_x0020_of_x0020_Project-&gt;1000000011</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Stage_x0020_of_x0020_Project-&gt;1000000011</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Stage_x0020_of_x0020_Project</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000011</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Kier_x0020_Delivery_x0020_Region-&gt;1000000012</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Kier_x0020_Delivery_x0020_Region-&gt;1000000012</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Kier_x0020_Delivery_x0020_Region</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000012</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Project_x0020_Location-&gt;1000000013</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Project_x0020_Location-&gt;1000000013</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Project_x0020_Location</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000013</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Sector-&gt;1000000014</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Sector-&gt;1000000014</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Sector</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000014</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Form_x0020_of_x0020_Contract-&gt;1000000016</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Form_x0020_of_x0020_Contract-&gt;1000000016</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Form_x0020_of_x0020_Contract</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000016</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Work_x0020_Description-&gt;1000000017</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Work_x0020_Description-&gt;1000000017</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Work_x0020_Description</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000017</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Business_x0020_Function-&gt;1000000018</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Business_x0020_Function-&gt;1000000018</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Business_x0020_Function</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000018</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>ed280121-b677-4e2a-8fbc-0d9e2325b0a2:ows_q_BOOL_isBestBid-&gt;3276</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>ed280121-b677-4e2a-8fbc-0d9e2325b0a2:ows_q_BOOL_isBestBid-&gt;3276</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_q_BOOL_isBestBid</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>ed280121-b677-4e2a-8fbc-0d9e2325b0a2</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>3276</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_isBestBid-&gt;3276</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_isBestBid-&gt;3276</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_isBestBid</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>3276</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>200</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_SubSector-&gt;1000000015</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_SubSector-&gt;1000000015</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_SubSector</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000015</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Topic-&gt;1000000019</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Topic-&gt;1000000019</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Topic</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000019</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Project_x0020_Region-&gt;1000000021</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Project_x0020_Region-&gt;1000000021</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Project_x0020_Region</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000021</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Project_x0020_Area-&gt;1000000022</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Project_x0020_Area-&gt;1000000022</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Project_x0020_Area</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000022</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Business_x0020_Categories-&gt;1000000023</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Business_x0020_Categories-&gt;1000000023</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Business_x0020_Categories</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000023</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Scope_x0020_of_x0020_Kier_x0020_-&gt;1000000024</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Scope_x0020_of_x0020_Kier_x0020_-&gt;1000000024</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Scope_x0020_of_x0020_Kier_x0020_</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000024</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Form_x0020_of_x0020_Procurement-&gt;1000000025</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Form_x0020_of_x0020_Procurement-&gt;1000000025</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Form_x0020_of_x0020_Procurement</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000025</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Handover_x0020_BREEAM/DREA0-&gt;1000000026</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Handover_x0020_BREEAM/DREA0-&gt;1000000026</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Handover_x0020_BREEAM/DREA0</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000026</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Client_x0020_Reference_x0020_ava-&gt;1000000027</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Client_x0020_Reference_x0020_ava-&gt;1000000027</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Client_x0020_Reference_x0020_ava</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000027</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_FormofProcurementSubType-&gt;1000000028</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_FormofProcurementSubType-&gt;1000000028</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_FormofProcurementSubType</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000028</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_EvidenceProjectStage-&gt;1000000029</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_EvidenceProjectStage-&gt;1000000029</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_EvidenceProjectStage</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000029</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Value_x0020_at_x0020_completion-&gt;1000000500</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Value_x0020_at_x0020_completion-&gt;1000000500</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Value_x0020_at_x0020_completion</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000500</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Planned_x0020_start_x0020_on_x00-&gt;1000000600</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Planned_x0020_start_x0020_on_x00-&gt;1000000600</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Planned_x0020_start_x0020_on_x00</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000600</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Planned_x0020_completion_x0020_d-&gt;1000000601</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Planned_x0020_completion_x0020_d-&gt;1000000601</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Planned_x0020_completion_x0020_d</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000601</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Actual_x0020_start_x0020_on_x002-&gt;1000000602</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Actual_x0020_start_x0020_on_x002-&gt;1000000602</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Actual_x0020_start_x0020_on_x002</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000602</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                    <d4p1:Key>00130329-0000-0130-c000-000000131346:ows_Actual_x0020_completion_x0020_da-&gt;1000000603</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>00130329-0000-0130-c000-000000131346:ows_Actual_x0020_completion_x0020_da-&gt;1000000603</d3p1:Name>
+                      <d3p1:CrawledPropertyName>ows_Actual_x0020_completion_x0020_da</d3p1:CrawledPropertyName>
+                      <d3p1:CrawledPropset>00130329-0000-0130-c000-000000131346</d3p1:CrawledPropset>
+                      <d3p1:ManagedPid>1000000603</d3p1:ManagedPid>
+                      <d3p1:MappingOrder>100</d3p1:MappingOrder>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringMappingInfoy6h3NzC8>
+                </d3p1:dictionary>
+              </Mappings>
+              <Overrides xmlns:d3p1="http://schemas.datacontract.org/2004/07/Microsoft.Office.Server.Search.Administration">
+                <d3p1:LastItemName>1000000603</d3p1:LastItemName>
+                <d3p1:dictionary xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>3259</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>3259</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>3259</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000011</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000011</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000011</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000012</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000012</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000012</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000013</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000013</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000013</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000014</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000014</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000014</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000015</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000015</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000015</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000016</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000016</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000016</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000017</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000017</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000017</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000018</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000018</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000018</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000019</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000019</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000019</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000021</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000021</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000021</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000022</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000022</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000022</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000023</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000023</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000023</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000024</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000024</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000024</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000025</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000025</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000025</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000026</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000026</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000026</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000027</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000027</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000027</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000028</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000028</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000028</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000029</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000029</d3p1:Name>
+                      <d3p1:AliasesOverridden>false</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000029</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000500</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000500</d3p1:Name>
+                      <d3p1:AliasesOverridden>true</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000500</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000600</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000600</d3p1:Name>
+                      <d3p1:AliasesOverridden>true</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000600</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000601</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000601</d3p1:Name>
+                      <d3p1:AliasesOverridden>true</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000601</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000602</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000602</d3p1:Name>
+                      <d3p1:AliasesOverridden>true</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000602</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                  <d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                    <d4p1:Key>1000000603</d4p1:Key>
+                    <d4p1:Value>
+                      <d3p1:Name>1000000603</d3p1:Name>
+                      <d3p1:AliasesOverridden>true</d3p1:AliasesOverridden>
+                      <d3p1:ExtraProperties i:nil="true" />
+                      <d3p1:ManagedPid>1000000603</d3p1:ManagedPid>
+                      <d3p1:MappingsOverridden>true</d3p1:MappingsOverridden>
+                      <d3p1:SchemaId>12</d3p1:SchemaId>
+                      <d3p1:TokenNormalization>true</d3p1:TokenNormalization>
+                    </d4p1:Value>
+                  </d4p1:KeyValueOfstringOverrideInfoy6h3NzC8>
+                </d3p1:dictionary>
+              </Overrides>
+            </SearchSchemaConfigurationSettings>
+          </SearchConfigurationSettings>
+        </pnp:WebSearchSettings>
+      </pnp:SearchSettings>
       <pnp:Publishing AutoCheckRequirements="MakeCompliant">
         <pnp:AvailableWebTemplates>
           <pnp:WebTemplate LanguageCode="1033" TemplateName="GLOBAL#0" />
