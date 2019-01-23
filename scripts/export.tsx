@@ -73,7 +73,7 @@ class App extends React.Component<IState, IProps> {
   constructor(props: IProps) {
     super(props); 
     const path = this.props.parameter[0].curPath;
-    this.dataList = path.substring(path.lastIndexOf('/Lists/') + 7, path.lastIndexOf('/'));
+    this.dataList = path.substring(path.lastIndexOf('/Lists/') + 7, path.lastIndexOf('/')).replace("1","");
     this.itemId = +this.getParameterByName('ID', path);
     this.state = { 
       parameter: props.parameter,
