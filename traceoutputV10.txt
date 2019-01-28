@@ -1,0 +1,71 @@
+powershell.exe Information: 0 : 2019-01-25 15:55:02.5789	[OfficeDevPnP.Core]	[0]	[Information]	File addOppAuthToUAT.xml retrieved from folder 	0ms	
+powershell.exe Information: 0 : 2019-01-25 15:55:02.5821	[OfficeDevPnP.Core]	[0]	[Information]	File addOppAuthToUAT.xml retrieved from folder 	0ms	
+powershell.exe Information: 0 : 2019-01-25 15:57:02.2525	[OfficeDevPnP.Core]	[0]	[Information]	File addOppAuthToUAT.xml retrieved from folder 	0ms	
+powershell.exe Information: 0 : 2019-01-25 15:57:02.2529	[OfficeDevPnP.Core]	[0]	[Information]	File addOppAuthToUAT.xml retrieved from folder 	0ms	
+powershell.exe Information: 0 : 2019-01-25 15:57:02.2765	[Provisioning]	[14]	[Debug]	Code execution scope started	0ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:02.2771	[Provisioning]	[14]	[Information]	OverwriteSystemPropertyBagValues is to true	0ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:02.2771	[Provisioning]	[14]	[Information]	ProgressDelegate registered	0ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:02.2771	[Provisioning]	[14]	[Information]	MessagesDelegate registered	0ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:06.2061	[Extensibility Providers]	[14]	[Debug]	Code execution scope started	0ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:06.2061	[Extensibility Providers]	[14]	[Debug]	Code execution scope ended	0ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:06.2323	[List instances]	[14]	[Debug]	Code execution scope started	0ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:07.4012	[List instances]	[14]	[Debug]	Updating list Project Datasheet	1168ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:30.8774	[List instances]	[14]	[Debug]	Updating list Project Datasheet with FieldRef CRM_x0020_Opportunity_x0020_Auth0	24645ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:32.0332	[List instances]	[14]	[Debug]	Code execution scope ended	25801ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:32.0644	[List instances]	[14]	[Debug]	Code execution scope started	0ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:33.0289	[List instances]	[14]	[Debug]	Updating list Project Datasheet	964ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:37.1528	[List instances]	[14]	[Debug]	Updating list Project Datasheet with FieldRef CRM_x0020_Opportunity_x0020_Auth0	5088ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:39.6589	[List instances]	[14]	[Debug]	Code execution scope ended	7594ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:57:39.6839	[List instances]	[14]	[Debug]	Code execution scope started	0ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:58:01.6405	[List instances]	[14]	[Debug]	Updating list Project Datasheet	21956ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:58:43.6294	[List instances]	[14]	[Debug]	Updating list Project Datasheet with FieldRef CRM_x0020_Opportunity_x0020_Auth0	63946ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:58:45.2713	[List instances]	[14]	[Debug]	Code execution scope ended	65587ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:58:45.2728	[Persist Template Info]	[14]	[Debug]	Code execution scope started	0ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:58:47.2818	[Persist Template Info]	[14]	[Debug]	Code execution scope ended	2009ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 15:58:47.2818	[Provisioning]	[14]	[Debug]	Code execution scope ended	105006ms	6daea0de-9dd2-447f-b2d9-f8fca7a80b0b
+powershell.exe Information: 0 : 2019-01-25 16:00:40.1581	[OfficeDevPnP.Core]	[0]	[Information]	File addOppAuthToUAT.xml retrieved from folder 	0ms	
+powershell.exe Information: 0 : 2019-01-25 16:00:40.1591	[OfficeDevPnP.Core]	[0]	[Information]	File addOppAuthToUAT.xml retrieved from folder 	0ms	
+powershell.exe Information: 0 : 2019-01-25 16:00:40.1746	[Provisioning]	[14]	[Debug]	Code execution scope started	0ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:00:40.1746	[Provisioning]	[14]	[Information]	OverwriteSystemPropertyBagValues is to true	0ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:00:40.1751	[Provisioning]	[14]	[Information]	ProgressDelegate registered	0ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:00:40.1751	[Provisioning]	[14]	[Information]	MessagesDelegate registered	0ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:00:43.1824	[Extensibility Providers]	[14]	[Debug]	Code execution scope started	0ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:00:43.1829	[Extensibility Providers]	[14]	[Debug]	Code execution scope ended	0ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:00:43.2108	[List instances]	[14]	[Debug]	Code execution scope started	0ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:00:44.4164	[List instances]	[14]	[Debug]	Updating list Project Datasheet	1205ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:11.3221	[List instances]	[14]	[Debug]	Updating list Project Datasheet with FieldRef CRM_x0020_Opportunity_x0020_Auth0	28111ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:11.9627	[List instances]	[14]	[Debug]	Code execution scope ended	28751ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:11.9939	[List instances]	[14]	[Debug]	Code execution scope started	0ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:13.3167	[List instances]	[14]	[Debug]	Updating list Project Datasheet	1322ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:17.5580	[List instances]	[14]	[Debug]	Updating list Project Datasheet with FieldRef CRM_x0020_Opportunity_x0020_Auth0	5564ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:17.9951	[List instances]	[14]	[Debug]	Code execution scope ended	6001ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:18.0227	[List instances]	[14]	[Debug]	Code execution scope started	0ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:19.1207	[List instances]	[14]	[Debug]	Updating list Project Datasheet	1098ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:23.9591	[List instances]	[14]	[Debug]	Updating list Project Datasheet with FieldRef CRM_x0020_Opportunity_x0020_Auth0	5936ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:24.6341	[List instances]	[14]	[Debug]	Code execution scope ended	6611ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:24.6346	[Persist Template Info]	[14]	[Debug]	Code execution scope started	0ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:25.3145	[Persist Template Info]	[14]	[Debug]	Code execution scope ended	680ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:01:25.3150	[Provisioning]	[14]	[Debug]	Code execution scope ended	45140ms	4d05bf50-818d-4c60-be87-87f7090dfcd0
+powershell.exe Information: 0 : 2019-01-25 16:04:30.5223	[OfficeDevPnP.Core]	[0]	[Information]	File addOppAuthToUAT.xml retrieved from folder 	0ms	
+powershell.exe Information: 0 : 2019-01-25 16:04:30.5228	[OfficeDevPnP.Core]	[0]	[Information]	File addOppAuthToUAT.xml retrieved from folder 	0ms	
+powershell.exe Information: 0 : 2019-01-25 16:04:30.5424	[Provisioning]	[14]	[Debug]	Code execution scope started	0ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:04:30.5429	[Provisioning]	[14]	[Information]	OverwriteSystemPropertyBagValues is to true	0ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:04:30.5429	[Provisioning]	[14]	[Information]	ProgressDelegate registered	0ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:04:30.5434	[Provisioning]	[14]	[Information]	MessagesDelegate registered	0ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:04:33.7558	[Extensibility Providers]	[14]	[Debug]	Code execution scope started	0ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:04:33.7563	[Extensibility Providers]	[14]	[Debug]	Code execution scope ended	0ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:04:33.7864	[List instances]	[14]	[Debug]	Code execution scope started	0ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:04:35.4538	[List instances]	[14]	[Debug]	Updating list Project Datasheet	1667ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:00.5290	[List instances]	[14]	[Debug]	Updating list Project Datasheet with FieldRef CRM_x0020_Opportunity_x0020_Auth0	26742ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:01.6221	[List instances]	[14]	[Debug]	Code execution scope ended	27835ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:01.6487	[List instances]	[14]	[Debug]	Code execution scope started	0ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:02.9771	[List instances]	[14]	[Debug]	Updating list Project Datasheet	1328ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:07.4970	[List instances]	[14]	[Debug]	Updating list Project Datasheet with FieldRef CRM_x0020_Opportunity_x0020_Auth0	5848ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:08.2823	[List instances]	[14]	[Debug]	Code execution scope ended	6633ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:08.3113	[List instances]	[14]	[Debug]	Code execution scope started	0ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:09.4104	[List instances]	[14]	[Debug]	Updating list Project Datasheet	1099ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:13.5736	[List instances]	[14]	[Debug]	Updating list Project Datasheet with FieldRef CRM_x0020_Opportunity_x0020_Auth0	5262ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:14.3788	[List instances]	[14]	[Debug]	Code execution scope ended	6067ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:14.3788	[Persist Template Info]	[14]	[Debug]	Code execution scope started	0ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:15.0635	[Persist Template Info]	[14]	[Debug]	Code execution scope ended	684ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef
+powershell.exe Information: 0 : 2019-01-25 16:05:15.0640	[Provisioning]	[14]	[Debug]	Code execution scope ended	44521ms	27a44c3b-39aa-4c8e-b79a-663550eeb8ef

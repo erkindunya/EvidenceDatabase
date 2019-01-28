@@ -1,3 +1,5 @@
-Connect-PnPOnline -Url "https://28.kier.group" -Credentials (Get-Credential)
-
-Get-PnPProvisioningTemplate -Out template.pnp -ContentTypeGroups "Construction EvidenceDB"
+$templatePath = Join-Path (Get-Location) '\resources\addOppAuthToUAT.xml'
+Connect-PnPOnline -Url https://content-mykier/sites/EDBUAT -CurrentCredentials
+Set-PnPTraceLog -On -LogFile traceoutputV10.txt -Level Debug
+Apply-PnPProvisioningTemplate -path $templatePath -overwrite
+Set-PnPTraceLog -Off

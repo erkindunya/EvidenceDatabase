@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.2.1810.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-88B91AEF6DDE4DF8B42DF7DCB61F7A05">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-88B91AEF6DDE4DF8B42DF7DCB61F7A05" Version="1" BaseSiteTemplate="BLANKINTERNET#0" Scope="RootSite">
+		<pnp:Lists>
+			<pnp:ListInstance Title="Project Datasheet" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Project Datasheet1" EnableVersioning="true" EnableModeration="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Project Datasheet1/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Project Datasheet1/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Project Datasheet1/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=23" IrmExpire="false" IrmReject="false" IsApplicationList="false" ReadSecurity="0" WriteSecurity="0" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0100E371B76ADC985B49AD3159C3A66C6E8D01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:FieldRefs>
+              <pnp:FieldRef ID="2ef822e5-f11c-4d4d-a52d-dc4a17d10fea" Name="CRM_x0020_Opportunity_x0020_Auth0" DisplayName="CRM Opportunity Author" />
+		  </pnp:FieldRefs>
+        </pnp:ListInstance>
+		</pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

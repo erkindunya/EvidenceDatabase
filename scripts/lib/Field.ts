@@ -30,8 +30,8 @@ export function getQueryAttributes(listName:string):any {
       'Project_x0020__x002F__x0020_Cont/Title',
       'Champion/Id',
       'Champion/Title',
-      'CRM_x0020_Opportunity_x0020_Auth/Id',
-      'CRM_x0020_Opportunity_x0020_Auth/Title',
+      'CRM_x0020_Opportunity_x0020_Auth0/Id',
+      'CRM_x0020_Opportunity_x0020_Auth0/Title',
       'QS_x0020__x002F__x0020_Commercia/Id',
       'QS_x0020__x002F__x0020_Commercia/Title',
       'Reviewer/Id','Reviewer/Title','Editor/Id','Editor/Title',
@@ -42,7 +42,7 @@ export function getQueryAttributes(listName:string):any {
       'Bid_x0020_Lead',
       'Design_x0020_Manager',
       'Project_x0020__x002F__x0020_Cont',
-      'Champion','CRM_x0020_Opportunity_x0020_Auth',
+      'Champion','CRM_x0020_Opportunity_x0020_Auth0',
       'QS_x0020__x002F__x0020_Commercia','Reviewer','Editor',
     ];
   } else {
