@@ -79,6 +79,22 @@ export class Style {
     border: 'none',
     padding: '15px 25px 15px 4px',
   };
+
+  tableHideBulletPoint = {
+    listStyle: 'none',
+    listStyleType: 'none',
+    backgroundImage:'none',
+    backgroundRepeat:'none',
+    backgroundPosition:0,
+    margin: 0,
+    padding: 0,
+    display: 'inline-block',
+    align:'left',
+    // textAlign:'left',
+  };
+  removeStyle = {
+    display:'none',
+  }
 }
 
 

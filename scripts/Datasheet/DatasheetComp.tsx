@@ -73,6 +73,7 @@ const DatasheetComp = (props:any) => {
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Sector</td>      
                 <td style={style.tableTd}>
+                    {item.Sector.results.length > 1?
                     <ul>{
                         item.Sector.results
                         .sort((a, b) => {
@@ -88,14 +89,15 @@ const DatasheetComp = (props:any) => {
                             return 0;
                         })
                         .map((term:any,i:number) => 
-                            <li key={'edbSECTOR_'+i}>{term.Label}</li>    
-                    )}
-                    </ul>
+                            <li key={'edbSECTOR_'+i}>{term.Label}</li>)
+                        }
+                    </ul>:item.Sector.results.length == 1 && item.Sector.results[0].Label}
                 </td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Sub-Sector</td>
                 <td style={style.tableTd}>
+                {item.Subsector.results.length > 1?
                     <ul>{
                         item.Subsector.results
                         .sort((a, b) => {
@@ -113,12 +115,13 @@ const DatasheetComp = (props:any) => {
                         .map((term:any,i:number) => 
                             <li key={'edbSubsector_'+i}>{term.Label}</li>    
                     )}
-                    </ul>
+                   </ul>:item.Subsector.results.length == 1 && item.Subsector.results[0].Label}
                 </td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Funding Sector</td>
                 <td style={style.tableTd}>
+                {item.Funding_x0020_Sector.results.length > 1?
                     <ul>{
                         item.Funding_x0020_Sector.results
                         .sort((a, b) => {
@@ -136,12 +139,13 @@ const DatasheetComp = (props:any) => {
                         .map((term:any,i:number) => 
                             <li key={'edbfundingSec_'+i}>{term.Label}</li>    
                     )}
-                    </ul>
+                    </ul>:item.Funding_x0020_Sector.results.length == 1 && item.Funding_x0020_Sector.results[0].Label}
                 </td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Form of procurement</td>
                 <td style={style.tableTd}>
+                {item.Form_x0020_of_x0020_Procurement.results.length > 1?
                     <ul>{
                         item.Form_x0020_of_x0020_Procurement.results
                         .sort((a, b) => {
@@ -159,7 +163,7 @@ const DatasheetComp = (props:any) => {
                         .map((term:any,i:number) => 
                             <li key={'edbFormOfProc_'+i}>{term.Label}</li>    
                     )}
-                    </ul>
+                    </ul>:item.Form_x0020_of_x0020_Procurement.results.length == 1 && item.Form_x0020_of_x0020_Procurement.results[0].Label}
                 </td>
             </tr>
             <tr style={style.tableTr}>
@@ -224,7 +228,9 @@ const DatasheetComp = (props:any) => {
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Work Description</td>
-                <td style={style.tableTd}><ul>{
+                <td style={style.tableTd}>
+                {item.Work_x0020_Description.results.length > 1?
+                    <ul>{
                     item.Work_x0020_Description.results
                     .sort((a, b) => {
                         var nameA = a.Label.toUpperCase(); // ignore upper and lowercase
@@ -239,9 +245,11 @@ const DatasheetComp = (props:any) => {
                         return 0;
                     })
                     .map((term:any,i:number) => 
-                        <li key={'edbWD_'+i}>{term.Label}</li>    
-                )}
-                </ul></td>
+                        <li  key={'edbWD_'+i}>{term.Label}</li>
+                    )}
+                </ul>:item.Work_x0020_Description.results[0].Label}
+                <div style={style.removeStyle}>&nbsp;</div>
+                </td>
             </tr>
             <tr style={style.tableTr}>
                 <td style={style.tableRowEmpty} colSpan={2}/>
@@ -268,6 +276,7 @@ const DatasheetComp = (props:any) => {
             <tr style={style.tableTr}>
                 <td style={style.tableTdFirstChild}>Scope of Kier involvement</td>
                 <td style={style.tableTd}>
+                {item.Scope_x0020_of_x0020_Kier_x0020_.results.length > 1?
                     <ul>{
                         item.Scope_x0020_of_x0020_Kier_x0020_.results
                         .sort((a, b) => {
@@ -285,7 +294,7 @@ const DatasheetComp = (props:any) => {
                         .map((term:any,i:number) => 
                             <li key={'edbSOKI_'+i}>{term.Label}</li>    
                     )}
-                    </ul>
+                    </ul>:item.Scope_x0020_of_x0020_Kier_x0020_.results.length == 1 && item.Scope_x0020_of_x0020_Kier_x0020_.results[0].Label}
                 </td>
             </tr>
             <tr style={style.tableTr}>
